@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // var arrayList = ['a','b','c','d','e','f']; 
+            // var anotherArrayList = arrayList;
+            // arrayList = [];
+            // console.log('===========arrayList 1', arrayList);
+            // console.log('===========anotherArrayList 1', anotherArrayList);
+            // arrayList = ['a','b','c','d','e','f'];
+            // anotherArrayList = arrayList;
+            // arrayList.length = 0;
+            // console.log('===========arrayList 2', arrayList);
+            // console.log('===========anotherArrayList 2', anotherArrayList);
+            // arrayList = ['a','b','c','d','e','f'];
+            // anotherArrayList = arrayList;
+            // arrayList.splice(0, arrayList.length);
+            // console.log('===========arrayList 3', arrayList);
+            // console.log('===========anotherArrayList 2', anotherArrayList);
+            // arrayList = ['a','b','c','d','e','f'];
+            // anotherArrayList = arrayList;
+            // while(arrayList.length) arrayList.pop();
+            // console.log('===========arrayList 4', arrayList);
+            // console.log('===========anotherArrayList 4', anotherArrayList);
+
+
+
+            // var str = 'abcdef';
+            // var arr = str.split('');
+            // console.log('=======str', str, Object.prototype.toString.call(str));
+            // console.log('=======arr', arr, Object.prototype.toString.call(arr));
+
+            // var Employee = {
+            //     company: 'xyz'
+            // };
+            // var emp_c = Object.create(Employee);
+            // var emp_a = Object.assign(Employee);
+            // var emp_b = emp_a.prototype;
+            // var emp_a3 = emp_a;
+            // emp_a.companyFn = emp_c.companyFn = function(){return null};
+            // var emp_a2 = Object.assign(emp_a);
+            // console.log('===========emp_c again', emp_c);
+            // console.log('===========emp_a again', emp_a);
+            // console.log('===========Employee', Employee);
+            // console.log('====== is same', emp_a === emp_a2)
+            
+            // function EmployeeFn() {
+            //     company = 'bar';
+            //     this.company = 'xyz';
+            // }
+            // var emp1 = new EmployeeFn();
+            // var emp2 = EmployeeFn.prototype;
+            // var emp3 = EmployeeFn.prototype.constructor;
+            // var emp4 = emp1.constructor;
+            // var emp5 = emp1;
+
+            // console.log('=======emp1', emp1);
+            // console.log('=======emp2', emp2);
+            // console.log('=======emp3', emp3);
+            // console.log('=======emp4', emp4);
+            // console.log('=======emp5', emp5);
+            // console.log('============================');
+            // EmployeeFn.company = 'new';
+            // emp1.company = 'new';
+            // emp2.company = 'new';
+            // emp3.company = 'new';
+            // emp4.company = 'new';
+            // emp5.company = 'new';
+
+            // console.log('=======emp1', emp1);
+            // console.log('=======emp2', emp2);
+            // console.log('=======emp3', emp3);
+            // console.log('=======emp4', emp4);
+            // console.log('=======emp5', emp5);
+
+            // delete emp1.company;
+
+            // console.log('============================');
+
+            // console.log('=======emp1', emp1);
+            // console.log('=======emp2', emp2);
+            // console.log('=======emp3', emp3);
+            // console.log('=======emp4', emp4);
+            // console.log('=======emp5', emp5);
+
+            // console.log('============EmployeeFn', EmployeeFn);
+            // console.log('============EmployeeFn.company', EmployeeFn.company);
+
+            // var bar = true;
+            // console.log(bar + 0);   
+            // console.log(bar + "xyz");  
+            // console.log(bar + true);  
+            // console.log(bar + false); 
+
+            // var trees = ["xyz","xxxx","test","ryan","apple"];
+            // // delete trees[3];
+            // trees.splice(3, 1);
+            // console.log(trees);
+
+            // var salary = "1000$";
+
+            // (function () {
+            //     console.log("Original salary was " + salary);
+
+            //     var salary = "5000$";
+
+            //     console.log("My New Salary " + salary);
+            // })();
+
+            function foo(){ 
+                return foo; 
+            }
+            console.log(new foo() instanceof foo);
+			
+			var query = {
+				q: "Portland, OR 97210"
+			};
+			query.q = query.q ||"";
+			query.originalq = query.q;
+			query.cs =query.q.toLowerCase().replace(/  /g," ").replace(/ /g,"_").replace(/,/g,"_").replace(/_{2,}/g, '_');
+			query.q = query.q.toLowerCase().replace(/  /g," ").replace(/ /g,"\\");
+			query.q2 =query.q.replace(/,/g,"\\");
+			var splitqs = query.originalq.toLowerCase().replace(/,/g," ").replace(/  /g," ").split(" ");
+			splitqs = splitqs.map(function(l){return l.replace(/ /g,"")});
+			splitqs =splitqs.filter(function(l){return l !==""});
+
+			var resultqs=splitqs.map(function(m){return "full_text:" + m}).join(" OR ")
+			query.qs = resultqs;
+console.log('=================query', query);
+			
+        </script>
+    </body>
+</html>

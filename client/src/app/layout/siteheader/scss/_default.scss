@@ -1,0 +1,244 @@
+$rem60: rem(60px);
+.siteheader-buffer {
+    background-color: #000;
+    height: rem(60px);
+    transition: all 0.25s ease;
+}
+.siteheader-comp {
+    // background-color: #E8C28A;
+    // background: url('./../../../assets/purty_wood_@2X.png') top left repeat;
+    background-color: rgba(#fff, 0.9);
+    box-shadow: 0px 8px 8px 0px rgba(#000, 0.25);
+    height: rem(60px);
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.25s ease;
+    width: 100%;
+    z-index: 96;
+    .logo-wrap {
+        left: rem(15px);
+        padding: rem(5px) 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.25s ease;
+        z-index: 2;
+    }
+    .site-logo {
+        display: block;
+        height: rem(50px);
+        text-align: center;
+        width: rem(50px);
+        img {
+            width: 100%;
+        }
+    }
+    .nav-wrap {
+        display: flex;
+        position: absolute;
+        right: rem(15px);
+        text-align: right;
+        top: 0;
+        z-index: 2;
+        button {
+            background: transparent;
+            border: 0;
+            color: #000;
+            height: rem(60px);
+            line-height: 1;
+            margin: 0 0 0 rem(8px);
+            padding: 0;
+            transition: all 0.25s ease;
+            width: rem(40px);
+            i {
+                font-size: rem(32px);
+            }
+            .txt {
+                font-weight: bold;
+            }
+        }
+    }
+    .close-site-nav {
+        background: none;
+        border: 0;
+        height: rem(50px);
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        width: rem(50px);
+    }
+}
+.site-nav-mask {
+    background-color: rgba(#303030, 0.5);
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: -250%;
+    top: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+    z-index: 98;
+    &.active {
+        opacity: 1;
+        right: 0;
+    }
+}
+.site-user, .site-search, .site-lang {
+    background-color: rgba(#fff, 0.9);
+    height: 100%;
+    position: fixed;
+    right: -200%;
+    top: 0;
+    transition: all 0.5s ease;
+    width: calc(100% - #{$rem60});
+    z-index: 102;
+    .mat-form-field {
+        width: 100%;
+    }
+    &.active {
+        right: 0;
+    }
+    .site-search-content, .site-user-content {
+        padding: rem(15px);
+    }
+}
+.site-nav {
+    background-color: #fff;
+    height: 100%;
+    overflow-y: visible;
+    position: fixed;
+    right: -200%;
+    top: 0;
+    transition: all 0.5s ease;
+    width: calc(100% - #{$rem60});
+    z-index: 102;
+    &.active {
+        right: 0;
+    }
+    .accessible-megamenu {
+        background-color: transparent;
+        border: rem(1px) solid transparent;
+        display: block;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        &:after {
+            clear: both;
+            content: '';
+            display: table;
+        }
+        & > .accessible-megamenu-top-nav-item {
+            border-top: rem(1px) solid map-get($mat-deep-purple, 200);
+            height: auto;
+            position: static;
+            text-shadow: none;
+            a {
+                border-radius: 0;
+            }
+            a[aria-expanded] {
+                box-shadow: none;
+                color: #000;
+                display: block;
+                font-size: rem(18px);
+                font-weight: 400;
+                height: auto;
+                line-height: 1;
+                padding: rem(20px) rem(50px) rem(20px) rem(15px);
+                position: relative;
+                text-transform: uppercase;
+                transition: all 0.25s ease;
+                &:hover, &:focus, &.open {
+                    background: linear-gradient(to bottom, rgba(#fff, 1) 0%,rgba(#e6e6e6, 1) 100%);
+                    border: 0;
+                    outline: medium none;
+                }
+                .ikn {
+                    border-radius: 100%;
+                    color: $primary;
+                    display: block;
+                    height: rem(24px);
+                    position: absolute;
+                    right: rem(10px);
+                    top: rem(16px);
+                    width: rem(24px);
+                    i {
+                        transition: all 0.5s ease;
+                    }
+                }
+                &.open {
+                    .ikn {
+                        i {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .accessible-megamenu-panel {
+        background-color: #e6e6e6;
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        ul, li {
+            display: block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #303030;
+            display: block;
+            font-size: rem(18px);
+            font-weight: normal;
+            margin: 0;
+            padding: rem(15px);
+            text-decoration: none;
+        }
+    }
+}
+.site-lang {
+    .site-lang-content {
+        .lang-active {
+            padding: rem(15px) rem(55px) rem(15px) rem(15px);
+            position: relative;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: $success;
+            .material-icons {
+                position: absolute;
+                right: rem(15px);
+                top: rem(12px);
+            }
+        }
+        nav {
+            ul, li {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: block;
+            }
+            li {
+                border-bottom: rem(1px) solid $dark;
+            }
+            a {
+                display: block;
+                text-transform: uppercase;
+                padding: rem(15px);
+                &:link {
+                    color: $dark;
+                }
+                &:visited {
+                    color: $dark;
+                }
+                &:hover {
+                    color: $dark;
+                }
+                &:active {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}

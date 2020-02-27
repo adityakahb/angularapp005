@@ -1,0 +1,44 @@
+[
+    {
+        "name": "english",
+        "lang": "English",
+        "short": "EN",
+        "css": "",
+        "link": "#"
+    },
+    {
+        "name": "hindi",
+        "lang": "हिंदी",
+        "short": "हिं",
+        "css": "type-hindi",
+        "link": "#"
+    },
+    {
+        "name": "marathi",
+        "lang": "मराठी",
+        "short": "म",
+        "css": "type-marathi",
+        "link": "#"
+    },
+    {
+        "name": "bangla",
+        "lang": "বাংলা",
+        "short": "বা",
+        "css": "type-bangla",
+        "link": "#"
+    },
+    {
+        "name": "gurumukhi",
+        "lang": "ਗੁਰਮੁਖੀ",
+        "short": "ਗੁ",
+        "css": "type-gurumukhi",
+        "link": "#"
+    },
+    {
+        "name": "gujrati",
+        "lang": "ગુજરાતી",
+        "short": "ગુ",
+        "css": "type-gujrati",
+        "link": "#"
+    }
+]

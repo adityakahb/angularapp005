@@ -1,0 +1,8 @@
+img {
+    @include center-center();
+    height: 100.75%;
+    &.stretched {
+        height: auto;
+        width: 100.75%;
+    }
+}

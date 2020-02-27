@@ -1,0 +1,72 @@
+@import './../../globalsass';
+.cta-comp {
+    margin-bottom: rem(8px);
+    margin-right: rem(8px);
+    .material-icons {
+        height: rem(24px);
+        width: rem(24px);
+    }
+    &.teaser-tag {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: rem(0);
+        margin-right: rem(0);
+        &.t-light {
+            &:link {
+                color: $light;
+            }
+            &:visited {
+                color: $light;
+            }
+            &:hover {
+                color: $light;
+            }
+            &:active {
+                color: $light;
+            }
+        }
+        &.t-dark {
+            &:link {
+                color: $dark;
+            }
+            &:visited {
+                color: $dark;
+            }
+            &:hover {
+                color: $dark;
+            }
+            &:active {
+                color: $dark;
+            }
+        }
+    }
+    &.txt-icn {
+        padding-right: rem(40px);
+        position: relative;
+        .material-icons {
+            margin-top: rem(-12px);
+            position: absolute;
+            right: rem(8px);
+            top: 50%;
+        }
+    }
+    &.icn-o {
+        padding-bottom: 0;
+        padding-top: rem(5.72px);
+        &.btn-lg {
+            padding-bottom: rem(3.71px);
+            padding-top: rem(10px);
+        }
+        &.btn-sm {
+            line-height: 1;
+            padding-bottom: 0;
+            padding-top: rem(2.29px);
+        }
+    }
+}
+::ng-deep .t-dark {
+    color: $dark;
+}
+::ng-deep .t-light {
+    color: $light;
+}

@@ -1,0 +1,389 @@
+{
+    "title": "A Sample Recipe",
+    "ratingsData": {
+        "ratings": "4.5",
+        "noofratings": "282",
+        "noofreviews": "320"
+    },
+    "tags": [
+        {
+            "title": "Tag 1",
+            "link": "#",
+            "cssclass": "teaser-tag",
+            "tag": "a"
+        },
+        {
+            "title": "Tag 2",
+            "link": "#",
+            "cssclass": "teaser-tag",
+            "tag": "a"
+        },
+        {
+            "title": "Tag 3",
+            "link": "#",
+            "cssclass": "teaser-tag",
+            "tag": "a"
+        }
+    ],
+    "published": {
+        "date": "2020-02-27T16:13:47.057Z",
+        "title": "Published on"
+    },
+    "titlepara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel posuere leo. Nunc commodo fermentum justo quis suscipit. Pellentesque auctor fermentum tellus.",
+    "para": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nibh non neque rhoncus cursus et ut nibh. Fusce tristique ipsum ac dignissim rutrum. Integer in nisi ut purus tristique tempor. Proin efficitur ante id bibendum dapibus. Maecenas eget accumsan lorem, luctus vulputate ligula. Ut erat sapien, elementum pharetra sapien non, consectetur dictum augue. Phasellus pulvinar commodo ex a condimentum. Etiam luctus pulvinar blandit. </p> <blockquote>Vestibulum elit odio, venenatis sed condimentum molestie, placerat vel mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur gravida nec tellus in ullamcorper. Aenean mattis turpis sed rhoncus tincidunt.<footer>Groucho Marx</footer></blockquote> <p> Maecenas sodales ullamcorper nisl non pretium. Aliquam ex tellus, cursus non metus ac, rhoncus ullamcorper dolor. Phasellus nec eleifend enim. Nullam rhoncus nibh lectus, quis malesuada enim posuere sed. Duis sagittis purus mi, sit amet dapibus sem sagittis id. Ut sagittis in dui ac suscipit. Phasellus sem mi, vehicula sed gravida consectetur, aliquam eu magna. Quisque condimentum et orci nec fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet mi sit amet urna auctor pretium at quis enim. Donec id dapibus dui. Nam tincidunt est vel molestie consequat. Sed vel luctus augue. Cras tempus mollis metus, quis ultrices justo viverra in. Mauris eleifend fermentum elit bibendum congue. </p> <p> Vestibulum ultrices lacus purus, vel aliquam odio rhoncus vel. Integer suscipit dolor eget odio dictum, at sollicitudin velit tincidunt. Phasellus rhoncus vel lacus at egestas. Vestibulum bibendum risus in enim laoreet, non varius urna eleifend. Suspendisse at augue consectetur, dictum augue id, imperdiet sem. Quisque sed risus in ipsum mattis rhoncus. Morbi vestibulum, eros ac cursus vehicula, ante odio luctus orci, a feugiat neque orci eu est. Aliquam ultricies, tellus sed varius dictum, mauris metus venenatis ante, malesuada pharetra dolor ex sed massa. Nam a molestie justo, eleifend commodo odio. Ut eget tellus malesuada enim imperdiet tincidunt. Suspendisse sodales vulputate massa ut suscipit. Fusce elementum ornare mi quis imperdiet. Vestibulum vulputate nibh semper finibus dictum. In hendrerit, arcu in fermentum viverra, massa lorem pharetra ligula, a faucibus libero metus ut mauris. </p> <p> Cras eu tellus eu leo dapibus maximus. Donec dapibus ullamcorper turpis vel imperdiet. Duis eget massa tincidunt, vestibulum mauris lacinia, dignissim purus. Suspendisse potenti. Integer tristique dui in mauris tincidunt, quis maximus nibh tempor. Phasellus volutpat euismod justo quis tristique. Maecenas id tortor vel lorem tincidunt volutpat id ut enim. </p> <p> Etiam ultrices rhoncus est eget feugiat. Mauris vel augue vitae dui tincidunt sollicitudin. Sed felis velit, tincidunt at porta at, vulputate vitae tellus. Fusce molestie lectus dui, et tempus lacus volutpat non. Morbi et varius erat. Cras porttitor placerat neque, a venenatis neque tristique id. Donec sed egestas purus, mattis rhoncus dui. Vivamus viverra urna quis tellus iaculis tempor. Nullam rhoncus tortor non luctus dignissim. Aliquam eu pulvinar dolor, eu auctor dolor. Mauris dignissim quam massa, sed hendrerit elit laoreet id. </p> <p> Vivamus eu enim sem. Nullam nec varius tellus. Cras vulputate tristique consectetur. Proin posuere ornare nunc, semper commodo sapien finibus non. Quisque tincidunt enim eu mi facilisis, eu semper nisl posuere. Etiam sodales quam vitae ex semper posuere non a nisl. Aliquam eleifend malesuada metus mollis facilisis. </p> <p> Pellentesque lacinia eget lectus sed viverra. Donec vestibulum risus sodales interdum ullamcorper. Nam dignissim a lacus sed condimentum. Aliquam tempor libero sit amet augue molestie, et sagittis nunc placerat. Vivamus nec sem nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis egestas tellus sollicitudin, auctor augue et, sollicitudin metus. Maecenas varius laoreet tortor ac convallis. Donec mollis cursus augue volutpat lacinia. Phasellus accumsan consequat lacinia. Donec gravida imperdiet sem, vitae ornare orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed in accumsan tellus. Nam dictum ultrices risus, fermentum imperdiet nulla mollis non. In porttitor est at faucibus rhoncus.</p>",
+    "authordata": {
+        "name": "Jane Doe",
+        "followers": {
+            "num": "200",
+            "title": "Followers",
+            "link": "#",
+            "cssclass": "teaser-tag",
+            "tag": "a",
+            "icon": "keyboard_arrow_right"
+        },
+        "profilelink": {
+            "title": "View Profile",
+            "link": "#",
+            "cssclass": "btn-primary",
+            "tag": "a",
+            "icon": "keyboard_arrow_right"
+        },
+        "authorimg": {
+            "xs": "https://via.placeholder.com/80x80.png",
+            "xs2": "https://via.placeholder.com/160x160.png"
+        },
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel posuere leo. Nunc commodo fermentum justo quis suscipit."
+    },
+    "reviewsheader": "Reviews",
+    "teaserside": [
+        {
+            "teasertitle": "Related Articles",
+            "morectatitle": "More articles",
+            "morectatext": "More articles",
+            "morectalink": "#",
+            "morectaicon": "keyboard_arrow_right",
+            "data": [
+                {
+                    "tileImg": {
+                        "xs": "https://via.placeholder.com/640x360.png",
+                        "xs2": "https://via.placeholder.com/1280x720.png",
+                        "md": "https://via.placeholder.com/800x450.png",
+                        "md2": "https://via.placeholder.com/1600x900.png"
+                    },
+                    "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
+                    "tags": [
+                        {
+                            "title": "Tag 1",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 2",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 3",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        }
+                    ],
+                    "cta": [
+                        {
+                            "title": "View Recipe",
+                            "link": "#",
+                            "cssclass": "btn-primary",
+                            "tag": "a",
+                            "icon": "keyboard_arrow_right"
+                        },
+                        {
+                            "title": "Share",
+                            "link": "#",
+                            "cssclass": "btn-outline",
+                            "tag": "button",
+                            "icon": "share"
+                        }
+                    ]
+                },
+                {
+                    "tileImg": {
+                        "xs": "https://via.placeholder.com/640x360.png",
+                        "xs2": "https://via.placeholder.com/1280x720.png",
+                        "md": "https://via.placeholder.com/800x450.png",
+                        "md2": "https://via.placeholder.com/1600x900.png"
+                    },
+                    "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
+                    "tags": [
+                        {
+                            "title": "Tag 1",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 2",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 3",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        }
+                    ],
+                    "cta": [
+                        {
+                            "title": "View Recipe",
+                            "link": "#",
+                            "cssclass": "btn-primary",
+                            "tag": "a",
+                            "icon": "keyboard_arrow_right"
+                        },
+                        {
+                            "title": "Share",
+                            "link": "#",
+                            "cssclass": "btn-outline",
+                            "tag": "button",
+                            "icon": "share"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "bottomSections": [
+        {
+            "title": "Featured Recipes",
+            "icon": "star",
+            "morectatitle": "Recently featured recipes",
+            "morectatext": "Recently featured recipes",
+            "morectalink": "#",
+            "morectaicon": "keyboard_arrow_right",
+            "theme": "dark",
+            "bg": "light",
+            "data": [
+                {
+                    "tileImg": {
+                        "xs": "https://via.placeholder.com/640x360.png",
+                        "xs2": "https://via.placeholder.com/1280x720.png",
+                        "md": "https://via.placeholder.com/800x450.png",
+                        "md2": "https://via.placeholder.com/1600x900.png"
+                    },
+                    "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
+                    "tags": [
+                        {
+                            "title": "Tag 1",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 2",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 3",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        }
+                    ],
+                    "cta": [
+                        {
+                            "title": "View Recipe",
+                            "link": "#",
+                            "cssclass": "btn-primary",
+                            "tag": "a",
+                            "icon": "keyboard_arrow_right"
+                        },
+                        {
+                            "title": "Share",
+                            "link": "#",
+                            "cssclass": "btn-outline",
+                            "tag": "button",
+                            "icon": "share"
+                        }
+                    ]
+                },
+                {
+                    "tileImg": {
+                        "xs": "https://via.placeholder.com/640x360.png",
+                        "xs2": "https://via.placeholder.com/1280x720.png",
+                        "md": "https://via.placeholder.com/800x450.png",
+                        "md2": "https://via.placeholder.com/1600x900.png"
+                    },
+                    "title": "Lorem Ipsum Dolor Sit Amet",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
+                    "tags": [
+                        {
+                            "title": "Tag 1",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 2",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 3",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        }
+                    ],
+                    "cta": [
+                        {
+                            "title": "View Recipe",
+                            "link": "#",
+                            "cssclass": "btn-primary",
+                            "tag": "a",
+                            "icon": "keyboard_arrow_right"
+                        },
+                        {
+                            "title": "Share",
+                            "link": "#",
+                            "cssclass": "btn-outline",
+                            "tag": "button",
+                            "icon": "share"
+                        }
+                    ]
+                },
+                {
+                    "tileImg": {
+                        "xs": "https://via.placeholder.com/640x360.png",
+                        "xs2": "https://via.placeholder.com/1280x720.png",
+                        "md": "https://via.placeholder.com/800x450.png",
+                        "md2": "https://via.placeholder.com/1600x900.png"
+                    },
+                    "title": "Lorem Ipsum Dolor Sit Amet",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
+                    "tags": [
+                        {
+                            "title": "Tag 1",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 2",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 3",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        }
+                    ],
+                    "cta": [
+                        {
+                            "title": "View Recipe",
+                            "link": "#",
+                            "cssclass": "btn-primary",
+                            "tag": "a",
+                            "icon": "keyboard_arrow_right"
+                        },
+                        {
+                            "title": "Share",
+                            "link": "#",
+                            "cssclass": "btn-outline",
+                            "tag": "button",
+                            "icon": "share"
+                        }
+                    ]
+                },
+                {
+                    "tileImg": {
+                        "xs": "https://via.placeholder.com/640x360.png",
+                        "xs2": "https://via.placeholder.com/1280x720.png",
+                        "md": "https://via.placeholder.com/800x450.png",
+                        "md2": "https://via.placeholder.com/1600x900.png"
+                    },
+                    "title": "Lorem Ipsum Dolor Sit Amet",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
+                    "tags": [
+                        {
+                            "title": "Tag 1",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 2",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        },
+                        {
+                            "title": "Tag 3",
+                            "link": "#",
+                            "cssclass": "teaser-tag",
+                            "tag": "a"
+                        }
+                    ],
+                    "cta": [
+                        {
+                            "title": "View Recipe",
+                            "link": "#",
+                            "cssclass": "btn-primary",
+                            "tag": "a",
+                            "icon": "keyboard_arrow_right"
+                        },
+                        {
+                            "title": "Share",
+                            "link": "#",
+                            "cssclass": "btn-outline",
+                            "tag": "button",
+                            "icon": "share"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

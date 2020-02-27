@@ -1,0 +1,79 @@
+<div class="main-content">
+  <section class="recipe-comp" [ngClass]="articleData.theme">
+    <div class="max-wrap">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-xl-9">
+            <app-article [data]="articleData"></app-article>
+          </div>
+          <div class="col-12 col-xl-3 p-0">
+              <div class="container-fluid" *ngFor="let teaser of articleData.teaserside">
+                  <div class="row">
+                      <div class="col-12">
+                          <h4 [innerHTML]="teaser.teasertitle"></h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-md-6 col-xl-12 mt-3 mb-3" *ngFor="let teaserData of teaser.data">
+                          <app-standard-teaser [theme]="articleData.theme" [data]="teaserData"></app-standard-teaser>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 mt-3 mb-3 align-center">
+                      <div class="section-footer">
+                        <app-cta
+                          [tag]="'a'"
+                          [title]="teaser.morectatitle"
+                          [cssclass]="'btn-info btn-lg'"
+                          [text]="teaser.morectatext"
+                          [icon]="teaser.morectaicon"
+                          [href]="teaser.morectalink"
+                        ></app-cta>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section *ngFor="let section of articleData.bottomSections" class="generic-content" [ngClass]="section.theme">
+    <div class="bg-wrap" [ngClass]="section.bg">
+      <div class="max-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 mt-3 mb-3 align-center">
+              <div class="section-header">
+                <span *ngIf="getSectionClass(section.icon)" [ngClass]="'section-icon food-icon ' + section.icon"></span>
+                <span *ngIf="!getSectionClass(section.icon)" class="section-icon">
+                  <i class="material-icons" [innerHTML]="section.icon"></i>
+                </span>
+                <h2 [innerHTML]="section.title"></h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data" [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
+              <app-standard-teaser [data]="item" [theme]="section.theme"></app-standard-teaser>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3 mb-3 align-center">
+              <div class="section-footer">
+                <app-cta
+                  [tag]="'a'"
+                  [title]="section.morectatitle"
+                  [cssclass]="'btn-info btn-lg'"
+                  [text]="section.morectatext"
+                  [icon]="section.morectaicon"
+                  [href]="section.morectalink"
+                ></app-cta>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

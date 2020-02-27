@@ -1,0 +1,30 @@
+<mat-card class="author-card" [ngClass]="theme">
+    <div class="teaser-img" *ngIf="data.authorimg">
+        <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="data.authorimg"></app-responsive-image>
+    </div>
+    <h6 [innerHTML]="data.name"></h6>
+    <mat-card-subtitle *ngIf="data.followers">
+        <app-cta
+            [cssclass]="data.followers.cssclass"
+            [href]="data.followers.link"
+            [tag]="data.followers.tag"
+            [text]="data.followers.num + ' ' + data.followers.title"
+            [theme]="theme"
+            [title]="data.followers.num + ' ' + data.followers.title"
+        ></app-cta>
+    </mat-card-subtitle>
+    <mat-card-content>
+        <p [innerHTML]="data.desc"></p>
+    </mat-card-content>
+    <mat-card-actions>
+        <app-cta
+            [cssclass]="data.profilelink.cssclass"
+            [href]="data.profilelink.link"
+            [tag]="data.profilelink.tag"
+            [text]="data.profilelink.title"
+            [theme]="theme"
+            [title]="data.profilelink.title"
+            [icon]="data.profilelink.icon"
+        ></app-cta>
+    </mat-card-actions>
+</mat-card>

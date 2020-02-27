@@ -1,0 +1,42 @@
+<div class="main-content">
+  <app-indexbanner></app-indexbanner>
+  <section *ngFor="let section of indexData" class="generic-content" [ngClass]="section.theme">
+    <div class="bg-wrap" [ngClass]="section.bg">
+      <div class="max-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 mt-3 mb-3 align-center">
+              <app-section-header
+                [align]="'center'"
+                [icon]="section.icon"
+                [tag]="'h2'"
+                [theme]="section.theme"
+                [title]="section.title"
+              >
+              </app-section-header>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data" [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
+              <app-standard-teaser [data]="item" [theme]="section.theme"></app-standard-teaser>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3 mb-3 align-center">
+              <div class="section-footer">
+                <app-cta
+                  [tag]="'a'"
+                  [title]="section.morectatitle"
+                  [cssclass]="'btn-info btn-lg'"
+                  [text]="section.morectatext"
+                  [icon]="section.morectaicon"
+                  [href]="section.morectalink"
+                ></app-cta>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,25 @@
+.teaser-rating {
+    padding: rem(4px) 0 rem(16px) 0;
+    height: rem(32px);
+    display: flex;
+    align-items: center;
+    font-size: rem(14px);
+    .r-num, .r-wrap, .r-count, .r-r-icon, .r-reviews {
+        height: rem(20px);
+        padding-right: rem(4px);
+        .material-icons {
+            font-size: rem(18px);
+        }
+    }
+    .r-num, .r-count, .r-reviews {
+        position: relative;
+        top: rem(1px);
+    }
+    .r-r-icon {
+        position: relative;
+        top: rem(2px);
+    }
+    .r-num, .r-count {
+        padding-right: rem(20px);
+    }
+}

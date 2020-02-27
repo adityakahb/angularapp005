@@ -1,0 +1,51 @@
+@import '~@angular/material/theming';
+
+$primary:       map-get($mat-deep-purple, 500);
+$secondary:     map-get($mat-brown, 500);
+$success:       map-get($mat-green, 500);
+$info:          map-get($mat-cyan, 500);
+$warning:       map-get($mat-yellow, 500);
+$danger:        map-get($mat-red, 500);
+$light:         map-get($mat-blue-grey, 100);
+$dark:          map-get($mat-blue-grey, 800);
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/buttons";
+
+@import './sass-globals/rem';
+@import './sass-globals/mixins';
+@import './sass-globals/variables';
+
+.type-hindi {
+  font-family: 'Hind', sans-serif;
+}
+.type-marathi {
+  font-family: 'Khand', sans-serif;
+}
+.type-bangla {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.type-gurumukhi {
+  font-family: 'Mukta Mahee', sans-serif;
+}
+.type-gujarati {
+  font-family: 'Hind Vadodara', sans-serif;
+}

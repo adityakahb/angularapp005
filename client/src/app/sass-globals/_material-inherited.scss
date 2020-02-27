@@ -1,0 +1,15 @@
+body {
+    .mat-button-base, .mat-raised-button, .mat-flat-button, .mat-stroked-button {
+        padding: 0 rem(16px);
+    }
+    a {
+        &.mat-button-base, &.mat-raised-button, &.mat-flat-button, &.mat-stroked-button {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .mat-form-field-label, .mat-input-element {
+        font-size: rem(16px);
+    }
+}

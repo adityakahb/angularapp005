@@ -1,0 +1,163 @@
+<section class="siteheader-comp" id="siteheader-comp" [ngClass]="{'active': isScrolledDown}">
+    <div class="header-wrap">
+        <header>
+            <div class="max-wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo-wrap">
+                                <a href="#" class="site-logo">
+                                    <img src="./../../../assets/logo-black.svg">
+                                </a>
+                            </div>
+                            <div class="site-nav" [ngClass]="{'active': isNavOpen}">
+                                <button class="close-site-nav d-xl-none" (click)="closeAllNav()">
+                                    <i class="material-icons">close</i>
+                                </button>
+                                <nav>
+                                    <ul class="nav-menu">
+                                        <li *ngFor="let item of navData" class="nav-item">
+                                            <a [href]="item.landing">
+                                                <span class="txt" [innerHTML]="item.name"></span>
+                                                <span class="ikn"><i class="material-icons">keyboard_arrow_right</i></span>
+                                            </a>
+                                            <div class="sub-nav">
+                                                <div class="max-wrap">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div *ngFor="let subnavgroup of item.links" class="col-12 col-xl-4 p-0 pl-xl-3 pr-xl-3">
+                                                                <ul class="sub-nav-group">
+                                                                    <li *ngFor="let subnav of subnavgroup.col">
+                                                                        <a [href]="subnav.link" [innerHTML]="subnav.name"></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="nav-wrap">
+                                <button type="button" (click)="openSearchNav()">
+                                    <i class="material-icons">search</i>
+                                </button>
+                                <button type="button" (click)="openUserNav()">
+                                    <i class="material-icons">account_circle</i>
+                                </button>
+                                <button type="button" (click)="openLangNav()">
+                                    <!-- <i class="material-icons">language</i> -->
+                                    <span class="txt">EN</span>
+                                </button>
+                                <button type="button" class="d-xl-none" (click)="openNav()">
+                                    <i class="material-icons">menu</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="site-nav-mask" [ngClass]="{'active': isNavOpen || isUserNavOpen || isSearchNavOpen || isLangNavOpen}" (click)="closeAllNav()">
+        </div>
+        <aside class="site-lang" [ngClass]="{'active': isLangNavOpen}">
+            <button class="close-site-nav" (click)="closeAllNav()">
+                <i class="material-icons">close</i>
+            </button>
+            <div class="site-lang-content">
+                <div class="lang-active">
+                    English
+                    <i class="material-icons">done</i>
+                </div>
+                <nav>
+                    <ul>
+                        <li *ngFor="let lang of langArr">
+                            <a [href]="lang.link" [ngClass]="lang.css" [innerHTML]="lang.lang"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <aside class="site-search" [ngClass]="{'active': isSearchNavOpen}">
+            <button class="close-site-nav" (click)="closeAllNav()">
+                <i class="material-icons">close</i>
+            </button>
+            <div class="site-search-content">
+                <form [formGroup]="searchForm">
+                    <div class="form-group">
+                        <mat-form-field>
+                            <input type="text"
+                                matInput
+                                placeholder="Search"
+                                formControlName="searchGroup"
+                                required
+                                [matAutocomplete]="autoGroup">
+                            <mat-autocomplete #autoGroup="matAutocomplete">
+                                <mat-optgroup *ngFor="let group of searchOptions | async" [label]="group.title">
+                                    <mat-option *ngFor="let name of group.names" [value]="name">
+                                        {{name}}
+                                    </mat-option>
+                                </mat-optgroup>
+                            </mat-autocomplete>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <app-cta
+                            [tag]="'button'"
+                            [title]="'Search'"
+                            [cssclass]="'btn btn-primary'"
+                            [text]="'Search'"
+                            [icon]="'keyboard_arrow_right'"
+                            [buttontype]="'submit'"
+                        ></app-cta>
+                    </div>
+                </form>
+            </div>
+        </aside>
+        <aside class="site-user" [ngClass]="{'active': isUserNavOpen}">
+            <button class="close-site-nav" (click)="closeAllNav()">
+                <i class="material-icons">close</i>
+            </button>
+            <div class="site-user-content">
+                <form #login = "ngForm" (ngSubmit) = "onClickSubmit(login.value)" >
+                    <div class="form-group">
+                        <mat-form-field class="full-width">
+                            <input matInput type="email" name="email" placeholder="Email" ngModel>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="full-width">
+                            <input matInput type="password" name="pwd" placeholder="Password" ngModel>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <app-cta
+                            [tag]="'button'"
+                            [title]="'Sign In'"
+                            [cssclass]="'btn btn-primary'"
+                            [text]="'Sign in'"
+                            [icon]="'keyboard_arrow_right'"
+                            [buttontype]="'submit'"
+                        ></app-cta>
+                    </div>
+                </form>
+            </div>
+        </aside>
+    </div>
+</section>
+<div class="siteheader-buffer" [ngClass]="{'active': isScrolledDown}"></div>
+<!-- <img src="https://via.placeholder.com/400x400.png?text=src"
+    src2="https://via.placeholder.com/800x800.png?text=src+retina"
+    sm="https://via.placeholder.com/600x600.png?text=sm"
+    sm2="https://via.placeholder.com/1200x1200.png?text=sm+retina"
+    md="https://via.placeholder.com/800x800.png?text=md"
+    md2="https://via.placeholder.com/1600x1600.png?text=md+retina"
+    lg="https://via.placeholder.com/1000x1000.png?text=lg"
+    lg2="https://via.placeholder.com/2000x2000.png?text=lg+retina"
+    xl="https://via.placeholder.com/1200x1200.png?text=xl"
+    xl2="https://via.placeholder.com/2400x2400.png?text=xl+retina"
+    style="width: 100%;"
+    appResponsiveImage
+> -->

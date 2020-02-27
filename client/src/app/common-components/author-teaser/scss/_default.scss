@@ -1,0 +1,40 @@
+.author-card {
+    background-color: rgba($light, 0.85);
+    border: rem(1px) solid $light; 
+    height: 100%;
+    padding: rem(8px) rem(8px) rem(54px) rem(96px);
+    position: relative;
+    min-height: 96px;
+    .mat-card-subtitle {
+        margin: 0;
+    }
+    .mat-card-content {
+        font-size: rem(16px);
+        margin: rem(8px) 0;
+    }
+    .teaser-img {
+        border: rem(1px) solid $light;
+        height: rem(80px);
+        overflow: hidden;
+        position: absolute;
+        width: rem(80px);
+        top: rem(8px);
+        left: rem(8px);
+        border-radius: rem(4px);
+    }
+    .mat-card-actions {
+        bottom: 0;
+        left: rem(96px);
+        margin: 0;
+        padding: rem(8px) 0 0 0;
+        position: absolute;
+    }
+    &.dark {
+        background-color: rgba($dark, 0.85);
+        border: rem(1px) solid $dark; 
+        color: #fff;
+        .teaser-img {
+            border: rem(1px) solid $dark;
+        }
+    }
+}

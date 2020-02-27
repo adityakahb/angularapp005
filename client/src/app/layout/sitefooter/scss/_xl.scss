@@ -1,0 +1,12 @@
+.sitefooter-comp {
+    [class^="col"] {
+        border-bottom: rem(1px) solid #fff;
+        border-top: 0;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    .footer-wrap {
+        padding: rem(48px) 0;
+    }
+}

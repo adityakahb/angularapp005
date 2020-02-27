@@ -1,0 +1,19 @@
+.recipe-comp {
+    background-color: #fff;
+    background-image: url('./../../../assets/page-bg.jpg');
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: contain;
+    padding: rem(24px) 0;
+    @media (min-resolution: 120dpi) and (-webkit-min-device-pixel-ratio: 1.2) {
+        background-image: url('./../../../assets/page-bg@2x.jpg');
+    }
+    &.dark {
+        background-color: #000;
+        background-image: url('./../../../assets/page-dark-bg.jpg');
+        color: #fff;
+        @media (min-resolution: 120dpi) and (-webkit-min-device-pixel-ratio: 1.2) {
+            background-image: url('./../../../assets/page-dark-bg@2x.jpg');
+        }
+    }
+}

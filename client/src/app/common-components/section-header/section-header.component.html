@@ -1,0 +1,12 @@
+<div class="section-header" [ngClass]="[theme ? theme : '', align ? align : '']">
+    <span *ngIf="icon && getSectionClass(icon)" [ngClass]="'section-icon ' + icon"></span>
+    <span *ngIf="icon && !getSectionClass(icon)" class="section-icon">
+      <i class="material-icons" [innerHTML]="icon"></i>
+    </span>
+    <h1 class="h-tag" *ngIf="tag === 'h1'" [innerHTML]="title"></h1>
+    <h2 class="h-tag" *ngIf="tag === 'h2'" [innerHTML]="title"></h2>
+    <h3 class="h-tag" *ngIf="tag === 'h3'" [innerHTML]="title"></h3>
+    <h4 class="h-tag" *ngIf="tag === 'h4'" [innerHTML]="title"></h4>
+    <h5 class="h-tag" *ngIf="tag === 'h5'" [innerHTML]="title"></h5>
+    <h6 class="h-tag" *ngIf="tag === 'h6'" [innerHTML]="title"></h6>
+</div>

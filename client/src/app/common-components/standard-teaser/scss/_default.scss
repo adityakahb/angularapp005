@@ -1,0 +1,101 @@
+$rem18: rem(18px);
+.teaser-card {
+    background-color: rgba($light, 0.85);
+    border: rem(1px) solid $light; 
+    height: 100%;
+    padding: 0 rem(8px) rem(54px) rem(8px);
+    position: relative;
+    .mat-card-subtitle, .mat-card-content {
+        font-size: rem(16px);
+        margin-bottom: rem(8px);
+    }
+    .teaser-img {
+        //border: rem(1px) solid $light;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .mat-card-image {
+        margin: 0 rem(-9px) rem(8px) rem(-9px);
+        width: calc(100% + #{$rem18});
+    }
+    .teaser-icon {
+        align-items: center;
+        display: flex;
+        height: rem(40px);
+        justify-content: center;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        top: rem(20px);
+        background-color: #fff;
+        border-radius: 100%;
+        span {
+            display: inline-block;
+            height: 70%;
+            width: 70%;
+            position: relative;
+            &:before {
+                font-size: rem(27px);
+                @include center-center();
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .mat-card-header {
+        align-items: center;
+        display: flex;
+        height: rem(80px);
+        padding: rem(8px) 0;
+        &.with-icon {
+            padding: rem(8px) 0 rem(8px) rem(48px);
+        }
+        position: relative;
+        .h-title {
+            margin: 0;
+        }
+        .mat-card-title {
+            margin: 0;
+        }
+        ::ng-deep .mat-card-header-text {
+            display: inline-block;
+            margin: 0px;
+        }
+    }
+    .mat-card-subtitle {
+        height: rem(60px);
+        margin: 0 0 rem(16px) 0;
+        overflow: hidden;
+    }
+    .mat-card-actions {
+        bottom: 0;
+        left: rem(8px);
+        margin: 0;
+        padding: rem(8px) 0 0 0;
+        position: absolute;
+    }
+    .teaser-video {
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+        iframe {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+    }
+    &.dark {
+        background-color: rgba($dark, 0.85);
+        border: rem(1px) solid $dark; 
+        color: #fff;
+        .teaser-img {
+            border: rem(1px) solid $dark;
+        }
+        .teaser-icon {
+            background-color: #000;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import './../../_globalsass';
+@import './../templates';
+@import './scss/default';
+
+// DON'T ADD ANY SCSS IN{ XS
+@media (min-width: rem(#{$xs})) {
+    @import './scss/xs';
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: rem(#{$sm})) {
+    @import './scss/sm';
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: rem(#{$md})) {
+    @import './scss/md';
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: rem(#{$lg})) {
+    @import './scss/lg';
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: rem(#{$xl})) {
+    @import './scss/xl';
+}

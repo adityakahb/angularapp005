@@ -1,0 +1,51 @@
+$rem30px: rem(30px);
+.section-header {
+    display: inline-block;
+    // max-width: calc(88% - #{$rem30px});
+    .h-tag {
+        margin: 0;
+        position: relative;
+        &:before, &:after {
+            background-color: $dark;
+            bottom: 50%;
+            content: '';
+            display: none;
+            height: rem(2px);
+            position: absolute;
+            width: rem(16px);
+        }
+        &:before {
+            right: 105%;
+        }
+        &:after {
+            left: 105%;
+        }
+    }
+    .section-icon {
+        display: block;
+        &:before, .material-icons {
+            font-size: rem(48px);
+        }
+    }
+    &.left {
+        .h-tag {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    &.right {
+        .h-tag {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &.dark {
+        .h-tag {
+            &:before, &:after {
+                background-color: $light;
+            }
+        }
+    }
+}

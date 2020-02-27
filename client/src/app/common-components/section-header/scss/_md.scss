@@ -1,0 +1,7 @@
+.section-header {
+    .h-tag {
+        &:before, &:after {
+            width: rem(24px);
+        }
+    }
+}
