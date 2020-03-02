@@ -53,7 +53,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -99,7 +120,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -150,7 +192,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -201,7 +264,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -263,7 +347,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -314,7 +419,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -366,7 +492,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -417,7 +564,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -480,7 +648,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -531,7 +720,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -582,7 +792,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -633,7 +864,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -693,7 +945,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"
@@ -743,7 +1016,28 @@
                     },
                     {
                         "title": "Share",
-                        "link": "#",
+                        "share": [
+                            {
+                                "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                                "text": "Facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                                "text": "Instagram",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                                "text": "Twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                                "text": "Pinterest",
+                                "link": "#"
+                            }
+                        ],
                         "cssclass": "btn-outline",
                         "tag": "button",
                         "icon": "share-variant"

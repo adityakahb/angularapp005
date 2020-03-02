@@ -20,7 +20,9 @@
         appResponsiveImage
     > -->
     <!-- <app-responsive-image appResponsiveBreakpoint (triggerBreakpointChange)="updateImgSrc($event)" [imgData]="bannerData.img || {}" [cbp]="cbp"></app-responsive-image> -->
-    <app-responsive-image appResponsiveBreakpoint [imgData]="bannerData.img || {}"></app-responsive-image>
+    <div class="img-wrap">
+        <app-responsive-image appResponsiveBreakpoint [imgData]="bannerData.img || {}"></app-responsive-image>
+    </div>
     <div class="text-wrap">
         <div class="max-wrap">
             <div class="container-fluid">

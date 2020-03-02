@@ -1,10 +1,33 @@
 @import './../../globalsass';
+.dropdown-menu {
+    .dropdown-item {
+        padding: rem(4px) rem(16px);
+        .icon {
+            height: rem(24px);
+            width: rem(24px);
+            display: inline-block;
+            margin-right: rem(8px);
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+.cta-inline-dd {
+    display: inline-block;
+}
 .cta-comp {
     margin-bottom: rem(8px);
     margin-right: rem(8px);
     .mdi {
         height: rem(24px);
         width: rem(24px);
+    }
+    &.dropdown-toggle {
+        &:after {
+            display: none;
+        }
     }
     &.teaser-tag {
         display: inline-block;

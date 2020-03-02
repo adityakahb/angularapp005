@@ -20,22 +20,27 @@ export class CtaComponent implements OnInit {
   @Input() index = -1;
   @Input() last = true;
   @Input() theme = 'light';
+  @Input() share;
 
-  routerLink = false;
+  routerLink = {
+    isRouter: false,
+    href: ''
+  };
 
   constructor() { }
 
   ngOnInit() {
-
+    if (this.href.charAt(0) === '[' && this.href.charAt(this.href.length - 1) === ']') {
+      this.routerLink.isRouter = true;
+      this.routerLink.href = this.href.substr(1, this.href.length - 2);
+    } else {
+      this.routerLink.href = this.href;
+    }
   }
 
   generateCssClass(val) {
     str = '';
     theme = this.theme ? this.theme === 'dark' ? 'light' : 'dark' : 'dark';
-
-    if (this.href.indexOf(0) === '[' && this.href.indexOf(this.href.length - 1) === ']') {
-      this.routerLink = true;
-    }
 
     if (this.cssclass.indexOf('btn-') !== -1) {
       str = 'btn ' + this.cssclass;

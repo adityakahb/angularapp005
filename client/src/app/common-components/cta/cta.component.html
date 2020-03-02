@@ -1,13 +1,25 @@
-<a *ngIf="tag === 'a' && !routerLink" [href]="href" [title]="title" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
+<a *ngIf="tag === 'a' && !routerLink.isRouter" [href]="routerLink.href" [title]="title" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
     <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
     <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
 </a>
-<a *ngIf="tag === 'a' && routerLink" [routerLink]="href" [title]="title" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
+<a *ngIf="tag === 'a' && routerLink.isRouter" [routerLink]="routerLink.href" [title]="title" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
     <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
     <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
 </a>
-<button *ngIf="tag === 'button'" [type]="buttontype" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
+<button *ngIf="tag === 'button' && (share || {}).length === 0" [type]="buttontype" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
     <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
     <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
 </button>
+<div class="dropdown cta-inline-dd" *ngIf="tag === 'button' && (share || {}).length > 0">
+    <button [type]="buttontype" role="button" class="cta-comp dropdown-toggle" [ngClass]="generateCssClass(true)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
+        <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" [href]="sh.link" [title]="sh.text" *ngFor="let sh of share">
+          <span class="icon" *ngIf="sh.icon"><img [src]="sh.icon" [alt]="sh.text"></span>
+          <span class="text" [innerHTML]="sh.text"></span>
+      </a>
+    </div>
+  </div>
 <span *ngIf="index !== -1 && !last" [ngClass]="generateCssClass(false)">,&nbsp;</span>
