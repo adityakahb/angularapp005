@@ -1,25 +1,10 @@
 .profile-comp {
     padding: rem(48px) 0;
-    .profile-wrap {
-        padding: 0 0 0 rem(256px);
-        position: relative;
-    }
     .user-comp {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: rem(226px);
         .img-wrap {
             display: block;
             width: 100%;
-            height: 0;
             padding-bottom: 100%;
-            overflow: hidden;
-            position: relative;
         }
-    }
-    .profile-center {
-        min-height: rem(610px);
     }
 }

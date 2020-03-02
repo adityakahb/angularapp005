@@ -2,43 +2,42 @@ import { Component, OnInit, Input } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-standard-teaser',
-  templateUrl: './standard-teaser.component.html',
-  styleUrls: ['./standard-teaser.component.scss']
+  selector: 'app-activity-teaser',
+  templateUrl: './activity-teaser.component.html',
+  styleUrls: ['./activity-teaser.component.scss']
 })
-export class StandardTeaserComponent implements OnInit {
-  icon;
-  ctas;
-  desc;
-  tags;
+export class ActivityTeaserComponent implements OnInit {
+  avtarImg;
+  activity;
   tileImg;
-  title;
   tileVideoSource;
   tileVideoURL;
   sttheme;
-  ratings;
   @Input() data;
   @Input() theme;
   constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    const ratingsData = {
-      ratings: '0',
-      noofratings: '0',
-      noofreviews: '0'
-    };
     let data = this.data || {};
-    this.icon = data.icon;
-    this.ctas = data.cta;
-    this.desc = this.getTrimmedData(this.trimStr(data.desc || ''), 100);
-    this.tags = data.tags;
+    let from = data.from || {};
+    let activity = from.activity || {};
+    this.avtarImg = from.avtarImg;
     this.tileImg = data.tileImg;
-    this.title = this.getTrimmedData(this.trimStr(data.title || ''), 40);
-    this.ratings = data.ratingsData || ratingsData;
-    this.sttheme = this.theme;
+    if (activity) {
+      this.activity = this.getActivity(from);
+    }
     if ((data.tileVideo || {}).source && (data.tileVideo || {}).url) {
       this.tileVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(data.tileVideo.url);
       this.tileVideoSource = this.data.tileVideo.source;
+    }
+  }
+
+  getActivity(from) {
+    if (from.activity.type === 'ratings') {
+      return `<a href="${from.link}" title="${from.name}">${from.name}</a> ${from.activity.info} ${from.activity.stars} ${from.activity.str}${from.activity.end}`;
+    }
+    if (from.activity.type === 'reviews') {
+      return `<a href="${from.link}" title="${from.name}">${from.name}</a> ${from.activity.info} <a href="${from.activity.link.href}" title="${from.activity.link.title}">${from.activity.link.title}</a>`;
     }
   }
 

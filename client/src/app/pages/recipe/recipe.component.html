@@ -44,13 +44,14 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 mt-3 mb-3 align-center">
-              <div class="section-header">
-                <span *ngIf="getSectionClass(section.icon)" [ngClass]="'section-icon food-icon ' + section.icon"></span>
-                <span *ngIf="!getSectionClass(section.icon)" class="section-icon">
-                  <i class="material-icons" [innerHTML]="section.icon"></i>
-                </span>
-                <h2 [innerHTML]="section.title"></h2>
-              </div>
+              <app-section-header
+                [align]="'center'"
+                [icon]="section.icon"
+                [tag]="'h2'"
+                [theme]="section.theme"
+                [title]="section.title"
+              >
+              </app-section-header>
             </div>
           </div>
           <div class="row">

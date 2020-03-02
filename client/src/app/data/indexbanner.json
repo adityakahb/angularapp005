@@ -35,16 +35,16 @@
             "cta": [
             {
                 "title": "View Recipe",
-                "link": "#",
+                "link": "pages/recipe",
                 "cssclass": "btn-primary",
                 "tag": "a",
-                "icon": "keyboard_arrow_right"
+                "icon": "chevron-right"
             }, {
                 "title": "Share",
                 "link": "#",
                 "cssclass": "btn-outline",
                 "tag": "button",
-                "icon": "share"
+                "icon": "share-variant"
             }
         ]
     }
@@ -85,16 +85,16 @@
             "cta": [
             {
                 "title": "View Recipe",
-                "link": "#",
+                "link": "pages/recipe",
                 "cssclass": "btn-primary",
                 "tag": "a",
-                "icon": "keyboard_arrow_right"
+                "icon": "chevron-right"
             }, {
                 "title": "Share",
                 "link": "#",
                 "cssclass": "btn-outline",
                 "tag": "button",
-                "icon": "share"
+                "icon": "share-variant"
             }
         ]
     }
@@ -130,16 +130,16 @@
             "cta": [
             {
                 "title": "View Recipe",
-                "link": "#",
+                "link": "pages/recipe",
                 "cssclass": "btn-primary",
                 "tag": "a",
-                "icon": "keyboard_arrow_right"
+                "icon": "chevron-right"
             }, {
                 "title": "Share",
                 "link": "#",
                 "cssclass": "btn-outline",
                 "tag": "button",
-                "icon": "share"
+                "icon": "share-variant"
             }
         ]
     }
@@ -181,16 +181,16 @@
             "cta": [
             {
                 "title": "View Recipe",
-                "link": "#",
+                "link": "pages/recipe",
                 "cssclass": "btn-primary",
                 "tag": "a",
-                "icon": "keyboard_arrow_right"
+                "icon": "chevron-right"
             }, {
                 "title": "Share",
                 "link": "#",
                 "cssclass": "btn-outline",
                 "tag": "button",
-                "icon": "share"
+                "icon": "share-variant"
             }
         ]
     }
@@ -231,16 +231,16 @@
             "cta": [
             {
                 "title": "View Recipe",
-                "link": "#",
+                "link": "pages/recipe",
                 "cssclass": "btn-primary",
                 "tag": "a",
-                "icon": "keyboard_arrow_right"
+                "icon": "chevron-right"
             }, {
                 "title": "Share",
                 "link": "#",
                 "cssclass": "btn-outline",
                 "tag": "button",
-                "icon": "share"
+                "icon": "share-variant"
             }
         ]
     }

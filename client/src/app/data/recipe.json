@@ -39,14 +39,14 @@
             "link": "#",
             "cssclass": "teaser-tag",
             "tag": "a",
-            "icon": "keyboard_arrow_right"
+            "icon": "chevron-right"
         },
         "profilelink": {
             "title": "View Profile",
             "link": "#",
             "cssclass": "btn-primary",
             "tag": "a",
-            "icon": "keyboard_arrow_right"
+            "icon": "chevron-right"
         },
         "authorimg": {
             "xs": "https://via.placeholder.com/80x80.png",
@@ -61,7 +61,7 @@
             "morectatitle": "More articles",
             "morectatext": "More articles",
             "morectalink": "#",
-            "morectaicon": "keyboard_arrow_right",
+            "morectaicon": "chevron-right",
             "data": [
                 {
                     "tileImg": {
@@ -103,14 +103,14 @@
                             "link": "#",
                             "cssclass": "btn-primary",
                             "tag": "a",
-                            "icon": "keyboard_arrow_right"
+                            "icon": "chevron-right"
                         },
                         {
                             "title": "Share",
                             "link": "#",
                             "cssclass": "btn-outline",
                             "tag": "button",
-                            "icon": "share"
+                            "icon": "share-variant"
                         }
                     ]
                 },
@@ -154,14 +154,14 @@
                             "link": "#",
                             "cssclass": "btn-primary",
                             "tag": "a",
-                            "icon": "keyboard_arrow_right"
+                            "icon": "chevron-right"
                         },
                         {
                             "title": "Share",
                             "link": "#",
                             "cssclass": "btn-outline",
                             "tag": "button",
-                            "icon": "share"
+                            "icon": "share-variant"
                         }
                     ]
                 }
@@ -171,11 +171,11 @@
     "bottomSections": [
         {
             "title": "Featured Recipes",
-            "icon": "star",
+            "icon": "star-circle-outline",
             "morectatitle": "Recently featured recipes",
             "morectatext": "Recently featured recipes",
             "morectalink": "#",
-            "morectaicon": "keyboard_arrow_right",
+            "morectaicon": "chevron-right",
             "theme": "dark",
             "bg": "light",
             "data": [
@@ -219,14 +219,14 @@
                             "link": "#",
                             "cssclass": "btn-primary",
                             "tag": "a",
-                            "icon": "keyboard_arrow_right"
+                            "icon": "chevron-right"
                         },
                         {
                             "title": "Share",
                             "link": "#",
                             "cssclass": "btn-outline",
                             "tag": "button",
-                            "icon": "share"
+                            "icon": "share-variant"
                         }
                     ]
                 },
@@ -270,14 +270,14 @@
                             "link": "#",
                             "cssclass": "btn-primary",
                             "tag": "a",
-                            "icon": "keyboard_arrow_right"
+                            "icon": "chevron-right"
                         },
                         {
                             "title": "Share",
                             "link": "#",
                             "cssclass": "btn-outline",
                             "tag": "button",
-                            "icon": "share"
+                            "icon": "share-variant"
                         }
                     ]
                 },
@@ -321,14 +321,14 @@
                             "link": "#",
                             "cssclass": "btn-primary",
                             "tag": "a",
-                            "icon": "keyboard_arrow_right"
+                            "icon": "chevron-right"
                         },
                         {
                             "title": "Share",
                             "link": "#",
                             "cssclass": "btn-outline",
                             "tag": "button",
-                            "icon": "share"
+                            "icon": "share-variant"
                         }
                     ]
                 },
@@ -372,14 +372,14 @@
                             "link": "#",
                             "cssclass": "btn-primary",
                             "tag": "a",
-                            "icon": "keyboard_arrow_right"
+                            "icon": "chevron-right"
                         },
                         {
                             "title": "Share",
                             "link": "#",
                             "cssclass": "btn-outline",
                             "tag": "button",
-                            "icon": "share"
+                            "icon": "share-variant"
                         }
                     ]
                 }

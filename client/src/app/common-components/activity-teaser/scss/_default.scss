@@ -1,11 +1,11 @@
 $rem2: rem(2px);
-.teaser-card {
+.activity-card {
     background-color: rgba($light, 0.85);
-    border: rem(1px) solid $light; 
     border-radius: rem(4px);
+    border: rem(1px) solid $light; 
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.25);
     height: 100%;
-    padding-bottom: rem(56px);
+    margin-bottom: rem(15px);
     position: relative;
     .teaser-subtitle, .teaser-content {
         font-size: rem(16px);
@@ -20,33 +20,20 @@ $rem2: rem(2px);
         position: relative;
         width: calc(100% + #{$rem2});
     }
-    .teaser-icon {
+    .teaser-avtar {
         align-items: center;
+        background-color: #fff;
+        border-radius: rem(4px);
         display: flex;
         height: rem(40px);
+        height: rem(40px);
         justify-content: center;
-        left: 0;
+        left: rem(8px);
         overflow: hidden;
         position: absolute;
         text-align: center;
         top: rem(20px);
-        background-color: #fff;
-        border-radius: 100%;
-        span {
-            display: inline-block;
-            height: 70%;
-            width: 70%;
-            position: relative;
-            &:before {
-                font-size: rem(27px);
-                @include center-center();
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    ::ng-deep .teaser-rating {
-        padding: rem(8px);
+        width: rem(40px);
     }
     .teaser-subtitle, .teaser-content {
         padding: rem(8px);
@@ -58,7 +45,7 @@ $rem2: rem(2px);
         align-items: center;
         display: flex;
         height: rem(80px);
-        padding: rem(8px);
+        padding: rem(8px 8px 8px 56px);
         &.with-icon {
             padding: rem(8px) 0 rem(8px) rem(48px);
         }

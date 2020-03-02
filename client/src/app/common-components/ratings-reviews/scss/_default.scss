@@ -1,13 +1,12 @@
 .teaser-rating {
-    padding: rem(4px) 0 rem(16px) 0;
     height: rem(32px);
     display: flex;
     align-items: center;
     font-size: rem(14px);
     .r-num, .r-wrap, .r-count, .r-r-icon, .r-reviews {
-        height: rem(20px);
+        // height: rem(20px);
         padding-right: rem(4px);
-        .material-icons {
+        .mdi {
             font-size: rem(18px);
         }
     }

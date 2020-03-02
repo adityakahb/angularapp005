@@ -1,7 +1,8 @@
-import { Component, AfterViewInit, HostListener } from '@angular/core';
+import { Component, AfterViewInit, HostListener, Input } from '@angular/core';
 import {FormControl, Validators, FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
+import $ from 'jquery';
 
 declare const require: any;
 declare const $: any;
@@ -30,6 +31,8 @@ export interface SearchGroup {
   styleUrls: ['./siteheader.component.scss']
 })
 export class SiteheaderComponent implements AfterViewInit {
+
+  @Input() loggedInUser;
 
   searchForm: FormGroup = this._formBuilder.group({
     searchGroup: '',
@@ -70,6 +73,7 @@ export class SiteheaderComponent implements AfterViewInit {
   ngAfterViewInit() {
     if (window && document) {
       $('nav:first').accessibleMegaMenu();
+      // console.log('=================', $('nav:first'));
       bodyElem = document.querySelector('body');
       htmlElem = document.documentElement;
     }

@@ -29,10 +29,10 @@ export class RatingsReviewsComponent implements OnInit {
       if (r >= 0.9) {
         arr.push('star');
       } else if (0.1 <= r && r < 0.8) {
-        arr.push('star_half');
+        arr.push('star-half');
       }
       for (let s = arr.length + 1; s<=5; s++) {
-        arr.push('star_border');
+        arr.push('star-outline');
       }
     } catch (e) {}
     this.ratingsArr = arr;

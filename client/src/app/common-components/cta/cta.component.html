@@ -1,9 +1,13 @@
-<a *ngIf="tag === 'a'" [href]="href" [title]="title" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
+<a *ngIf="tag === 'a' && !routerLink" [href]="href" [title]="title" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
     <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
-    <i *ngIf="icon" class="material-icons" [innerHTML]="icon"></i>
+    <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
+</a>
+<a *ngIf="tag === 'a' && routerLink" [routerLink]="href" [title]="title" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
+    <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
+    <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
 </a>
 <button *ngIf="tag === 'button'" [type]="buttontype" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
     <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
-    <i *ngIf="icon" class="material-icons" [innerHTML]="icon"></i>
+    <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
 </button>
 <span *ngIf="index !== -1 && !last" [ngClass]="generateCssClass(false)">,&nbsp;</span>

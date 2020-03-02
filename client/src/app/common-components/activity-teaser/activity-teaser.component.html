@@ -1,13 +1,12 @@
-<div class="teaser-card" [ngClass]="sttheme">
+<div class="activity-card" [ngClass]="sttheme">
     <div class="teaser-header" [ngClass]="{'with-icon': icon}">
-        <div class="teaser-icon" *ngIf="icon">
-            <span [ngClass]="icon"></span>
+        <div class="teaser-avtar">
+            <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="avtarImg"></app-responsive-image>
         </div>
         <div class="teaser-title">
-            <h6 class="h-title" [innerHTML]="title"></h6>
+            <p class="h-title" [innerHTML]="activity"></p>
         </div>
     </div>
-    <app-ratings-reviews [data]="ratings"></app-ratings-reviews>
     <div class="teaser-img" mat-card-image *ngIf="tileImg">
         <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
     </div>

@@ -12,14 +12,15 @@
                             </div>
                             <div class="site-nav" [ngClass]="{'active': isNavOpen}">
                                 <button class="close-site-nav d-xl-none" (click)="closeAllNav()">
-                                    <i class="material-icons">close</i>
+                                    <!-- <i class="material-icons">close</i> -->
+                                    <span class="mdi mdi-close"></span>
                                 </button>
                                 <nav>
                                     <ul class="nav-menu">
                                         <li *ngFor="let item of navData" class="nav-item">
                                             <a [href]="item.landing">
                                                 <span class="txt" [innerHTML]="item.name"></span>
-                                                <span class="ikn"><i class="material-icons">keyboard_arrow_right</i></span>
+                                                <span class="ikn"><span class="mdi mdi-chevron-right"></span></span>
                                             </a>
                                             <div class="sub-nav">
                                                 <div class="max-wrap">
@@ -42,17 +43,20 @@
                             </div>
                             <div class="nav-wrap">
                                 <button type="button" (click)="openSearchNav()">
-                                    <i class="material-icons">search</i>
+                                    <!-- <i class="material-icons">search</i> -->
+                                    <span class="mdi mdi-magnify"></span>
                                 </button>
                                 <button type="button" (click)="openUserNav()">
-                                    <i class="material-icons">account_circle</i>
+                                    <!-- <i class="material-icons">account_circle</i> -->
+                                    <span class="mdi mdi-account"></span>
                                 </button>
                                 <button type="button" (click)="openLangNav()">
                                     <!-- <i class="material-icons">language</i> -->
                                     <span class="txt">EN</span>
                                 </button>
                                 <button type="button" class="d-xl-none" (click)="openNav()">
-                                    <i class="material-icons">menu</i>
+                                    <!-- <i class="material-icons">menu</i> -->
+                                    <span class="mdi mdi-menu"></span>
                                 </button>
                             </div>
                         </div>
@@ -64,12 +68,13 @@
         </div>
         <aside class="site-lang" [ngClass]="{'active': isLangNavOpen}">
             <button class="close-site-nav" (click)="closeAllNav()">
-                <i class="material-icons">close</i>
+                <span class="mdi mdi-close"></span>
             </button>
             <div class="site-lang-content">
                 <div class="lang-active">
                     English
-                    <i class="material-icons">done</i>
+                    <!-- <i class="material-icons">done</i> -->
+                    <span class="mdi mdi-check"></span>
                 </div>
                 <nav>
                     <ul>
@@ -82,55 +87,32 @@
         </aside>
         <aside class="site-search" [ngClass]="{'active': isSearchNavOpen}">
             <button class="close-site-nav" (click)="closeAllNav()">
-                <i class="material-icons">close</i>
+                <span class="mdi mdi-close"></span>
             </button>
             <div class="site-search-content">
-                <form [formGroup]="searchForm">
+                <form id="usersearchform">
                     <div class="form-group">
-                        <mat-form-field>
-                            <input type="text"
-                                matInput
-                                placeholder="Search"
-                                formControlName="searchGroup"
-                                required
-                                [matAutocomplete]="autoGroup">
-                            <mat-autocomplete #autoGroup="matAutocomplete">
-                                <mat-optgroup *ngFor="let group of searchOptions | async" [label]="group.title">
-                                    <mat-option *ngFor="let name of group.names" [value]="name">
-                                        {{name}}
-                                    </mat-option>
-                                </mat-optgroup>
-                            </mat-autocomplete>
-                        </mat-form-field>
-                    </div>
-                    <div class="form-group">
-                        <app-cta
-                            [tag]="'button'"
-                            [title]="'Search'"
-                            [cssclass]="'btn btn-primary'"
-                            [text]="'Search'"
-                            [icon]="'keyboard_arrow_right'"
-                            [buttontype]="'submit'"
-                        ></app-cta>
+                        <input type="search" class="form-control form-control-lg" id="usersearch" placeholder="Enter keywords to search">
+                        <button type="button" class="user-search-btn">
+                            <span class="mdi mdi-magnify"></span>
+                        </button>
                     </div>
                 </form>
             </div>
         </aside>
         <aside class="site-user" [ngClass]="{'active': isUserNavOpen}">
             <button class="close-site-nav" (click)="closeAllNav()">
-                <i class="material-icons">close</i>
+                <span class="mdi mdi-close"></span>
             </button>
             <div class="site-user-content">
-                <form #login = "ngForm" (ngSubmit) = "onClickSubmit(login.value)" >
+                <form id="userloginform" #login = "ngForm" (ngSubmit) = "onClickSubmit(login.value)" >
                     <div class="form-group">
-                        <mat-form-field class="full-width">
-                            <input matInput type="email" name="email" placeholder="Email" ngModel>
-                        </mat-form-field>
+                        <label for="useremail">Registered Email</label>
+                        <input type="email" class="form-control form-control-lg" id="useremail" placeholder="Registered Email">
                     </div>
                     <div class="form-group">
-                        <mat-form-field class="full-width">
-                            <input matInput type="password" name="pwd" placeholder="Password" ngModel>
-                        </mat-form-field>
+                        <label for="userpassword">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="userpassword" placeholder="Password">
                     </div>
                     <div class="form-group">
                         <app-cta
@@ -138,7 +120,7 @@
                             [title]="'Sign In'"
                             [cssclass]="'btn btn-primary'"
                             [text]="'Sign in'"
-                            [icon]="'keyboard_arrow_right'"
+                            [icon]="'chevron-right'"
                             [buttontype]="'submit'"
                         ></app-cta>
                     </div>

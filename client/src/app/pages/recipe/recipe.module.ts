@@ -8,6 +8,7 @@ import { RatingsReviewsModule } from './../../common-components/ratings-reviews/
 import { RecipeComponent } from './recipe.component';
 import { RecipeRoutingModule } from './recipe-routing.module';
 import { ResponsiveImageModule } from './../../common-components/responsive-image/responsive-image.module';
+import { SectionHeaderModule } from './../../common-components/section-header/section-header.module';
 import { StandardTeaserModule } from './../../common-components/standard-teaser/standard-teaser.module';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { StandardTeaserModule } from './../../common-components/standard-teaser/
     RatingsReviewsModule,
     RecipeRoutingModule,
     ResponsiveImageModule,
+    SectionHeaderModule,
     StandardTeaserModule,
   ],
   declarations: [

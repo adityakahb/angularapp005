@@ -2,7 +2,7 @@
 .cta-comp {
     margin-bottom: rem(8px);
     margin-right: rem(8px);
-    .material-icons {
+    .mdi {
         height: rem(24px);
         width: rem(24px);
     }
@@ -43,7 +43,7 @@
     &.txt-icn {
         padding-right: rem(40px);
         position: relative;
-        .material-icons {
+        .mdi {
             margin-top: rem(-12px);
             position: absolute;
             right: rem(8px);

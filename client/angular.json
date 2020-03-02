@@ -35,6 +35,8 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "src/app/vendor/js/jquery-accessibleMegaMenu.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/waypoints/lib/noframework.waypoints.min.js"
             ]
           },

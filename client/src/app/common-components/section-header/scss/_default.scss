@@ -23,7 +23,7 @@ $rem30px: rem(30px);
     }
     .section-icon {
         display: block;
-        &:before, .material-icons {
+        &:before, .mdi {
             font-size: rem(48px);
         }
     }

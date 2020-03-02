@@ -1,94 +1,166 @@
 <div class="main-content">
     <section class="profile-comp">
         <div class="max-wrap">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-4 col-xl-3">
-                        <div class="profile-wrap">
-                            <aside class="user-comp">
-                                <div class="img-wrap">
-                                    <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="{
-                                        xs: 'https://via.placeholder.com/400x400.png',
-                                        xs2: 'https://via.placeholder.com/800x800.png'
-                                    }"></app-responsive-image>
-                                </div>
-                                <div class="text-wrap">
-                                    <h1 class="h5">Jane Doe</h1>
-                                    <nav class="profile-links">
-                                        <ul>
-                                            <li><a href="#" class="btn btn-primary btn-lg primary">
-                                                <span class="left">
-                                                    <i class="material-icons">create</i>
-                                                </span>
-                                                Edit profile
-                                                <span class="right">
-                                                    <i class="material-icons">keyboard_arrow_right</i>
-                                                </span>
-                                            </a></li>
-                                            <li><a href="#" class="btn btn-outline-primary">
-                                                <span class="left">
-                                                    <i class="material-icons">device_hub</i>
-                                                </span>
-                                                My followers
-                                                <span class="right">
-                                                    <i class="material-icons">keyboard_arrow_right</i>
-                                                </span>
-                                            </a></li>
-                                            <li><a href="#" class="btn btn-outline-primary">
-                                                <span class="left">
-                                                    <i class="material-icons">restaurant_menu</i>
-                                                </span>
-                                                My recipes
-                                                <span class="right">
-                                                    <i class="material-icons">keyboard_arrow_right</i>
-                                                </span>
-                                            </a></li>
-                                            <li><a href="#" class="btn btn-outline-primary">
-                                                <span class="left">
-                                                    <i class="material-icons">ondemand_video</i>
-                                                </span>
-                                                My videos
-                                                <span class="right">
-                                                    <i class="material-icons">keyboard_arrow_right</i>
-                                                </span>
-                                            </a></li>
-                                            <li><a href="#" class="btn btn-outline-primary">
-                                                <span class="left">
-                                                    <i class="material-icons">description</i>
-                                                </span>
-                                                My articles
-                                                <span class="right">
-                                                    <i class="material-icons">keyboard_arrow_right</i>
-                                                </span>
-                                            </a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </aside>                            
-                        </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <aside class="user-comp">
+                            <div class="img-wrap">
+                                <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="{
+                                    xs: 'https://via.placeholder.com/400x400.png',
+                                    xs2: 'https://via.placeholder.com/800x800.png'
+                                }"></app-responsive-image>
+                            </div>
+                            <div class="text-wrap">
+                                <h1 class="h5">Jane Doe</h1>
+                                <nav class="profile-links">
+                                    <ul>
+                                        <li><a href="#" class="btn btn-primary btn-lg primary">
+                                            <span class="left">
+                                                <span class="mdi mdi-pencil"></span>
+                                            </span>
+                                            Edit profile
+                                            <span class="right">
+                                                <span class="mdi mdi-chevron-right"></span>
+                                            </span>
+                                        </a></li>
+                                        <li><a href="#" class="btn btn-outline-primary">
+                                            <span class="left">
+                                                <span class="mdi mdi-hubspot"></span>
+                                            </span>
+                                            My followers
+                                            <span class="right">
+                                                <span class="mdi mdi-chevron-right"></span>
+                                            </span>
+                                        </a></li>
+                                        <li><a href="#" class="btn btn-outline-primary">
+                                            <span class="left">
+                                                <span class="mdi mdi-silverware"></span>
+                                            </span>
+                                            My recipes
+                                            <span class="right">
+                                                <span class="mdi mdi-chevron-right"></span>
+                                            </span>
+                                        </a></li>
+                                        <li><a href="#" class="btn btn-outline-primary">
+                                            <span class="left">
+                                                <span class="mdi mdi-video-vintage"></span>
+                                            </span>
+                                            My videos
+                                            <span class="right">
+                                                <span class="mdi mdi-chevron-right"></span>
+                                            </span>
+                                        </a></li>
+                                        <li><a href="#" class="btn btn-outline-primary">
+                                            <span class="left">
+                                                <span class="mdi mdi-script-text"></span>
+                                            </span>
+                                            My articles
+                                            <span class="right">
+                                                <span class="mdi mdi-chevron-right"></span>
+                                            </span>
+                                        </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </aside>    
                     </div>
-                    <div class="col-12 col-md-8 col-xl-6">
+                    <div class="col-12 col-md-8 col-lg-6">
                         <div class="profile-center">
                             <div class="main-actions">
-                                <button type="button" class="btn btn-lg btn-dark">
-                                    <i class="material-icons">restaurant_menu</i>
+                                <button type="button" class="btn btn-lg btn-light">
+                                    <span class="mdi mdi-silverware"></span>
                                     New recipe
                                 </button>
                                 <button type="button" class="btn btn-lg btn-light">
-                                    <i class="material-icons">ondemand_video</i>
+                                    <span class="mdi mdi-video-vintage"></span>
                                     New video
                                 </button>
                                 <button type="button" class="btn btn-lg btn-light">
-                                    <i class="material-icons">description</i>
+                                    <span class="mdi mdi-script-text"></span>
                                     New article
                                 </button>
                             </div>
-                            <h3>Recent Activity</h3>
+                            <div class="profile-activity">
+                                <app-activity-teaser [data]="{
+                                    from: {
+                                        name: 'John Doe',
+                                        link: '#',
+                                        isUser: false,
+                                        avtarImg: {
+                                            xs: 'https://via.placeholder.com/80x80.png',
+                                            xs2: 'https://via.placeholder.com/160x160.png'
+                                        },
+                                        activity: {
+                                            type: 'ratings',
+                                            stars: '5',
+                                            str: 'stars',
+                                            info: 'rated your recipe',
+                                            end: '.'
+
+                                        }
+                                    },
+                                    tileImg: {
+                                        xs: 'https://via.placeholder.com/640x360.png',
+                                        xs2: 'https://via.placeholder.com/1280x720.png',
+                                        md: 'https://via.placeholder.com/800x450.png',
+                                        md2: 'https://via.placeholder.com/1600x900.png'
+                                    }
+                                }"></app-activity-teaser>
+                                <app-activity-teaser [data]="{
+                                    from: {
+                                        name: 'John Doe',
+                                        link: '#',
+                                        isUser: false,
+                                        avtarImg: {
+                                            xs: 'https://via.placeholder.com/80x80.png',
+                                            xs2: 'https://via.placeholder.com/160x160.png'
+                                        },
+                                        activity: {
+                                            type: 'reviews',
+                                            info: 'reviewed your article.',
+                                            link: {
+                                                title: 'Read Review.',
+                                                href: '#'
+                                            }
+                                        }
+                                    },
+                                    tileImg: {
+                                        xs: 'https://via.placeholder.com/640x360.png',
+                                        xs2: 'https://via.placeholder.com/1280x720.png',
+                                        md: 'https://via.placeholder.com/800x450.png',
+                                        md2: 'https://via.placeholder.com/1600x900.png'
+                                    }
+                                }"></app-activity-teaser>
+                                <app-activity-teaser [data]="{
+                                    from: {
+                                        name: 'John Doe',
+                                        link: '#',
+                                        isUser: false,
+                                        avtarImg: {
+                                            xs: 'https://via.placeholder.com/80x80.png',
+                                            xs2: 'https://via.placeholder.com/160x160.png'
+                                        },
+                                        activity: {
+                                            type: 'reviews',
+                                            info: 'reviewed your video.',
+                                            link: {
+                                                title: 'Read Review.',
+                                                href: '#'
+                                            }
+                                        }
+                                    },
+                                    tileVideo: {
+                                        source: 'youtube',
+                                        url: 'https://www.youtube.com/embed/r9IEKuASfgU'
+                                    }
+                                }"></app-activity-teaser>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-3">
+                    <!-- <div class="col-12 col-xl-3">
                         <div style="background-color: red;">right</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

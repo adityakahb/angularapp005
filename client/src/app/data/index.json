@@ -1,11 +1,11 @@
 [
     {
         "title": "Featured Recipes",
-        "icon": "star",
+        "icon": "star-circle-outline",
         "morectatitle": "Recently featured recipes",
         "morectatext": "Recently featured recipes",
         "morectalink": "#",
-        "morectaicon": "keyboard_arrow_right",
+        "morectaicon": "chevron-right",
         "theme": "dark",
         "bg": "primary",
         "data": [
@@ -49,14 +49,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -95,14 +95,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -146,14 +146,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -197,14 +197,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             }
@@ -212,11 +212,11 @@
     },
     {
         "title": "New Healthy Recipes",
-        "icon": "favorite",
+        "icon": "heart-pulse",
         "morectatitle": "More healthy recipes",
         "morectatext": "More healthy recipes",
         "morectalink": "#",
-        "morectaicon": "keyboard_arrow_right",
+        "morectaicon": "chevron-right",
         "bg": "dark",
         "data": [
             {
@@ -259,14 +259,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -310,14 +310,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -362,14 +362,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -413,14 +413,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             }
@@ -432,7 +432,7 @@
         "morectatitle": "More vegetarian recipes",
         "morectatext": "More vegetarian recipes",
         "morectalink": "#",
-        "morectaicon": "keyboard_arrow_right",
+        "morectaicon": "chevron-right",
         "theme": "dark",
         "bg": "light",
         "data": [
@@ -476,14 +476,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -527,14 +527,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -578,14 +578,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -629,14 +629,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             }
@@ -644,11 +644,11 @@
     },
     {
         "title": "Latest Videos",
-        "icon": "ondemand_video",
+        "icon": "video-vintage",
         "morectatitle": "More videos",
         "morectatext": "More videos",
         "morectalink": "#",
-        "morectaicon": "keyboard_arrow_right",
+        "morectaicon": "chevron-right",
         "data": [
             {
                 "col": "2",
@@ -689,14 +689,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             },
@@ -739,14 +739,14 @@
                         "link": "#",
                         "cssclass": "btn-primary",
                         "tag": "a",
-                        "icon": "keyboard_arrow_right"
+                        "icon": "chevron-right"
                     },
                     {
                         "title": "Share",
                         "link": "#",
                         "cssclass": "btn-outline",
                         "tag": "button",
-                        "icon": "share"
+                        "icon": "share-variant"
                     }
                 ]
             }

@@ -50,8 +50,8 @@ $rem60: rem(60px);
             padding: 0;
             transition: all 0.25s ease;
             width: rem(40px);
-            i {
-                font-size: rem(32px);
+            .mdi {
+                font-size: rem(24px);
             }
             .txt {
                 font-weight: bold;
@@ -102,6 +102,26 @@ $rem60: rem(60px);
         padding: rem(15px);
     }
 }
+.site-search {
+    .form-group {
+        position: relative;
+        input[type=search] {
+            padding-right: rem(48px);
+        }
+    }
+    .user-search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        border: 0;
+        height: rem(48px);
+        width: rem(48px);
+        .mdi {
+            font-size: rem(24px);
+        }
+    }
+}
 .site-nav {
     background-color: #fff;
     height: 100%;
@@ -128,7 +148,7 @@ $rem60: rem(60px);
             display: table;
         }
         & > .accessible-megamenu-top-nav-item {
-            border-top: rem(1px) solid map-get($mat-deep-purple, 200);
+            border-top: rem(1px) solid $primary;
             height: auto;
             position: static;
             text-shadow: none;
@@ -161,13 +181,15 @@ $rem60: rem(60px);
                     right: rem(10px);
                     top: rem(16px);
                     width: rem(24px);
-                    i {
+                    .mdi {
+                        display: block;
+                        font-size: rem(24px);
                         transition: all 0.5s ease;
                     }
                 }
                 &.open {
                     .ikn {
-                        i {
+                        .mdi {
                             transform: rotate(90deg);
                         }
                     }
@@ -206,7 +228,8 @@ $rem60: rem(60px);
             text-transform: uppercase;
             color: #fff;
             background-color: $success;
-            .material-icons {
+            .mdi {
+                font-size: rem(20px);
                 position: absolute;
                 right: rem(15px);
                 top: rem(12px);

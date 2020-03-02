@@ -2,7 +2,79 @@
   <section class="register-comp">
     <div class="max-wrap">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-xl-6">
+            <h1>Sign Up</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-xl-6">
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+              </div>
+              <div class="form-group">
+                <label for="dateofbirth">Date of Birth</label>
+                <input type="date" class="form-control" id="dateofbirth" placeholder="Date of Birth">
+              </div>
+              <div class="form-group">
+                <label>Gender</label><br>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="gmale" name="gender" class="custom-control-input">
+                  <label class="custom-control-label" for="gmale">Male</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="gfemale" name="gender" class="custom-control-input">
+                  <label class="custom-control-label" for="gfemale">Female</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="gnot" name="gender" class="custom-control-input">
+                  <label class="custom-control-label" for="gnot">Don't want to specify</label>
+                </div>
+              </div>
+              <hr>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="acceptterms">
+                <label class="custom-control-label" name="acceptterms" for="acceptterms">Accept <a href="#">Terms and Conditions</a></label>
+              </div>
+              <hr>
+              <div class="form-group">
+                <app-cta
+                  [tag]="'button'"
+                  [title]="'Register'"
+                  [cssclass]="'btn-primary'"
+                  [text]="'Register'"
+                  [icon]="'chevron-right'"
+                  [buttontype]="'submit'"
+                ></app-cta>
+                <app-cta
+                  [tag]="'a'"
+                  [title]="'Sign In'"
+                  [cssclass]="'btn-outline'"
+                  [text]="'Account exists? Sign In'"
+                  [icon]="'chevron-right'"
+                  [href]="'#'"
+                ></app-cta>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

@@ -1,13 +1,13 @@
-@import '~@angular/material/theming';
+// @import '~@angular/material/theming';
 
-$primary:       map-get($mat-deep-purple, 500);
-$secondary:     map-get($mat-brown, 500);
-$success:       map-get($mat-green, 500);
-$info:          map-get($mat-cyan, 500);
-$warning:       map-get($mat-yellow, 500);
-$danger:        map-get($mat-red, 500);
-$light:         map-get($mat-blue-grey, 100);
-$dark:          map-get($mat-blue-grey, 800);
+$primary:       #673AB7;
+$secondary:     #795548;
+$success:       #4CAF50;
+$info:          #00BCD4;
+$warning:       #FFEB3B;
+$danger:        #F44336;
+$light:         #ECEFF1;
+$dark:          #263238;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default

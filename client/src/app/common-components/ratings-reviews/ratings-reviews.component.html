@@ -10,12 +10,12 @@
     <!-- <div class="r-count" *ngIf="noofratings" [innerHTML]="get99(noofratings, 'Rating', 'Ratings')"></div> -->
 
     <div class="r-wrap">
-        <i class="material-icons" *ngFor="let rt of ratingsArr" [innerHTML]="rt"></i>
+        <span class="mdi" *ngFor="let rt of ratingsArr" [ngClass]="'mdi-' + rt"></span>
     </div>
     <div class="r-num" *ngIf="ratings" [innerHTML]="ratings"></div>
 
     <div class="r-r-icon" *ngIf="noofreviews">
-        <i class="material-icons">comment</i>
+        <span class="mdi mdi-comment-text"></span>
     </div>
     <div class="r-reviews" *ngIf="noofreviews" [innerHTML]="get99(noofratings, 'Review', 'Reviews')"></div>
 </div>
