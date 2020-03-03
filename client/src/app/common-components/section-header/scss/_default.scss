@@ -23,8 +23,12 @@ $rem30px: rem(30px);
     }
     .section-icon {
         display: block;
-        &:before, .mdi {
+        margin-bottom: rem(16px);
+        .mdi {
             font-size: rem(48px);
+        }
+        &:before {
+            font-size: rem(40px);
         }
     }
     &.left {

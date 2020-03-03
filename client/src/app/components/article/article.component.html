@@ -7,14 +7,16 @@
         <div class="tags">
             <app-cta
                 *ngFor="let tag of data.tags, index as i, last as isLast"
-                [cssclass]="tag.cssclass"
-                [href]="tag.link"
-                [index]="i"
-                [last]="isLast"
-                [tag]="tag.tag"
-                [text]="tag.title"
+                [data]="{
+                    cssclass: tag.cssclass,
+                    href: tag.link,
+                    index: i,
+                    last: isLast,
+                    tag: tag.tag,
+                    text: tag.title,
+                    title: tag.title
+                }"
                 [theme]="data.theme"
-                [title]="tag.title"
             ></app-cta>
         </div>
         <p class="h5" [innerHTML]="data.titlepara"></p>

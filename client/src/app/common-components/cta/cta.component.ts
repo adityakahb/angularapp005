@@ -10,17 +10,19 @@ let theme = '';
 })
 export class CtaComponent implements OnInit {
 
-  @Input() buttontype = 'button';
-  @Input() cssclass = '';
-  @Input() href = '#';
-  @Input() icon = '';
-  @Input() tag = '';
-  @Input() text = '';
-  @Input() title = '';
-  @Input() index = -1;
-  @Input() last = true;
+  @Input() data;
   @Input() theme = 'light';
-  @Input() share;
+
+  buttontype;
+  cssclass;
+  href;
+  icon;
+  tag;
+  text;
+  title;
+  index;
+  last;
+  share;
 
   routerLink = {
     isRouter: false,
@@ -30,11 +32,26 @@ export class CtaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    if (this.href.charAt(0) === '[' && this.href.charAt(this.href.length - 1) === ']') {
+    const data = this.data || {};
+    this.buttontype = data.buttontype || 'button';
+    this.cssclass = data.cssclass || '';
+    this.href = data.href || '#';
+    this.icon = data.icon || '';
+    this.tag = data.tag || '';
+    this.text = data.text || '';
+    this.title = data.title || '';
+    this.index = -1;
+    if ((data.index || 0) >= 0) {
+      this.index = data.index;
+    }
+    this.last = data.last;
+    this.share = data.share || {};
+    let href = this.href || '';
+    if (href.charAt(0) === '[' && href.charAt(href.length - 1) === ']') {
       this.routerLink.isRouter = true;
-      this.routerLink.href = this.href.substr(1, this.href.length - 2);
+      this.routerLink.href = href.substr(1, href.length - 2);
     } else {
-      this.routerLink.href = this.href;
+      this.routerLink.href = href;
     }
   }
 

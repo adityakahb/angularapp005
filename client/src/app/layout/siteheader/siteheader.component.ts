@@ -2,7 +2,6 @@ import { Component, AfterViewInit, HostListener, Input } from '@angular/core';
 import {FormControl, Validators, FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
-import $ from 'jquery';
 
 declare const require: any;
 declare const $: any;
@@ -71,9 +70,8 @@ export class SiteheaderComponent implements AfterViewInit {
   constructor(private _formBuilder: FormBuilder) { }
 
   ngAfterViewInit() {
-    if (window && document) {
+    if (window && document && window.$) {
       $('nav:first').accessibleMegaMenu();
-      // console.log('=================', $('nav:first'));
       bodyElem = document.querySelector('body');
       htmlElem = document.documentElement;
     }

@@ -16,14 +16,16 @@
     <div class="teaser-subtitle" *ngIf="(tags || []).length > 0">
         <app-cta
             *ngFor="let tag of tags, index as i, last as isLast"
-            [cssclass]="tag.cssclass"
-            [href]="tag.link"
-            [index]="i"
-            [last]="isLast"
-            [tag]="tag.tag"
-            [text]="tag.title"
+            [data]="{
+                cssclass: tag.cssclass,
+                href: tag.link,
+                index: i,
+                last: isLast,
+                tag: tag.tag,
+                text: tag.title,
+                title: tag.title
+            }"
             [theme]="sttheme"
-            [title]="tag.title"
         ></app-cta>
     </div>
     <div class="teaser-content">
@@ -32,13 +34,15 @@
     <div class="teaser-actions">
         <app-cta
             *ngFor="let cta of ctas, last as isLast"
-            [cssclass]="cta.cssclass"
-            [href]="cta.link"
-            [icon]="cta.icon"
-            [tag]="cta.tag"
-            [text]="cta.title"
+            [data]="{
+                cssclass: cta.cssclass,
+                href: cta.link,
+                icon: cta.icon,
+                tag: cta.tag,
+                text: cta.title,
+                title: cta.title
+            }"
             [theme]="sttheme"
-            [title]="cta.title"
         ></app-cta>
     </div>
 </div>

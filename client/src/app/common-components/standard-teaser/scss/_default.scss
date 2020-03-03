@@ -51,8 +51,8 @@ $rem2: rem(2px);
     .teaser-subtitle, .teaser-content {
         padding: rem(8px);
     }
-    .teaser-content p {
-        margin: 0;
+    .teaser-content {
+        display: none;
     }
     .teaser-header {
         align-items: center;

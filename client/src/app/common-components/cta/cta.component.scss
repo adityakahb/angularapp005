@@ -1,5 +1,6 @@
 @import './../../globalsass';
 .dropdown-menu {
+    min-width: auto;
     .dropdown-item {
         padding: rem(4px) rem(16px);
         .icon {

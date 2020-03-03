@@ -46,13 +46,13 @@
                                     <!-- <i class="material-icons">search</i> -->
                                     <span class="mdi mdi-magnify"></span>
                                 </button>
-                                <button type="button" (click)="openUserNav()">
-                                    <!-- <i class="material-icons">account_circle</i> -->
-                                    <span class="mdi mdi-account"></span>
-                                </button>
                                 <button type="button" (click)="openLangNav()">
                                     <!-- <i class="material-icons">language</i> -->
                                     <span class="txt">EN</span>
+                                </button>
+                                <button type="button" (click)="openUserNav()">
+                                    <!-- <i class="material-icons">account_circle</i> -->
+                                    <span class="mdi mdi-account"></span>
                                 </button>
                                 <button type="button" class="d-xl-none" (click)="openNav()">
                                     <!-- <i class="material-icons">menu</i> -->
@@ -92,7 +92,7 @@
             <div class="site-search-content">
                 <form id="usersearchform">
                     <div class="form-group">
-                        <input type="search" class="form-control form-control-lg" id="usersearch" placeholder="Enter keywords to search">
+                        <input type="search" class="form-control form-control-lg" id="usersearch" placeholder="Enter keywords">
                         <button type="button" class="user-search-btn">
                             <span class="mdi mdi-magnify"></span>
                         </button>
@@ -116,12 +116,14 @@
                     </div>
                     <div class="form-group">
                         <app-cta
-                            [tag]="'button'"
-                            [title]="'Sign In'"
-                            [cssclass]="'btn btn-primary'"
-                            [text]="'Sign in'"
-                            [icon]="'chevron-right'"
-                            [buttontype]="'submit'"
+                            [data]="{
+                                tag: 'button',
+                                title: 'Sign In',
+                                cssclass: 'btn btn-primary',
+                                text: 'Sign In',
+                                icon: 'chevron-right',
+                                buttontype: 'submit'
+                            }"
                         ></app-cta>
                     </div>
                 </form>

@@ -5,10 +5,14 @@
         }
     }
 }
+.site-user, .site-search, .site-lang, .site-nav {
+    
+}
 .site-nav {
     background-color: transparent;
     box-sizing: border-box;
     height: auto;
+    overflow: visible;
     position: static;
     right: 0;
     top: 0;
@@ -17,8 +21,7 @@
         padding: 0 rem(228px) 0 rem(85px);
         width: 100%;
         & > .accessible-megamenu-top-nav-item {
-            border-left: rem(1px) solid transparent;
-            border: 0;
+            border: rem(1px) solid transparent;
             max-width: rem(178px);
             width: 20%;
             a[aria-expanded] {
@@ -51,6 +54,7 @@
         padding: rem(30px) 0;
         &.open {
             top: auto;
+            max-height: rem(350px);
         }
         li {
             padding: rem(15px) 0;

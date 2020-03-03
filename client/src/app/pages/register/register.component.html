@@ -57,20 +57,24 @@
               <hr>
               <div class="form-group">
                 <app-cta
-                  [tag]="'button'"
-                  [title]="'Register'"
-                  [cssclass]="'btn-primary'"
-                  [text]="'Register'"
-                  [icon]="'chevron-right'"
-                  [buttontype]="'submit'"
+                  [data]="{
+                    tag: 'button',
+                    title: 'Register',
+                    cssclass: 'btn-primary',
+                    text: 'Register',
+                    icon: 'chevron-right',
+                    buttontype: 'submit'
+                  }"
                 ></app-cta>
                 <app-cta
-                  [tag]="'a'"
-                  [title]="'Sign In'"
-                  [cssclass]="'btn-outline'"
-                  [text]="'Account exists? Sign In'"
-                  [icon]="'chevron-right'"
-                  [href]="'#'"
+                  [data]="{
+                    tag: 'a',
+                    title: 'Sign In',
+                    cssclass: 'btn-outline',
+                    text: 'Account exists? Sign In',
+                    icon: 'chevron-right',
+                    href: '#'
+                  }"
                 ></app-cta>
               </div>
             </form>

@@ -18,6 +18,11 @@ body {
     @media (min-resolution: 120dpi) and (-webkit-min-device-pixel-ratio: 1.2) {
         background-image: url('./assets/body-bg@2x.jpg');
     }
+    .mdi {
+        &, &:before {
+            line-height: rem(24px);
+        }
+    }
     &.nav-open {
         height: 100%;
         overflow: hidden;

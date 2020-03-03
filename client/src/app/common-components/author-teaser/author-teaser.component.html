@@ -5,12 +5,14 @@
     <h6 [innerHTML]="data.name"></h6>
     <div class="teaser-subtitle" *ngIf="data.followers">
         <app-cta
-            [cssclass]="data.followers.cssclass"
-            [href]="data.followers.link"
-            [tag]="data.followers.tag"
-            [text]="data.followers.num + ' ' + data.followers.title"
+            [data]="{
+                cssclass: data.followers.cssclass,
+                href: data.followers.link,
+                tag: data.followers.tag,
+                text: data.followers.num + ' ' + data.followers.title,
+                title: data.followers.num + ' ' + data.followers.title
+            }"
             [theme]="theme"
-            [title]="data.followers.num + ' ' + data.followers.title"
         ></app-cta>
     </div>
     <div class="teaser-content">
@@ -18,13 +20,15 @@
     </div>
     <div class="teaser-actions">
         <app-cta
-            [cssclass]="data.profilelink.cssclass"
-            [href]="data.profilelink.link"
-            [tag]="data.profilelink.tag"
-            [text]="data.profilelink.title"
+            [data]="{
+                cssclass: data.profilelink.cssclass,
+                href: data.profilelink.link,
+                tag: data.profilelink.tag,
+                text: data.profilelink.title,
+                title: data.profilelink.title,
+                icon: data.profilelink.icon 
+            }"
             [theme]="theme"
-            [title]="data.profilelink.title"
-            [icon]="data.profilelink.icon"
         ></app-cta>
     </div>
 </div>

@@ -7,15 +7,23 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SectionHeaderComponent implements OnInit {
 
-  @Input() tag;
-  @Input() title;
-  @Input() icon;
-  @Input() align;
-  @Input() theme;
+  @Input() data;
+
+  tag;
+  title;
+  icon;
+  align;
+  theme;
 
   constructor() { }
 
   ngOnInit() {
+    let data = this.data || {};
+    this.tag = data.tag || '';
+    this.title = data.title || '';
+    this.icon = data.icon || '';
+    this.align = data.align || 'center';
+    this.theme = data.theme || 'light';
   }
 
   getSectionClass(classname) {

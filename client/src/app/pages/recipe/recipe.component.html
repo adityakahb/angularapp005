@@ -22,12 +22,14 @@
                     <div class="col-12 mt-3 mb-3 align-center">
                       <div class="section-footer">
                         <app-cta
-                          [tag]="'a'"
-                          [title]="teaser.morectatitle"
-                          [cssclass]="'btn-info btn-lg'"
-                          [text]="teaser.morectatext"
-                          [icon]="teaser.morectaicon"
-                          [href]="teaser.morectalink"
+                          [data]="{
+                            tag: 'a',
+                            title: teaser.morectatitle,
+                            cssclass: 'btn-info btn-lg',
+                            text: teaser.morectatext,
+                            icon: teaser.morectaicon,
+                            href: teaser.morectalink
+                          }"
                         ></app-cta>
                       </div>
                     </div>
@@ -45,11 +47,13 @@
           <div class="row">
             <div class="col-12 mt-3 mb-3 align-center">
               <app-section-header
-                [align]="'center'"
-                [icon]="section.icon"
-                [tag]="'h2'"
-                [theme]="section.theme"
-                [title]="section.title"
+                [data]="{
+                  align: 'center',
+                  icon: section.icon,
+                  tag: 'h2',
+                  theme: section.theme,
+                  title: section.title
+                }"
               >
               </app-section-header>
             </div>
@@ -63,12 +67,14 @@
             <div class="col-12 mt-3 mb-3 align-center">
               <div class="section-footer">
                 <app-cta
-                  [tag]="'a'"
-                  [title]="section.morectatitle"
-                  [cssclass]="'btn-info btn-lg'"
-                  [text]="section.morectatext"
-                  [icon]="section.morectaicon"
-                  [href]="section.morectalink"
+                  [data]="{
+                    tag: 'a',
+                    title: section.morectatitle,
+                    cssclass: 'btn-info btn-lg',
+                    text: section.morectatext,
+                    icon: section.morectaicon,
+                    href: section.morectalink
+                  }"
                 ></app-cta>
               </div>
             </div>
