@@ -15,11 +15,13 @@ let jsURLs = [
     'http://localhost:4100/vendor/js/jquery-accessibleMegaMenu.js',
     'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
     'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+    'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js'
 ];
 let cssURLs = [
     'http://localhost:4100/vendor/css/food/css/food.min.css',
-    'http://localhost:4100/vendor/css/megamenu.css'
+    'http://localhost:4100/vendor/css/megamenu.css',
+    'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
 ];
 let fontsURLs = [
     'https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css',

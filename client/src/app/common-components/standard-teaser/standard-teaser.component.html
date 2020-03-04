@@ -4,7 +4,12 @@
             <span [ngClass]="icon"></span>
         </div>
         <div class="teaser-title">
-            <h6 class="h-title" [innerHTML]="title"></h6>
+            <h1 *ngIf="tag === 'h1'" class="h6 h-title" [innerHTML]="title"></h1>
+            <h2 *ngIf="tag === 'h2'" class="h6 h-title" [innerHTML]="title"></h2>
+            <h3 *ngIf="tag === 'h3'" class="h6 h-title" [innerHTML]="title"></h3>
+            <h4 *ngIf="tag === 'h4'" class="h6 h-title" [innerHTML]="title"></h4>
+            <h5 *ngIf="tag === 'h5'" class="h6 h-title" [innerHTML]="title"></h5>
+            <h6 *ngIf="tag === 'h6'" class="h-title" [innerHTML]="title"></h6>
         </div>
     </div>
     <app-ratings-reviews [data]="ratings"></app-ratings-reviews>

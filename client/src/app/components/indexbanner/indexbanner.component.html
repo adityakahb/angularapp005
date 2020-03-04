@@ -1,34 +1,17 @@
 <section class="indexbanner-comp">
-    <!-- <img src="https://via.placeholder.com/400x400.png?text=src"
-        src2="https://via.placeholder.com/800x800.png?text=src+retina"
-        sm="https://via.placeholder.com/600x600.png?text=sm"
-        sm2="https://via.placeholder.com/1200x1200.png?text=sm+retina"
-        md="https://via.placeholder.com/800x800.png?text=md"
-        md2="https://via.placeholder.com/1600x1600.png?text=md+retina"
-        lg="https://via.placeholder.com/1000x1000.png?text=lg"
-        lg2="https://via.placeholder.com/2000x2000.png?text=lg+retina"
-        xl="https://via.placeholder.com/1200x1200.png?text=xl"
-        xl2="https://via.placeholder.com/2400x2400.png?text=xl+retina"
-        appResponsiveImage
-    > -->
-    <!-- <img src="./../../../assets/banner/b-800x400.jpg"
-        src2="./../../../assets/banner/b-1600x800.jpg"
-        md="./../../../assets/banner/b-1200x600.jpg"
-        md2="./../../../assets/banner/b-2400x1200.jpg"
-        xl="./../../../assets/banner/b-1280x720.jpg"
-        xl2="./../../../assets/banner/b-2560x1440.jpg"
-        appResponsiveImage
-    > -->
-    <!-- <app-responsive-image appResponsiveBreakpoint (triggerBreakpointChange)="updateImgSrc($event)" [imgData]="bannerData.img || {}" [cbp]="cbp"></app-responsive-image> -->
-    <div class="img-wrap">
-        <app-responsive-image appResponsiveBreakpoint [imgData]="bannerData.img || {}"></app-responsive-image>
-    </div>
-    <div class="text-wrap">
-        <div class="max-wrap">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-8 col-xl-6">
-                        <app-standard-teaser [data]="bannerData.data"></app-standard-teaser>
+    <div class="hero-slider">
+        <div class="hero-slide" *ngFor="let slide of bannerData">
+            <div class="img-wrap">
+                <app-responsive-image appResponsiveBreakpoint [imgData]="slide.img || {}"></app-responsive-image>
+            </div>
+            <div class="text-wrap">
+                <div class="max-wrap">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-xl-6">
+                                <app-standard-teaser [data]="slide.data"></app-standard-teaser>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,352 +1,303 @@
-[{
-    "img": {
-        "xs": "./../../../assets/banner/a-800x450.jpg",
-        "xs2": "./../../../assets/banner/a-1600x900.jpg",
-        "sm": "",
-        "sm2": "",
-        "md": "./../../../assets/banner/a-1040x585.jpg",
-        "md2": "./../../../assets/banner/a-2080x1170.jpg",
-        "lg": "",
-        "lg2": "",
-        "xl": "./../../../assets/banner/a-1280x720.jpg",
-        "xl2": "./../../../assets/banner/a-2560x1440.jpg"
-    },
-    "data": {
-        "title": "Lorem Ipsum Dolor Sit Amet",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratingsData": {
-            "ratings": "4.5",
-            "noofratings": "282",
-            "noofreviews": "320"
+[
+    {
+        "img": {
+            "xs": "./../../../assets/banner/a-800x450.jpg",
+            "xs2": "./../../../assets/banner/a-1600x900.jpg",
+            "sm": "",
+            "sm2": "",
+            "md": "./../../../assets/banner/a-1040x585.jpg",
+            "md2": "./../../../assets/banner/a-2080x1170.jpg",
+            "lg": "",
+            "lg2": "",
+            "xl": "./../../../assets/banner/a-1280x720.jpg",
+            "xl2": "./../../../assets/banner/a-2560x1440.jpg"
         },
-        "tags": [
-            {
-                "title": "Tag 1",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }, {
-                "title": "Tag 2",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }
-            ],
+        "data": {
+            "title": "Lorem Ipsum Dolor Sit Amet",
+            "tag": "h2",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+            "ratingsData": {
+                "ratings": "4.5",
+                "noofratings": "282",
+                "noofreviews": "320"
+            },
             "cta": [
-            {
-                "title": "View Recipe",
-                "link": "[/pages/recipe]",
-                "cssclass": "btn-primary",
-                "tag": "a",
-                "icon": "chevron-right"
-            }, {
-                "title": "Share",
-                "share": [
-                    {
-                        "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
-                        "text": "Facebook",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/instagram.svg",
-                        "text": "Instagram",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/twitter.svg",
-                        "text": "Twitter",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
-                        "text": "Pinterest",
-                        "link": "#"
-                    }
-                ],
-                "cssclass": "btn-outline",
-                "tag": "button",
-                "icon": "share-variant"
-            }
-        ]
-    }
-}, {
-    "img": {
-        "xs": "./../../../assets/banner/b-800x450.jpg",
-        "xs2": "./../../../assets/banner/b-1600x900.jpg",
-        "sm": "",
-        "sm2": "",
-        "md": "./../../../assets/banner/b-1040x585.jpg",
-        "md2": "./../../../assets/banner/b-2080x1170.jpg",
-        "lg": "",
-        "lg2": "",
-        "xl": "./../../../assets/banner/b-1280x720.jpg",
-        "xl2": "./../../../assets/banner/b-2560x1440.jpg"
+                {
+                    "title": "View Recipe",
+                    "link": "[/pages/recipe]",
+                    "cssclass": "btn-primary",
+                    "tag": "a",
+                    "icon": "chevron-right"
+                },
+                {
+                    "title": "Share",
+                    "share": [
+                        {
+                            "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                            "text": "Facebook",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                            "text": "Instagram",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                            "text": "Twitter",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                            "text": "Pinterest",
+                            "link": "#"
+                        }
+                    ],
+                    "cssclass": "btn-outline",
+                    "tag": "button",
+                    "icon": "share-variant"
+                }
+            ]
+        }
     },
-    "data": {
-        "title": "Lorem Ipsum Dolor Sit Amet",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratingsData": {
-            "ratings": "4.5",
-            "noofratings": "282",
-            "noofreviews": "320"
+    {
+        "img": {
+            "xs": "./../../../assets/banner/b-800x450.jpg",
+            "xs2": "./../../../assets/banner/b-1600x900.jpg",
+            "sm": "",
+            "sm2": "",
+            "md": "./../../../assets/banner/b-1040x585.jpg",
+            "md2": "./../../../assets/banner/b-2080x1170.jpg",
+            "lg": "",
+            "lg2": "",
+            "xl": "./../../../assets/banner/b-1280x720.jpg",
+            "xl2": "./../../../assets/banner/b-2560x1440.jpg"
         },
-        "tags": [
-            {
-                "title": "Tag 1",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }, {
-                "title": "Tag 2",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }
-            ],
+        "data": {
+            "title": "Lorem Ipsum Dolor Sit Amet",
+            "tag": "h2",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+            "ratingsData": {
+                "ratings": "4.5",
+                "noofratings": "282",
+                "noofreviews": "320"
+            },
             "cta": [
-            {
-                "title": "View Recipe",
-                "link": "[/pages/recipe]",
-                "cssclass": "btn-primary",
-                "tag": "a",
-                "icon": "chevron-right"
-            }, {
-                "title": "Share",
-                "share": [
-                    {
-                        "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
-                        "text": "Facebook",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/instagram.svg",
-                        "text": "Instagram",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/twitter.svg",
-                        "text": "Twitter",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
-                        "text": "Pinterest",
-                        "link": "#"
-                    }
-                ],
-                "cssclass": "btn-outline",
-                "tag": "button",
-                "icon": "share-variant"
-            }
-        ]
-    }
-}, {
-    "img": {
-        "xs": "./../../../assets/banner/c-800x450.jpg",
-        "xs2": "./../../../assets/banner/c-1600x900.jpg",
-        "sm": "",
-        "sm2": "",
-        "md": "./../../../assets/banner/c-1040x585.jpg",
-        "md2": "./../../../assets/banner/c-2080x1170.jpg",
-        "lg": "",
-        "lg2": "",
-        "xl": "./../../../assets/banner/c-1280x720.jpg",
-        "xl2": "./../../../assets/banner/c-2560x1440.jpg"
+                {
+                    "title": "View Recipe",
+                    "link": "[/pages/recipe]",
+                    "cssclass": "btn-primary",
+                    "tag": "a",
+                    "icon": "chevron-right"
+                },
+                {
+                    "title": "Share",
+                    "share": [
+                        {
+                            "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                            "text": "Facebook",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                            "text": "Instagram",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                            "text": "Twitter",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                            "text": "Pinterest",
+                            "link": "#"
+                        }
+                    ],
+                    "cssclass": "btn-outline",
+                    "tag": "button",
+                    "icon": "share-variant"
+                }
+            ]
+        }
     },
-    "data": {
-        "title": "Lorem Ipsum Dolor Sit Amet",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "tags": [
-            {
-                "title": "Tag 1",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }, {
-                "title": "Tag 2",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }
-            ],
-            "cta": [
-            {
-                "title": "View Recipe",
-                "link": "[/pages/recipe]",
-                "cssclass": "btn-primary",
-                "tag": "a",
-                "icon": "chevron-right"
-            }, {
-                "title": "Share",
-                "share": [
-                    {
-                        "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
-                        "text": "Facebook",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/instagram.svg",
-                        "text": "Instagram",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/twitter.svg",
-                        "text": "Twitter",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
-                        "text": "Pinterest",
-                        "link": "#"
-                    }
-                ],
-                "cssclass": "btn-outline",
-                "tag": "button",
-                "icon": "share-variant"
-            }
-        ]
-    }
-}, {
-    "img": {
-        "xs": "./../../../assets/banner/d-800x450.jpg",
-        "xs2": "./../../../assets/banner/d-1600x900.jpg",
-        "sm": "",
-        "sm2": "",
-        "md": "./../../../assets/banner/d-1040x585.jpg",
-        "md2": "./../../../assets/banner/d-2080x1170.jpg",
-        "lg": "",
-        "lg2": "",
-        "xl": "./../../../assets/banner/d-1280x720.jpg",
-        "xl2": "./../../../assets/banner/d-2560x1440.jpg"
-    },
-    "data": {
-        "title": "Lorem Ipsum Dolor Sit Amet",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratings": "2.8",
-        "ratingsData": {
-            "ratings": "4.5",
-            "noofratings": "282",
-            "noofreviews": "320"
+    {
+        "img": {
+            "xs": "./../../../assets/banner/c-800x450.jpg",
+            "xs2": "./../../../assets/banner/c-1600x900.jpg",
+            "sm": "",
+            "sm2": "",
+            "md": "./../../../assets/banner/c-1040x585.jpg",
+            "md2": "./../../../assets/banner/c-2080x1170.jpg",
+            "lg": "",
+            "lg2": "",
+            "xl": "./../../../assets/banner/c-1280x720.jpg",
+            "xl2": "./../../../assets/banner/c-2560x1440.jpg"
         },
-        "tags": [
-            {
-                "title": "Tag 1",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }, {
-                "title": "Tag 2",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }
-            ],
+        "data": {
+            "title": "Lorem Ipsum Dolor Sit Amet",
+            "tag": "h2",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
             "cta": [
-            {
-                "title": "View Recipe",
-                "link": "[/pages/recipe]",
-                "cssclass": "btn-primary",
-                "tag": "a",
-                "icon": "chevron-right"
-            }, {
-                "title": "Share",
-                "share": [
-                    {
-                        "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
-                        "text": "Facebook",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/instagram.svg",
-                        "text": "Instagram",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/twitter.svg",
-                        "text": "Twitter",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
-                        "text": "Pinterest",
-                        "link": "#"
-                    }
-                ],
-                "cssclass": "btn-outline",
-                "tag": "button",
-                "icon": "share-variant"
-            }
-        ]
-    }
-}, {
-    "img": {
-        "xs": "./../../../assets/banner/d-800x450.jpg",
-        "xs2": "./../../../assets/banner/d-1600x900.jpg",
-        "sm": "",
-        "sm2": "",
-        "md": "./../../../assets/banner/d-1040x585.jpg",
-        "md2": "./../../../assets/banner/d-2080x1170.jpg",
-        "lg": "",
-        "lg2": "",
-        "xl": "./../../../assets/banner/d-1280x720.jpg",
-        "xl2": "./../../../assets/banner/d-2560x1440.jpg"
+                {
+                    "title": "View Recipe",
+                    "link": "[/pages/recipe]",
+                    "cssclass": "btn-primary",
+                    "tag": "a",
+                    "icon": "chevron-right"
+                },
+                {
+                    "title": "Share",
+                    "share": [
+                        {
+                            "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                            "text": "Facebook",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                            "text": "Instagram",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                            "text": "Twitter",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                            "text": "Pinterest",
+                            "link": "#"
+                        }
+                    ],
+                    "cssclass": "btn-outline",
+                    "tag": "button",
+                    "icon": "share-variant"
+                }
+            ]
+        }
     },
-    "data": {
-        "title": "Lorem Ipsum Dolor Sit Amet",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratingsData": {
-            "ratings": "4.5",
-            "noofratings": "282",
-            "noofreviews": "320"
+    {
+        "img": {
+            "xs": "./../../../assets/banner/d-800x450.jpg",
+            "xs2": "./../../../assets/banner/d-1600x900.jpg",
+            "sm": "",
+            "sm2": "",
+            "md": "./../../../assets/banner/d-1040x585.jpg",
+            "md2": "./../../../assets/banner/d-2080x1170.jpg",
+            "lg": "",
+            "lg2": "",
+            "xl": "./../../../assets/banner/d-1280x720.jpg",
+            "xl2": "./../../../assets/banner/d-2560x1440.jpg"
         },
-        "tags": [
-            {
-                "title": "Tag 1",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }, {
-                "title": "Tag 2",
-                "link": "#",
-                "cssclass": "teaser-tag",
-                "tag": "a"
-            }
-            ],
+        "data": {
+            "title": "Lorem Ipsum Dolor Sit Amet",
+            "tag": "h2",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+            "ratings": "2.8",
+            "ratingsData": {
+                "ratings": "4.5",
+                "noofratings": "282",
+                "noofreviews": "320"
+            },
             "cta": [
-            {
-                "title": "View Recipe",
-                "link": "[/pages/recipe]",
-                "cssclass": "btn-primary",
-                "tag": "a",
-                "icon": "chevron-right"
-            }, {
-                "title": "Share",
-                "share": [
-                    {
-                        "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
-                        "text": "Facebook",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/instagram.svg",
-                        "text": "Instagram",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/twitter.svg",
-                        "text": "Twitter",
-                        "link": "#"
-                    },
-                    {
-                        "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
-                        "text": "Pinterest",
-                        "link": "#"
-                    }
-                ],
-                "cssclass": "btn-outline",
-                "tag": "button",
-                "icon": "share-variant"
-            }
-        ]
+                {
+                    "title": "View Recipe",
+                    "link": "[/pages/recipe]",
+                    "cssclass": "btn-primary",
+                    "tag": "a",
+                    "icon": "chevron-right"
+                },
+                {
+                    "title": "Share",
+                    "share": [
+                        {
+                            "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                            "text": "Facebook",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                            "text": "Instagram",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                            "text": "Twitter",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                            "text": "Pinterest",
+                            "link": "#"
+                        }
+                    ],
+                    "cssclass": "btn-outline",
+                    "tag": "button",
+                    "icon": "share-variant"
+                }
+            ]
+        }
+    },
+    {
+        "img": {
+            "xs": "./../../../assets/banner/d-800x450.jpg",
+            "xs2": "./../../../assets/banner/d-1600x900.jpg",
+            "sm": "",
+            "sm2": "",
+            "md": "./../../../assets/banner/d-1040x585.jpg",
+            "md2": "./../../../assets/banner/d-2080x1170.jpg",
+            "lg": "",
+            "lg2": "",
+            "xl": "./../../../assets/banner/d-1280x720.jpg",
+            "xl2": "./../../../assets/banner/d-2560x1440.jpg"
+        },
+        "data": {
+            "title": "Lorem Ipsum Dolor Sit Amet",
+            "tag": "h2",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+            "ratingsData": {
+                "ratings": "4.5",
+                "noofratings": "282",
+                "noofreviews": "320"
+            },
+            "cta": [
+                {
+                    "title": "View Recipe",
+                    "link": "[/pages/recipe]",
+                    "cssclass": "btn-primary",
+                    "tag": "a",
+                    "icon": "chevron-right"
+                },
+                {
+                    "title": "Share",
+                    "share": [
+                        {
+                            "icon": "./../../../assets/fontawesome/black/facebook-f.svg",
+                            "text": "Facebook",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/instagram.svg",
+                            "text": "Instagram",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/twitter.svg",
+                            "text": "Twitter",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "./../../../assets/fontawesome/black/pinterest-p.svg",
+                            "text": "Pinterest",
+                            "link": "#"
+                        }
+                    ],
+                    "cssclass": "btn-outline",
+                    "tag": "button",
+                    "icon": "share-variant"
+                }
+            ]
+        }
     }
-}]
+]

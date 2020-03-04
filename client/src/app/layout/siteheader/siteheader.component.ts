@@ -70,8 +70,10 @@ export class SiteheaderComponent implements AfterViewInit {
   constructor(private _formBuilder: FormBuilder) { }
 
   ngAfterViewInit() {
-    if (window && document && window.$) {
-      $('nav:first').accessibleMegaMenu();
+    if (window && document) {
+      window.setTimeout(()=> {
+        $('nav:first').accessibleMegaMenu();
+      }, 1000);
       bodyElem = document.querySelector('body');
       htmlElem = document.documentElement;
     }

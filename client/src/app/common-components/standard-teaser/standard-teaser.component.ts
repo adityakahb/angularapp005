@@ -17,6 +17,7 @@ export class StandardTeaserComponent implements OnInit {
   tileVideoURL;
   sttheme;
   ratings;
+  tag;
   @Input() data;
   @Input() theme;
   constructor(private sanitizer: DomSanitizer) { }
@@ -35,6 +36,7 @@ export class StandardTeaserComponent implements OnInit {
     this.tileImg = data.tileImg;
     this.title = this.getTrimmedData(this.trimStr(data.title || ''), 40);
     this.ratings = data.ratingsData || ratingsData;
+    this.tag = data.tag || 'h6';
     this.sttheme = this.theme;
     if ((data.tileVideo || {}).source && (data.tileVideo || {}).url) {
       this.tileVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(data.tileVideo.url);
