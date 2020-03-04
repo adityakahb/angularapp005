@@ -43,7 +43,7 @@ $rem60: rem(60px);
         button {
             background: transparent;
             border: 0;
-            color: #000;
+            color: $dark;
             height: rem(60px);
             line-height: 1;
             margin: 0 0 0 rem(8px);
@@ -55,6 +55,10 @@ $rem60: rem(60px);
             }
             .txt {
                 font-weight: bold;
+            }
+            &.active {
+                color: $light;
+                background-color: $dark;
             }
         }
     }
@@ -160,7 +164,7 @@ $rem60: rem(60px);
             a[aria-expanded] {
                 border: rem(1px) solid transparent;
                 box-shadow: none;
-                color: #000;
+                color: $primary;
                 display: block;
                 font-size: rem(18px);
                 font-weight: 400;
@@ -171,9 +175,14 @@ $rem60: rem(60px);
                 text-transform: uppercase;
                 transition: all 0.25s ease;
                 &:hover, &:focus, &.open {
-                    background-color: #e6e6e6;
+                    background: $dark;
+                    border: rem(1px) solid $dark;
+                    color: $light;
                     outline: medium none;
                     outline-offset: 0;
+                    .ikn {
+                        color: $light;
+                    }
                 }
                 .ikn {
                     border-radius: 100%;
@@ -201,8 +210,9 @@ $rem60: rem(60px);
         }
     }
     .accessible-megamenu-panel {
-        background-color: #e6e6e6;
+        background: $dark;
         border: 0;
+        border-radius: 0;
         box-shadow: none;
         left: 0;
         padding: 0;
@@ -214,13 +224,27 @@ $rem60: rem(60px);
             padding: 0;
         }
         a {
-            color: #303030;
             display: block;
             font-size: rem(18px);
             font-weight: normal;
             margin: 0;
             padding: rem(15px);
             text-decoration: none;
+            &:link {
+                color: $light;
+            }
+            &:visited {
+                color: $light;
+            }
+            &:hover {
+                color: $light;
+            }
+            &:active {
+                color: $light;
+            }
+        }
+        p {
+            display: none;
         }
     }
 }

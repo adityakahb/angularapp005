@@ -17,7 +17,12 @@ export class IndexbannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.bannerData = bannerJson;
+    let arr = bannerJson || [];
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    this.bannerData = arr;
     // if ((bannerJson || []).length > 0) {
     //   this.bannerData = bannerJson[Math.floor(Math.random() * bannerJson.length)];
     // }

@@ -45,7 +45,7 @@ export class CtaComponent implements OnInit {
       this.index = data.index;
     }
     this.last = data.last;
-    this.share = data.share || {};
+    this.share = data.share;
     let href = this.href || '';
     if (href.charAt(0) === '[' && href.charAt(href.length - 1) === ']') {
       this.routerLink.isRouter = true;

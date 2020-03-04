@@ -241,16 +241,16 @@
     },
     {
         "img": {
-            "xs": "./../../../assets/banner/d-800x450.jpg",
-            "xs2": "./../../../assets/banner/d-1600x900.jpg",
+            "xs": "./../../../assets/banner/e-800x450.jpg",
+            "xs2": "./../../../assets/banner/e-1600x900.jpg",
             "sm": "",
             "sm2": "",
-            "md": "./../../../assets/banner/d-1040x585.jpg",
-            "md2": "./../../../assets/banner/d-2080x1170.jpg",
+            "md": "./../../../assets/banner/e-1040x585.jpg",
+            "md2": "./../../../assets/banner/e-2080x1170.jpg",
             "lg": "",
             "lg2": "",
-            "xl": "./../../../assets/banner/d-1280x720.jpg",
-            "xl2": "./../../../assets/banner/d-2560x1440.jpg"
+            "xl": "./../../../assets/banner/e-1280x720.jpg",
+            "xl2": "./../../../assets/banner/e-2560x1440.jpg"
         },
         "data": {
             "title": "Lorem Ipsum Dolor Sit Amet",

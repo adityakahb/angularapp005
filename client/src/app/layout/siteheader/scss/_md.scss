@@ -17,3 +17,13 @@
 .site-user, .site-nav, .site-search, .site-lang {
     width: rem(400px);
 }
+.site-nav {
+    .accessible-megamenu-panel {
+        p {
+            color: darken($light, 30%);
+            display: block;
+            font-size: rem(14px);
+            padding: 0 rem(15px);
+        }
+    }
+}
