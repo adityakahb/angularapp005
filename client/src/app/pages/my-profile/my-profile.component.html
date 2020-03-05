@@ -44,18 +44,18 @@
                                         </a></li>
                                         <li><a href="#" class="btn btn-outline-primary">
                                             <span class="left">
-                                                <span class="mdi mdi-video-vintage"></span>
+                                                <span class="mdi mdi-script-text"></span>
                                             </span>
-                                            My videos
+                                            My articles
                                             <span class="right">
                                                 <span class="mdi mdi-chevron-right"></span>
                                             </span>
                                         </a></li>
                                         <li><a href="#" class="btn btn-outline-primary">
                                             <span class="left">
-                                                <span class="mdi mdi-script-text"></span>
+                                                <span class="mdi mdi-account-group"></span>
                                             </span>
-                                            My articles
+                                            My groups
                                             <span class="right">
                                                 <span class="mdi mdi-chevron-right"></span>
                                             </span>
@@ -71,10 +71,6 @@
                                 <button type="button" class="btn btn-lg btn-light">
                                     <span class="mdi mdi-silverware"></span>
                                     New recipe
-                                </button>
-                                <button type="button" class="btn btn-lg btn-light">
-                                    <span class="mdi mdi-video-vintage"></span>
-                                    New video
                                 </button>
                                 <button type="button" class="btn btn-lg btn-light">
                                     <span class="mdi mdi-script-text"></span>
@@ -118,11 +114,13 @@
                                         },
                                         activity: {
                                             type: 'reviews',
-                                            info: 'reviewed your article.',
+                                            info: 'reviewed your',
+                                            reviewed: 'article',
                                             link: {
-                                                title: 'Read Review.',
+                                                title: 'Article Name',
                                                 href: '#'
-                                            }
+                                            },
+                                            end: '.'
                                         }
                                     },
                                     tileImg: {
@@ -130,29 +128,6 @@
                                         xs2: 'https://via.placeholder.com/1280x720.png',
                                         md: 'https://via.placeholder.com/800x450.png',
                                         md2: 'https://via.placeholder.com/1600x900.png'
-                                    }
-                                }"></app-activity-teaser>
-                                <app-activity-teaser [data]="{
-                                    from: {
-                                        name: 'John Doe',
-                                        link: '#',
-                                        isUser: false,
-                                        avtarImg: {
-                                            xs: 'https://via.placeholder.com/80x80.png',
-                                            xs2: 'https://via.placeholder.com/160x160.png'
-                                        },
-                                        activity: {
-                                            type: 'reviews',
-                                            info: 'reviewed your video.',
-                                            link: {
-                                                title: 'Read Review.',
-                                                href: '#'
-                                            }
-                                        }
-                                    },
-                                    tileVideo: {
-                                        source: 'youtube',
-                                        url: 'https://www.youtube.com/embed/r9IEKuASfgU'
                                     }
                                 }"></app-activity-teaser>
                             </div>

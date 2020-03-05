@@ -1,77 +1,68 @@
-import { Component, AfterViewInit, HostListener, Input } from '@angular/core';
-import {FormControl, Validators, FormBuilder, FormGroup} from '@angular/forms';
-import {Observable} from 'rxjs';
-import {startWith, map} from 'rxjs/operators';
+import { Component, OnInit, AfterViewInit, HostListener, Input } from '@angular/core';
+import { FormControl, FormBuilder, Validators } from '@angular/forms';
+import { Subscription } from 'rxjs';
+import { Apollo } from 'apollo-angular';
+import gql from 'graphql-tag';
 
 declare const require: any;
 declare const $: any;
 
-const navJson = require('./../../data/megamenu.json');
+const className = 'nav-open';
 const langJson = require('./../../data/lang.json');
-let lastScrollTop = 0;
-let lastScrollTopVal = 0;
+const navJson = require('./../../data/megamenu.json');
 let bodyElem;
 let htmlElem;
-const className = 'nav-open';
+let lastScrollTop = 0;
+let lastScrollTopVal = 0;
 
-export interface SearchItem {
-  text: string;
-  link: string;
-}
 
-export interface SearchGroup {
-  title: string;
-  links: SearchItem[];
-}
+const GQLUserLogin = gql`
+  query RootQuery($email: String!, $password: String!) {
+    login(email: $email, password: $password){
+      firstname
+      middlename
+      lastname
+      email
+      dateofbirth
+      gender
+      age
+      profilepic
+    }
+  }
+`;
+
 
 @Component({
   selector: 'app-siteheader',
   templateUrl: './siteheader.component.html',
   styleUrls: ['./siteheader.component.scss']
 })
-export class SiteheaderComponent implements AfterViewInit {
+export class SiteheaderComponent implements OnInit, AfterViewInit {
 
   @Input() loggedInUser;
 
-  searchForm: FormGroup = this._formBuilder.group({
-    searchGroup: '',
-  });
-
-  searchGroups: SearchGroup[] = [{
-    title: 'Videos',
-    links: [{
-      text: 'Video Lorem Ipsum 1',
-      link: '#'
-    }, {
-      text: 'Video Lorem Ipsum 2',
-      link: '#'
-    }]
-  }, {
-    title: 'Recipes',
-    links: [{
-      text: 'Recipe Lorem Ipsum 1',
-      link: '#'
-    }, {
-      text: 'Recipe Lorem Ipsum 2',
-      link: '#'
-    }]
-  }];
-
-  searchGroupOptions: Observable<SearchGroup[]>;
-
-  navData = navJson;
-  langData = langJson;
-  isNavOpen = false;
-  isUserNavOpen = false;
-  isSearchNavOpen = false;
   isLangNavOpen = false;
+  isNavOpen = false;
   isScrolledDown = false;
+  isSearchNavOpen = false;
+  isUserNavOpen = false;
   langArr = [];
-  constructor(private _formBuilder: FormBuilder) { }
+  langData = langJson;
+  navData = navJson;
+
+  loginForm;
+  currentUser: any;
+  querySubscription: Subscription;
+  
+  USER_EMAIL: FormControl;
+  USER_PASSWORD: FormControl;
+  isLoginLoading: false;
+
+  constructor(private _formBuilder: FormBuilder, private apollo: Apollo) {}
 
   ngAfterViewInit() {
     if (window && document) {
-      window.setTimeout(()=> {
+      window.setTimeout(() => {
         $('nav:first').accessibleMegaMenu();
       }, 1000);
       bodyElem = document.querySelector('body');
@@ -82,11 +73,11 @@ export class SiteheaderComponent implements AfterViewInit {
         this.langArr.push(item);
       }
     });
-    this.searchGroupOptions = this.searchForm.get('searchGroup')!.valueChanges
-      .pipe(
-        startWith(''),
-        map(value => this._filterGroup(value))
-      );
+  }
+
+  ngOnInit(): void {
+    this.createFormControls();
+    this.createForm();
   }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
@@ -101,13 +92,15 @@ export class SiteheaderComponent implements AfterViewInit {
     }
   }
 
-  private _filterGroup(value: string): SearchGroup[] {
-    if (value) {
-      console.log('-----------value', value);
-      return [];
-    }
-
-    return this.searchGroups;
+  createFormControls() {
+    this.USER_EMAIL = new FormControl({value: ''}, [Validators.required]);
+    this.USER_PASSWORD = new FormControl({value: ''}, [Validators.required]);
+  }
+  createForm(): void {
+    this.loginForm = this._formBuilder.group({
+        USER_EMAIL: this.USER_EMAIL,
+        USER_PASSWORD: this.USER_PASSWORD,
+    });
   }
 
   updateScrollVal() {
@@ -135,6 +128,7 @@ export class SiteheaderComponent implements AfterViewInit {
 
   openUserNav() {
     this.isUserNavOpen = true;
+    this.loginForm.reset();
     this.updateScrollVal();
   }
 
@@ -153,6 +147,24 @@ export class SiteheaderComponent implements AfterViewInit {
   }
 
   onClickSubmit(formData) {
-    alert('Your Email is : ' + formData.email);
+    this.loginForm.get('USER_EMAIL').disable();
+    this.loginForm.get('USER_PASSWORD').disable();
+    this.isLoginLoading = true;
+    this.querySubscription = this.apollo
+      .watchQuery({
+        query: GQLUserLogin,
+        variables: {
+          email: formData.USER_EMAIL,
+          password: formData.USER_PASSWORD
+        },
+      })
+      .valueChanges.subscribe(({data, loading}) => {
+        if (!loading) {
+          this.loginForm.get('USER_EMAIL').enable();
+          this.loginForm.get('USER_PASSWORD').enable();
+          this.isLoginLoading = false;
+          this.currentUser = data;
+        }
+      });
   }
 }
