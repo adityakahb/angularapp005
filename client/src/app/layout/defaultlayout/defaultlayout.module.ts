@@ -1,3 +1,4 @@
+import { AlertMsgModule } from './../../common-components/alert-msg/alert-msg.module';
 import { CommonModule } from '@angular/common';
 import { CtaModule } from './../../common-components/cta/cta.module';
 import { DirectiveModule } from './../../directives/directive.module';
@@ -10,6 +11,7 @@ import { SiteheaderComponent } from './../siteheader/siteheader.component';
 
 @NgModule({
   imports: [
+    AlertMsgModule,
     CommonModule,
     CtaModule,
     DirectiveModule,

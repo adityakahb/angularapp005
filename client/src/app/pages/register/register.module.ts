@@ -1,3 +1,4 @@
+import { AlertMsgModule } from './../../common-components/alert-msg/alert-msg.module';
 import { AuthorTeaserModule } from './../../common-components/author-teaser/author-teaser.module';
 import { CommonModule } from '@angular/common';
 import { CtaModule } from './../../common-components/cta/cta.module';
@@ -11,6 +12,7 @@ import { StandardTeaserModule } from './../../common-components/standard-teaser/
 
 @NgModule({
   imports: [
+    AlertMsgModule,
     AuthorTeaserModule,
     CommonModule,
     CtaModule,

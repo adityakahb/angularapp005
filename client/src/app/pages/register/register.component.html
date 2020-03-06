@@ -10,6 +10,133 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-xl-6">
             <form>
+              <div class="alerts">
+                <app-alert-msg [data]="{
+                  alertType: 'primary',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'alert-rhombus'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'primary',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'loading-spinner'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'secondary',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'secondary',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'success',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'success',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'danger',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'danger',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'warning',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'warning',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'info',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'info',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'light',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'light',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'dark',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'dark',
+                  title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
+                  content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+                <app-alert-msg [data]="{
+                  alertType: 'dark',
+                  icon: 'alert-rhombus',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <app-alert-msg [data]="{
+                  alertType: 'dark',
+                  icon: 'loading-spinner',
+                  isClosable: 'true'
+                }"></app-alert-msg>
+                <br>
+              </div>
               <div class="form-group">
                 <label for="firstname">First Name</label>
                 <input type="text" class="form-control" id="firstname" placeholder="First Name">

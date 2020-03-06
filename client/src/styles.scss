@@ -35,6 +35,28 @@ body {
             top: 0.1rem;
         }
     }
+    
+    @keyframes rotating {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .ld-spinner {
+        border-radius: 50%;
+        width: rem(40px);
+        height: rem(40px);
+        border: rem(4px) solid rgba(0, 0, 0, 0.1);
+        border-top: rem(4px) solid $dark;
+        animation: rotating 1s infinite cubic-bezier(0.75, 0.25, 0.25, 0.75);
+    }
+      
+    .alert-dismissible {
+        .close {
+            padding: rem(12px);
+        }
+    }
+
     .slick-dots {
         // background-color: rgba($light, 0.9);
         bottom: 0;

@@ -56,7 +56,7 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   
   USER_EMAIL: FormControl;
   USER_PASSWORD: FormControl;
-  isLoginLoading: false;
+  isLoginLoading = false;
 
   constructor(private _formBuilder: FormBuilder, private apollo: Apollo) {}
 
@@ -158,8 +158,8 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
           password: formData.USER_PASSWORD
         },
       })
-      .valueChanges.subscribe(({data, loading}) => {
-        if (!loading) {
+      .valueChanges.subscribe(({data, loading, errors}) => {
+        if (!loading && !errors) {
           this.loginForm.get('USER_EMAIL').enable();
           this.loginForm.get('USER_PASSWORD').enable();
           this.isLoginLoading = false;
