@@ -8,6 +8,11 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        ::ng-deep {
+            h1, h2, h3, h4, h5, h6 {
+                margin: 0;
+            }
+        }
     }
     .icn {
         height: rem(40px);
@@ -24,6 +29,9 @@
                 line-height: 1;
             }
         }
+    }
+    hr {
+        width: 100%;
     }
     @each $color, $value in $theme-colors {
         &.alert-#{$color} {

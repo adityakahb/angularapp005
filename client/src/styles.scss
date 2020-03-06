@@ -4,9 +4,11 @@
 @import './app/sass-globals/bootstrap-inherited';
 // @import './app/sass-globals/material-inherited';
 
-html {
+html, body { 
+    font-size: rem(16px);
     height: 100%;
 }
+
 body {
     background-image: url('./assets/body-bg.jpg');
     background-color: #51220E;
@@ -91,9 +93,3 @@ body {
         }
     }
 }
-
-html, body { 
-    font-size: rem(16px);
-    height: 100%;
-}
-

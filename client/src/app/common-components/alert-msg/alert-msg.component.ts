@@ -25,7 +25,7 @@ export class AlertMsgComponent implements OnInit {
     this.title = data.title;
     this.content = data.content;
     this.icon = data.icon;
-    this.actions = data.actions;
+    this.actions = data.actions || [];
     this.isClosable = data.isClosable === true || data.isClosable === 'true' ? data.isClosable : false;
   }
 }

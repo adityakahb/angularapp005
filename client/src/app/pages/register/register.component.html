@@ -15,20 +15,74 @@
                   alertType: 'primary',
                   title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
                   content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
-                  icon: 'alert-rhombus'
+                  icon: 'alert-rhombus',
+                  actions: [
+                    {
+                      title: 'Action Link',
+                      text: 'Action Link',
+                      link: '#',
+                      cssclass: 'btn-primary',
+                      tag: 'a',
+                      icon: 'chevron-right'
+                    },
+                    {
+                      title: 'Action Button',
+                      text: 'Action Button',
+                      buttontype: 'button',
+                      cssclass: 'btn-outline',
+                      tag: 'button',
+                      icon: 'chevron-right'
+                    }
+                  ]
                 }"></app-alert-msg>
                 <app-alert-msg [data]="{
                   alertType: 'primary',
                   title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
                   content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
-                  icon: 'loading-spinner'
+                  icon: 'loading-spinner',
+                  actions: [
+                    {
+                      title: 'Action Link',
+                      text: 'Action Link',
+                      link: '#',
+                      cssclass: 'btn-primary',
+                      tag: 'a',
+                      icon: 'chevron-right'
+                    },
+                    {
+                      title: 'Action Button',
+                      text: 'Action Button',
+                      buttontype: 'button',
+                      cssclass: 'btn-outline',
+                      tag: 'button',
+                      icon: 'chevron-right'
+                    }
+                  ]
                 }"></app-alert-msg>
                 <br>
                 <app-alert-msg [data]="{
                   alertType: 'secondary',
                   content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
                   icon: 'alert-rhombus',
-                  isClosable: 'true'
+                  isClosable: 'true',
+                  actions: [
+                    {
+                      title: 'Action Link',
+                      text: 'Action Link',
+                      link: '#',
+                      cssclass: 'btn-primary',
+                      tag: 'a',
+                      icon: 'chevron-right'
+                    },
+                    {
+                      title: 'Action Button',
+                      text: 'Action Button',
+                      buttontype: 'button',
+                      cssclass: 'btn-outline',
+                      tag: 'button',
+                      icon: 'chevron-right'
+                    }
+                  ]
                 }"></app-alert-msg>
                 <app-alert-msg [data]="{
                   alertType: 'secondary',
@@ -70,7 +124,25 @@
                   title: '<h3 class=\'alert-heading\'>Alert Title</h3>',
                   content: '<strong>Error!</strong> A simple danger alert with <a href=\'#\' class=\'alert-link\'>an example link</a>.',
                   icon: 'alert-rhombus',
-                  isClosable: 'true'
+                  isClosable: 'true',
+                  actions: [
+                    {
+                      title: 'Action Link',
+                      text: 'Action Link',
+                      link: '#',
+                      cssclass: 'btn-primary',
+                      tag: 'a',
+                      icon: 'chevron-right'
+                    },
+                    {
+                      title: 'Action Button',
+                      text: 'Action Button',
+                      buttontype: 'button',
+                      cssclass: 'btn-outline',
+                      tag: 'button',
+                      icon: 'chevron-right'
+                    }
+                  ]
                 }"></app-alert-msg>
                 <app-alert-msg [data]="{
                   alertType: 'warning',

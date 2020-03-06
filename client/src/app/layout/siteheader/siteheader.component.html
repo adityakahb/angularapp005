@@ -106,14 +106,14 @@
                 <span class="mdi mdi-close"></span>
             </button>
             <div class="site-user-content">
-                <form id="userloginform" [formGroup]="loginForm" (ngSubmit)="onClickSubmit(loginForm.value)" >
+                <form id="userloginform" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit(loginForm.value)" >
                     <div class="form-group">
                         <label for="useremail">Registered Email</label>
-                        <input type="email" class="form-control form-control-lg" id="useremail" placeholder="Registered Email" formControlName="USER_EMAIL">
+                        <input type="email" class="form-control form-control-lg" [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_EMAIL.errors}" placeholder="Registered Email" formControlName="USER_EMAIL">
                     </div>
                     <div class="form-group">
                         <label for="userpassword">Password</label>
-                        <input type="password" class="form-control form-control-lg" id="userpassword" placeholder="Password" formControlName="USER_PASSWORD">
+                        <input type="password" class="form-control form-control-lg" [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_PASSWORD.errors}" id="userpassword" placeholder="Password" formControlName="USER_PASSWORD">
                     </div>
                     <div class="form-group">
                         <app-cta
@@ -131,9 +131,10 @@
                     </div>
 
                     <app-alert-msg [data]="{
-                        title: 'Alert title',
-                        titleTag: ''
-                    }"></app-alert-msg>
+                        alertType: 'info',
+                        content: 'Logging in...',
+                        icon: 'loading-spinner'
+                      }"></app-alert-msg>
 
                 </form>
             </div>

@@ -53,6 +53,7 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   loginForm;
   currentUser: any;
   querySubscription: Subscription;
+  loginFormSubmitted = false;
   
   USER_EMAIL: FormControl;
   USER_PASSWORD: FormControl;
@@ -79,6 +80,8 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
     this.createFormControls();
     this.createForm();
   }
+
+  get loginControls() { return this.loginForm.controls; }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
     if (window && document) {
@@ -146,7 +149,11 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
     }
   }
 
-  onClickSubmit(formData) {
+  onLoginSubmit(formData) {
+    this.loginFormSubmitted = true;
+    if (this.loginForm.invalid) {
+        return;
+    }
     this.loginForm.get('USER_EMAIL').disable();
     this.loginForm.get('USER_PASSWORD').disable();
     this.isLoginLoading = true;

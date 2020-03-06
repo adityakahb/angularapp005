@@ -1,10 +1,12 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
 import { AlertMsgComponent } from './alert-msg.component';
+import { CommonModule } from '@angular/common';
+import { CtaModule } from './../cta/cta.module';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   imports: [
     CommonModule,
+    CtaModule
   ],
   declarations: [
     AlertMsgComponent

@@ -9,6 +9,9 @@
         }
     }
 }
+.site-user, .site-nav, .site-search, .site-lang {
+    width: rem(480px);
+}
 .site-nav {
     background-color: transparent;
     box-sizing: border-box;
