@@ -1,20 +1,20 @@
 <section class="indexbanner-comp">
-    <div class="hero-slider">
-        <div class="hero-slide" *ngFor="let slide of bannerData">
-            <div class="img-wrap">
-                <app-responsive-image appResponsiveBreakpoint [imgData]="slide.img || {}"></app-responsive-image>
+  <div class="hero-slider">
+    <div class="hero-slide" *ngFor="let slide of bannerData">
+      <div class="img-wrap">
+        <app-responsive-image appResponsiveBreakpoint [imgData]="slide.img || {}"></app-responsive-image>
+      </div>
+      <div class="text-wrap">
+        <div class="max-wrap">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-8 col-xl-6">
+                <app-standard-teaser [data]="slide.data"></app-standard-teaser>
+              </div>
             </div>
-            <div class="text-wrap">
-                <div class="max-wrap">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-md-8 col-xl-6">
-                                <app-standard-teaser [data]="slide.data"></app-standard-teaser>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>

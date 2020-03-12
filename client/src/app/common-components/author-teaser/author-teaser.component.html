@@ -1,34 +1,28 @@
 <div class="author-card" [ngClass]="theme">
-    <div class="teaser-img" *ngIf="data.authorimg">
-        <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="data.authorimg"></app-responsive-image>
-    </div>
-    <h6 [innerHTML]="data.name"></h6>
-    <div class="teaser-subtitle" *ngIf="data.followers">
-        <app-cta
-            [data]="{
+  <div class="teaser-img" *ngIf="data.authorimg">
+    <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="data.authorimg"></app-responsive-image>
+  </div>
+  <h6 [innerHTML]="data.name"></h6>
+  <div class="teaser-subtitle" *ngIf="data.followers">
+    <app-cta [data]="{
                 cssclass: data.followers.cssclass,
                 href: data.followers.link,
                 tag: data.followers.tag,
                 text: data.followers.num + ' ' + data.followers.title,
                 title: data.followers.num + ' ' + data.followers.title
-            }"
-            [theme]="theme"
-        ></app-cta>
-    </div>
-    <div class="teaser-content">
-        <p [innerHTML]="data.desc"></p>
-    </div>
-    <div class="teaser-actions">
-        <app-cta
-            [data]="{
+            }" [theme]="theme"></app-cta>
+  </div>
+  <div class="teaser-content">
+    <p [innerHTML]="data.desc"></p>
+  </div>
+  <div class="teaser-actions">
+    <app-cta [data]="{
                 cssclass: data.profilelink.cssclass,
                 href: data.profilelink.link,
                 tag: data.profilelink.tag,
                 text: data.profilelink.title,
                 title: data.profilelink.title,
                 icon: data.profilelink.icon 
-            }"
-            [theme]="theme"
-        ></app-cta>
-    </div>
+            }" [theme]="theme"></app-cta>
+  </div>
 </div>

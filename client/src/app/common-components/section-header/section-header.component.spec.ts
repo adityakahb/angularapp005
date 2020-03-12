@@ -8,9 +8,9 @@ describe('SectionIconComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SectionHeaderComponent ]
+      declarations: [SectionHeaderComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

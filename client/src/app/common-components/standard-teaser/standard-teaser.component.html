@@ -1,28 +1,38 @@
 <div class="teaser-card" [ngClass]="sttheme">
-    <div class="teaser-header" [ngClass]="{'with-icon': icon}">
-        <div class="teaser-icon" *ngIf="icon">
-            <span [ngClass]="icon"></span>
-        </div>
-        <div class="teaser-title">
-            <h1 *ngIf="tag === 'h1'" class="h6 h-title" [innerHTML]="title"></h1>
-            <h2 *ngIf="tag === 'h2'" class="h6 h-title" [innerHTML]="title"></h2>
-            <h3 *ngIf="tag === 'h3'" class="h6 h-title" [innerHTML]="title"></h3>
-            <h4 *ngIf="tag === 'h4'" class="h6 h-title" [innerHTML]="title"></h4>
-            <h5 *ngIf="tag === 'h5'" class="h6 h-title" [innerHTML]="title"></h5>
-            <h6 *ngIf="tag === 'h6'" class="h-title" [innerHTML]="title"></h6>
-        </div>
+  <div class="teaser-author">
+    <div class="author-img">
+      <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="{
+                xs: 'https://via.placeholder.com/80x80.png',
+                xs2: 'https://via.placeholder.com/160x160.png'
+            }"></app-responsive-image>
     </div>
-    <app-ratings-reviews [data]="ratings"></app-ratings-reviews>
-    <div class="teaser-img" mat-card-image *ngIf="tileImg">
-        <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
+    <div class="author-name">
+      <a href="#">John Doe</a>
     </div>
-    <div class="teaser-video" mat-card-image *ngIf="tileVideoURL">
-        <iframe *ngIf="tileVideoSource === 'youtube'" width="560" height="315" [src]="tileVideoURL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="teaser-header" [ngClass]="{'with-icon': icon}">
+    <div class="teaser-icon" *ngIf="icon">
+      <span [ngClass]="icon"></span>
     </div>
-    <div class="teaser-subtitle" *ngIf="(tags || []).length > 0">
-        <app-cta
-            *ngFor="let tag of tags, index as i, last as isLast"
-            [data]="{
+    <div class="teaser-title">
+      <h1 *ngIf="tag === 'h1'" class="h6 h-title" [innerHTML]="title"></h1>
+      <h2 *ngIf="tag === 'h2'" class="h6 h-title" [innerHTML]="title"></h2>
+      <h3 *ngIf="tag === 'h3'" class="h6 h-title" [innerHTML]="title"></h3>
+      <h4 *ngIf="tag === 'h4'" class="h6 h-title" [innerHTML]="title"></h4>
+      <h5 *ngIf="tag === 'h5'" class="h6 h-title" [innerHTML]="title"></h5>
+      <h6 *ngIf="tag === 'h6'" class="h-title" [innerHTML]="title"></h6>
+    </div>
+  </div>
+  <app-ratings-reviews [data]="ratings"></app-ratings-reviews>
+  <div class="teaser-img" mat-card-image *ngIf="tileImg">
+    <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
+  </div>
+  <div class="teaser-video" mat-card-image *ngIf="tileVideoURL">
+    <iframe *ngIf="tileVideoSource === 'youtube'" width="560" height="315" [src]="tileVideoURL" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="teaser-subtitle" *ngIf="(tags || []).length > 0">
+    <app-cta *ngFor="let tag of tags, index as i, last as isLast" [data]="{
                 cssclass: tag.cssclass,
                 href: tag.link,
                 index: i,
@@ -30,17 +40,13 @@
                 tag: tag.tag,
                 text: tag.title,
                 title: tag.title
-            }"
-            [theme]="sttheme"
-        ></app-cta>
-    </div>
-    <div class="teaser-content">
-        <p [innerHTML]="desc"></p>
-    </div>
-    <div class="teaser-actions">
-        <app-cta
-            *ngFor="let cta of ctas"
-            [data]="{
+            }" [theme]="sttheme"></app-cta>
+  </div>
+  <div class="teaser-content">
+    <p [innerHTML]="desc"></p>
+  </div>
+  <div class="teaser-actions">
+    <app-cta *ngFor="let cta of ctas" [data]="{
                 cssclass: cta.cssclass,
                 href: cta.link,
                 tag: cta.tag,
@@ -48,8 +54,6 @@
                 title: cta.title,
                 icon: cta.icon,
                 share: cta.share
-            }"
-            [theme]="sttheme"
-        ></app-cta>
-    </div>
+            }" [theme]="sttheme"></app-cta>
+  </div>
 </div>

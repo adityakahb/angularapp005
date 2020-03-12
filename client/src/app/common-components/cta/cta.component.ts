@@ -23,6 +23,8 @@ export class CtaComponent implements OnInit {
   index;
   last;
   share;
+  possibleLoading = false;
+  loading = false;
 
   routerLink = {
     isRouter: false,
@@ -41,6 +43,8 @@ export class CtaComponent implements OnInit {
     this.text = data.text || '';
     this.title = data.title || '';
     this.index = -1;
+    this.possibleLoading = data.possibleLoading || false;
+    this.loading = data.loading || false;
     if ((data.index || 0) >= 0) {
       this.index = data.index;
     }
@@ -68,13 +72,13 @@ export class CtaComponent implements OnInit {
     if (this.cssclass === 'teaser-tag') {
       str = 'teaser-tag ' + 't-' + theme;
     }
-    if (this.icon && this.text) {
+    if ((this.icon || this.possibleLoading) && this.text) {
       str += ' txt-icn';
     }
-    if (this.icon && !this.text) {
+    if ((this.icon || this.possibleLoading) && !this.text) {
       str += ' icn-o';
     }
-    if (!this.icon && this.text) {
+    if (!(this.icon || this.possibleLoading) && this.text) {
       str += ' txt-o';
     }
     if (!val) {

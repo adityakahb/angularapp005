@@ -1,19 +1,20 @@
-<div class="alert custom" [ngClass]="['alert-' + theme, (icon ? 'with-icon' : ''), (isClosable ? 'alert-dismissible' : '')]" role="alert">
-    <div class="icn" *ngIf="icon">
-        <div class="ld-spinner" *ngIf="icon === 'loading-spinner'; else elseBlock" ></div>
-        <ng-template #elseBlock>
-            <span class="mdi" [ngClass]="'mdi-'+icon"></span>
-        </ng-template>
+<div class="alert custom"
+  [ngClass]="['alert-' + theme, (icon ? 'with-icon' : ''), (isClosable ? 'alert-dismissible' : '')]" role="alert">
+  <div class="icn" *ngIf="icon">
+    <div class="ld-spinner" *ngIf="icon === 'loading-spinner'; else elseBlock"></div>
+    <ng-template #elseBlock>
+      <span class="mdi" [ngClass]="'mdi-'+icon"></span>
+    </ng-template>
+  </div>
+  <div class="txt">
+    <div [innerHTML]="title" *ngIf="title"></div>
+    <div [innerHTML]="content" *ngIf="content"></div>
+    <div *ngIf="actions.length > 0" class="btn-holder">
+      <hr>
+      <app-cta *ngFor="let cta of actions" [data]="cta"></app-cta>
     </div>
-    <div class="txt">
-        <div [innerHTML]="title" *ngIf="title"></div>
-        <div [innerHTML]="content" *ngIf="content"></div>
-        <div *ngIf="actions.length > 0" class="btn-holder">
-            <hr>
-            <app-cta *ngFor="let cta of actions" [data]="cta"></app-cta>
-        </div>
-    </div>
-    <button *ngIf="isClosable" type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true" class="mdi mdi-close"></span>
-    </button>
+  </div>
+  <button *ngIf="isClosable" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true" class="mdi mdi-close"></span>
+  </button>
 </div>

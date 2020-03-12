@@ -1,104 +1,148 @@
-$rem2: rem(2px);
 .teaser-card {
-    background-color: rgba($light, 0.85);
-    border: rem(1px) solid $light; 
-    border-radius: rem(4px);
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.25);
-    height: 100%;
-    padding-bottom: rem(56px);
+  background-color: rgba($light, 0.85);
+  border: rem(1px) solid $light;
+  border-radius: rem(4px);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  padding-bottom: rem(56px);
+  position: relative;
+
+  .teaser-author {
+    padding: rem(8px 8px 8px 56px);
     position: relative;
-    .teaser-subtitle, .teaser-content {
-        font-size: rem(16px);
+    height: rem(56px);
+    display: flex;
+
+    .author-img {
+      position: absolute;
+      left: rem(8px);
+      top: rem(8px);
+      height: rem(40px);
+      width: rem(40px);
+      overflow: hidden;
+      border-radius: rem(4px);
     }
-    .teaser-img, .teaser-video {
-        border-bottom: rem(1px) solid $light;
-        border-top: rem(1px) solid $light;
-        height: 0;
-        margin: 0 rem(-1px) rem(8px) rem(-1px);
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        width: calc(100% + #{$rem2});
+
+    .author-name {
+      align-items: center;
+      display: flex;
+      flex: 1;
     }
+  }
+
+  .teaser-subtitle,
+  .teaser-content {
+    font-size: rem(16px);
+  }
+
+  .teaser-img,
+  .teaser-video {
+    border-bottom: rem(1px) solid $light;
+    border-top: rem(1px) solid $light;
+    height: 0;
+    margin: 0 rem(-1px) rem(8px) rem(-1px);
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: calc(100% + #{rem(2px)});
+  }
+
+  .teaser-icon {
+    align-items: center;
+    display: flex;
+    height: rem(40px);
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: rem(20px);
+    background-color: #fff;
+    border-radius: 100%;
+
+    span {
+      display: inline-block;
+      height: 70%;
+      width: 70%;
+      position: relative;
+
+      &:before {
+        font-size: rem(27px);
+        @include center-center();
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  ::ng-deep .teaser-rating {
+    padding: rem(8px);
+  }
+
+  .teaser-subtitle,
+  .teaser-content {
+    padding: rem(8px);
+  }
+
+  .teaser-content {
+    display: none;
+  }
+
+  .teaser-header {
+    align-items: center;
+    display: flex;
+    height: rem(40px);
+    padding: rem(8px);
+
+    &.with-icon {
+      padding: rem(8px) 0 rem(8px) rem(48px);
+    }
+
+    position: relative;
+
+    .h-title {
+      margin: 0;
+    }
+
+    .teaser-title {
+      margin: 0;
+    }
+  }
+
+  .teaser-subtitle {
+    height: rem(60px);
+    margin: 0 0 rem(16px) 0;
+    overflow: hidden;
+  }
+
+  .teaser-actions {
+    bottom: 0;
+    left: rem(8px);
+    margin: 0;
+    padding: rem(8px) 0 0 0;
+    position: absolute;
+  }
+
+  .teaser-video {
+    iframe {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &.dark {
+    background-color: rgba($dark, 0.85);
+    border: rem(1px) solid $dark;
+    color: #fff;
+
+    .teaser-img {
+      border-bottom: rem(1px) solid $dark;
+      border-top: rem(1px) solid $dark;
+    }
+
     .teaser-icon {
-        align-items: center;
-        display: flex;
-        height: rem(40px);
-        justify-content: center;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        text-align: center;
-        top: rem(20px);
-        background-color: #fff;
-        border-radius: 100%;
-        span {
-            display: inline-block;
-            height: 70%;
-            width: 70%;
-            position: relative;
-            &:before {
-                font-size: rem(27px);
-                @include center-center();
-                width: 100%;
-                height: 100%;
-            }
-        }
+      background-color: #000;
     }
-    ::ng-deep .teaser-rating {
-        padding: rem(8px);
-    }
-    .teaser-subtitle, .teaser-content {
-        padding: rem(8px);
-    }
-    .teaser-content {
-        display: none;
-    }
-    .teaser-header {
-        align-items: center;
-        display: flex;
-        height: rem(80px);
-        padding: rem(8px);
-        &.with-icon {
-            padding: rem(8px) 0 rem(8px) rem(48px);
-        }
-        position: relative;
-        .h-title {
-            margin: 0;
-        }
-        .teaser-title {
-            margin: 0;
-        }
-    }
-    .teaser-subtitle {
-        height: rem(60px);
-        margin: 0 0 rem(16px) 0;
-        overflow: hidden;
-    }
-    .teaser-actions {
-        bottom: 0;
-        left: rem(8px);
-        margin: 0;
-        padding: rem(8px) 0 0 0;
-        position: absolute;
-    }
-    .teaser-video {
-        iframe {
-            height: 100%;
-            position: absolute;
-            width: 100%;
-        }
-    }
-    &.dark {
-        background-color: rgba($dark, 0.85);
-        border: rem(1px) solid $dark; 
-        color: #fff;
-        .teaser-img {
-            border-bottom: rem(1px) solid $dark;
-            border-top: rem(1px) solid $dark;
-        }
-        .teaser-icon {
-            background-color: #000;
-        }
-    }
+  }
 }

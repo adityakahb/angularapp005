@@ -12,7 +12,7 @@ export class AuthorTeaserComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    
+
   }
 
   trimStr(str) {

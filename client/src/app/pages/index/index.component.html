@@ -6,36 +6,33 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 mt-3 mb-3 align-center">
-              <app-section-header
-                [data]="{
+              <app-section-header [data]="{
                   align: 'center',
                   icon: section.icon,
                   tag: 'h2',
                   theme: section.theme,
                   title: section.title
-                }"
-              >
+                }">
               </app-section-header>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data" [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
+            <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data"
+              [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
               <app-standard-teaser [data]="item" [theme]="section.theme"></app-standard-teaser>
             </div>
           </div>
           <div class="row">
             <div class="col-12 mt-3 mb-3 align-center">
               <div class="section-footer">
-                <app-cta
-                  [data]="{
+                <app-cta [data]="{
                     tag: 'a',
                     title: section.morectatitle,
                     cssclass: 'btn-info btn-lg',
                     text: section.morectatext,
                     icon: section.morectaicon,
                     href: section.morectalink
-                  }"
-                ></app-cta>
+                  }"></app-cta>
               </div>
             </div>
           </div>

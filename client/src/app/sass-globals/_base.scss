@@ -1,46 +1,56 @@
 .max-wrap {
-    margin: 0 auto;
-    max-width: rem(1440px);
-    min-width: rem(320px);
+  margin: 0 auto;
+  max-width: rem(1440px);
 }
+
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .bg-wrap {
-    background-blend-mode: multiply;
-    &.primary {
-        background-color: rgba($primary, 0.25);
-    }
-    &.secondary {
-        background-color: rgba($secondary, 0.25);
-    }
-    &.success {
-        background-color: rgba($success, 0.25);
-    }
-    &.info {
-        background-color: rgba($info, 0.25);
-    }
-    &.warning {
-        background-color: rgba($warning, 0.25);
-    }
-    &.danger {
-        background-color: rgba($danger, 0.25);
-    }
-    &.light {
-        background-color: rgba($light, 0.25);
-    }
-    &.dark {
-        background-color: rgba($dark, 0.25);
-    }
+  background-blend-mode: multiply;
+
+  &.primary {
+    background-color: rgba($primary, 0.25);
+  }
+
+  &.secondary {
+    background-color: rgba($secondary, 0.25);
+  }
+
+  &.success {
+    background-color: rgba($success, 0.25);
+  }
+
+  &.info {
+    background-color: rgba($info, 0.25);
+  }
+
+  &.warning {
+    background-color: rgba($warning, 0.25);
+  }
+
+  &.danger {
+    background-color: rgba($danger, 0.25);
+  }
+
+  &.light {
+    background-color: rgba($light, 0.25);
+  }
+
+  &.dark {
+    background-color: rgba($dark, 0.25);
+  }
 }
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
+
 .align-left {
-    text-align: left;
+  text-align: left;
 }
+
 .align-right {
-    text-align: right;
+  text-align: right;
 }

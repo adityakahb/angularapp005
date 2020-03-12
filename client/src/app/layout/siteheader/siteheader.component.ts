@@ -54,12 +54,14 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   currentUser: any;
   querySubscription: Subscription;
   loginFormSubmitted = false;
-  
+
   USER_EMAIL: FormControl;
   USER_PASSWORD: FormControl;
   isLoginLoading = false;
+  isLoginFailed = false;
+  loginFailMsg = '';
 
-  constructor(private _formBuilder: FormBuilder, private apollo: Apollo) {}
+  constructor(private _formBuilder: FormBuilder, private apollo: Apollo) { }
 
   ngAfterViewInit() {
     if (window && document) {
@@ -96,13 +98,16 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   }
 
   createFormControls() {
-    this.USER_EMAIL = new FormControl({value: ''}, [Validators.required]);
-    this.USER_PASSWORD = new FormControl({value: ''}, [Validators.required]);
+    this.USER_EMAIL = new FormControl({ value: '' }, [Validators.required, Validators.email]);
+    this.USER_PASSWORD = new FormControl({ value: '' }, [
+      Validators.required,
+      Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,10}$/)
+    ]);
   }
   createForm(): void {
     this.loginForm = this._formBuilder.group({
-        USER_EMAIL: this.USER_EMAIL,
-        USER_PASSWORD: this.USER_PASSWORD,
+      USER_EMAIL: this.USER_EMAIL,
+      USER_PASSWORD: this.USER_PASSWORD,
     });
   }
 
@@ -152,8 +157,9 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   onLoginSubmit(formData) {
     this.loginFormSubmitted = true;
     if (this.loginForm.invalid) {
-        return;
+      return;
     }
+    this.loginFailMsg = '';
     this.loginForm.get('USER_EMAIL').disable();
     this.loginForm.get('USER_PASSWORD').disable();
     this.isLoginLoading = true;
@@ -165,10 +171,26 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
           password: formData.USER_PASSWORD
         },
       })
-      .valueChanges.subscribe(({data, loading, errors}) => {
-        if (!loading && !errors) {
+      .valueChanges.subscribe(({ data, loading, errors }) => {
+        if (!loading) {
           this.loginForm.get('USER_EMAIL').enable();
           this.loginForm.get('USER_PASSWORD').enable();
+        }
+        if (errors) {
+          if (errors.length === 1) {
+            this.loginFailMsg = errors[0].message;
+          } else {
+            this.loginFailMsg = '<ul>';
+            errors.forEach(error => {
+              this.loginFailMsg += '<li>' + error.message + '</li>';
+            });
+            this.loginFailMsg += '</ul>';
+          }
+          this.isLoginLoading = false;
+          this.isLoginFailed = true;
+        }
+        if (!errors) {
+          this.isLoginFailed = false;
           this.isLoginLoading = false;
           this.currentUser = data;
         }

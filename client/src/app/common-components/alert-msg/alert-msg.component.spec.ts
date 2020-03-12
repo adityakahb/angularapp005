@@ -8,9 +8,9 @@ describe('AlertMsgComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlertMsgComponent ]
+      declarations: [AlertMsgComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

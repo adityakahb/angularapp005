@@ -1,18 +1,18 @@
 const usersaccount = [
     {
         id: 'user1',
-        email: 'user1.email@emaildomain.com',
-        password: 'user1@123'
+        email: 'u1.email@domain.com',
+        password: 'Test@123'
     },
     {
         id: 'user2',
-        email: 'user2.email@emaildomain.com',
-        password: 'user2@123'
+        email: 'u2.email@domain.com',
+        password: 'Test@123'
     },
     {
         id: 'user3',
-        email: 'user3.email@emaildomain.com',
-        password: 'user3@123'
+        email: 'u3.email@domain.com',
+        password: 'Test@123'
     }
 ];
 

@@ -1,34 +1,35 @@
 @mixin text-family ($family: 'Arial', $style: 'normal', $alternate: 'sans-serif') {
-    font-family: "#{$family}", #{$alternate};
-    font-style: #{$style};
-    font-weight: 400;
+  font-family: "#{$family}",
+  #{$alternate};
+  font-style: #{$style};
+  font-weight: 400;
 }
 
 @mixin center-center() {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin top-center() {
-    left: 50%;
-    position: absolute;
-    top: 0%;
-    transform: translate(-50%, -0%);
+  left: 50%;
+  position: absolute;
+  top: 0%;
+  transform: translate(-50%, -0%);
 }
 
 @mixin top-right() {
-    left: 100%;
-    position: absolute;
-    top: 0%;
-    transform: translate(-100%, -0%);
+  left: 100%;
+  position: absolute;
+  top: 0%;
+  transform: translate(-100%, -0%);
 }
 
 @mixin clearfix() {
-    &:after {
-        clear: both;
-        content: '';
-        display: table;
-    }
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 }

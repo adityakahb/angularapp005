@@ -8,9 +8,9 @@ describe('ResponsiveImageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResponsiveImageComponent ]
+      declarations: [ResponsiveImageComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

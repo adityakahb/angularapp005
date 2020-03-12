@@ -3,21 +3,25 @@
 
 // DON'T ADD ANY SCSS IN{ XS
 @media (min-width: rem(#{$xs})) {
-    @import './_templates-scss/xs';
+  @import './_templates-scss/xs';
 }
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: rem(#{$sm})) {
-    @import './_templates-scss/sm';
+  @import './_templates-scss/sm';
 }
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: rem(#{$md})) {
-    @import './_templates-scss/md';
+  @import './_templates-scss/md';
 }
+
 // Large devices (desktops, 992px and up)
 @media (min-width: rem(#{$lg})) {
-    @import './_templates-scss/lg';
+  @import './_templates-scss/lg';
 }
+
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: rem(#{$xl})) {
-    @import './_templates-scss/xl';
+  @import './_templates-scss/xl';
 }

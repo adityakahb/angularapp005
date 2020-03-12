@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 export class CommonFunctionsService {
   private cbp = 'xs';
   constructor() { }
-  setCBP (value) {
+  setCBP(value) {
     this.cbp = value;
   }
-  getCBP () {
+  getCBP() {
     return this.cbp;
   }
 }

@@ -7,34 +7,32 @@
             <app-article [data]="articleData"></app-article>
           </div>
           <div class="col-12 col-xl-3 p-0">
-              <div class="container-fluid" *ngFor="let teaser of articleData.teaserside">
-                  <div class="row">
-                      <div class="col-12">
-                          <h4 [innerHTML]="teaser.teasertitle"></h4>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-12 col-md-6 col-xl-12 mt-3 mb-3" *ngFor="let teaserData of teaser.data">
-                          <app-standard-teaser [theme]="articleData.theme" [data]="teaserData"></app-standard-teaser>
-                      </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 mt-3 mb-3 align-center">
-                      <div class="section-footer">
-                        <app-cta
-                          [data]="{
+            <div class="container-fluid" *ngFor="let teaser of articleData.teaserside">
+              <div class="row">
+                <div class="col-12">
+                  <h4 [innerHTML]="teaser.teasertitle"></h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-12 mt-3 mb-3" *ngFor="let teaserData of teaser.data">
+                  <app-standard-teaser [theme]="articleData.theme" [data]="teaserData"></app-standard-teaser>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mt-3 mb-3 align-center">
+                  <div class="section-footer">
+                    <app-cta [data]="{
                             tag: 'a',
                             title: teaser.morectatitle,
                             cssclass: 'btn-info btn-lg',
                             text: teaser.morectatext,
                             icon: teaser.morectaicon,
                             href: teaser.morectalink
-                          }"
-                        ></app-cta>
-                      </div>
-                    </div>
+                          }"></app-cta>
                   </div>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -46,36 +44,33 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 mt-3 mb-3 align-center">
-              <app-section-header
-                [data]="{
+              <app-section-header [data]="{
                   align: 'center',
                   icon: section.icon,
                   tag: 'h2',
                   theme: section.theme,
                   title: section.title
-                }"
-              >
+                }">
               </app-section-header>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data" [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
+            <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data"
+              [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
               <app-standard-teaser [data]="item" [theme]="section.theme"></app-standard-teaser>
             </div>
           </div>
           <div class="row">
             <div class="col-12 mt-3 mb-3 align-center">
               <div class="section-footer">
-                <app-cta
-                  [data]="{
+                <app-cta [data]="{
                     tag: 'a',
                     title: section.morectatitle,
                     cssclass: 'btn-info btn-lg',
                     text: section.morectatext,
                     icon: section.morectaicon,
                     href: section.morectalink
-                  }"
-                ></app-cta>
+                  }"></app-cta>
               </div>
             </div>
           </div>

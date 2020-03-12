@@ -1,144 +1,163 @@
 <section class="siteheader-comp" id="siteheader-comp" [ngClass]="{'active': isScrolledDown}">
-    <div class="header-wrap">
-        <header>
-            <div class="max-wrap">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-                            <div class="logo-wrap">
-                                <a href="#" class="site-logo">
-                                    <img src="./../../../assets/logo-black.svg">
-                                </a>
-                            </div>
-                            <div class="site-nav" [ngClass]="{'active': isNavOpen}">
-                                <button class="close-site-nav d-xl-none" (click)="closeAllNav()">
-                                    <!-- <i class="material-icons">close</i> -->
-                                    <span class="mdi mdi-close"></span>
-                                </button>
-                                <nav>
-                                    <ul class="nav-menu">
-                                        <li *ngFor="let item of navData" class="nav-item">
-                                            <a [href]="item.landing">
-                                                <span class="txt" [innerHTML]="item.name"></span>
-                                                <span class="ikn"><span class="mdi mdi-chevron-right"></span></span>
-                                            </a>
-                                            <div class="sub-nav">
-                                                <div class="max-wrap">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div *ngFor="let subnavgroup of item.links" class="col-12 col-xl-4 p-0 pl-xl-3 pr-xl-3">
-                                                                <ul class="sub-nav-group">
-                                                                    <li *ngFor="let subnav of subnavgroup.col">
-                                                                        <a [href]="subnav.link" [innerHTML]="subnav.name"></a>
-                                                                        <p [innerHTML]="subnav.desc"></p>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="nav-wrap">
-                                <button type="button" [ngClass]="{'active': isSearchNavOpen}" (click)="openSearchNav()">
-                                    <!-- <i class="material-icons">search</i> -->
-                                    <span class="mdi mdi-magnify"></span>
-                                </button>
-                                <button type="button" [ngClass]="{'active': isLangNavOpen}" (click)="openLangNav()">
-                                    <!-- <i class="material-icons">language</i> -->
-                                    <span class="txt">EN</span>
-                                </button>
-                                <button type="button" [ngClass]="{'active': isUserNavOpen}" (click)="openUserNav()">
-                                    <!-- <i class="material-icons">account_circle</i> -->
-                                    <span class="mdi mdi-account"></span>
-                                </button>
-                                <button type="button" [ngClass]="{'active': isNavOpen}" class="d-xl-none" (click)="openNav()">
-                                    <!-- <i class="material-icons">menu</i> -->
-                                    <span class="mdi mdi-menu"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="site-nav-mask" [ngClass]="{'active': isNavOpen || isUserNavOpen || isSearchNavOpen || isLangNavOpen}" (click)="closeAllNav()">
-        </div>
-        <aside class="site-lang" [ngClass]="{'active': isLangNavOpen}">
-            <button class="close-site-nav" (click)="closeAllNav()">
-                <span class="mdi mdi-close"></span>
-            </button>
-            <div class="site-lang-content">
-                <div class="lang-active">
-                    English
-                    <!-- <i class="material-icons">done</i> -->
-                    <span class="mdi mdi-check"></span>
-                </div>
+  <div class="header-wrap">
+    <header>
+      <div class="max-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="logo-wrap">
+                <a href="#" class="site-logo">
+                  <img src="./../../../assets/logo-black.svg">
+                </a>
+              </div>
+              <div class="site-nav" [ngClass]="{'active': isNavOpen}">
+                <button class="close-site-nav d-xl-none" (click)="closeAllNav()">
+                  <!-- <i class="material-icons">close</i> -->
+                  <span class="mdi mdi-close"></span>
+                </button>
                 <nav>
-                    <ul>
-                        <li *ngFor="let lang of langArr">
-                            <a [href]="lang.link" [ngClass]="lang.css" [innerHTML]="lang.lang"></a>
-                        </li>
-                    </ul>
+                  <ul class="nav-menu">
+                    <li *ngFor="let item of navData" class="nav-item">
+                      <a [href]="item.landing">
+                        <span class="txt" [innerHTML]="item.name"></span>
+                        <span class="ikn"><span class="mdi mdi-chevron-right"></span></span>
+                      </a>
+                      <div class="sub-nav">
+                        <div class="max-wrap">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div *ngFor="let subnavgroup of item.links" class="col-12 col-xl-4 p-0 pl-xl-3 pr-xl-3">
+                                <ul class="sub-nav-group">
+                                  <li *ngFor="let subnav of subnavgroup.col">
+                                    <a [href]="subnav.link" [innerHTML]="subnav.name"></a>
+                                    <p [innerHTML]="subnav.desc"></p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </nav>
+              </div>
+              <div class="nav-wrap">
+                <button type="button" [ngClass]="{'active': isSearchNavOpen}" (click)="openSearchNav()">
+                  <!-- <i class="material-icons">search</i> -->
+                  <span class="mdi mdi-magnify"></span>
+                </button>
+                <button type="button" [ngClass]="{'active': isLangNavOpen}" (click)="openLangNav()">
+                  <!-- <i class="material-icons">language</i> -->
+                  <span class="txt">EN</span>
+                </button>
+                <button type="button" [ngClass]="{'active': isUserNavOpen}" (click)="openUserNav()">
+                  <!-- <i class="material-icons">account_circle</i> -->
+                  <span class="mdi mdi-account"></span>
+                </button>
+                <button type="button" [ngClass]="{'active': isNavOpen}" class="d-xl-none" (click)="openNav()">
+                  <!-- <i class="material-icons">menu</i> -->
+                  <span class="mdi mdi-menu"></span>
+                </button>
+              </div>
             </div>
-        </aside>
-        <aside class="site-search" [ngClass]="{'active': isSearchNavOpen}">
-            <button class="close-site-nav" (click)="closeAllNav()">
-                <span class="mdi mdi-close"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="site-nav-mask" [ngClass]="{'active': isNavOpen || isUserNavOpen || isSearchNavOpen || isLangNavOpen}"
+      (click)="closeAllNav()">
+    </div>
+    <aside class="site-lang" [ngClass]="{'active': isLangNavOpen}">
+      <button class="close-site-nav" (click)="closeAllNav()">
+        <span class="mdi mdi-close"></span>
+      </button>
+      <div class="site-lang-content">
+        <div class="lang-active">
+          English
+          <!-- <i class="material-icons">done</i> -->
+          <span class="mdi mdi-check"></span>
+        </div>
+        <nav>
+          <ul>
+            <li *ngFor="let lang of langArr">
+              <a [href]="lang.link" [ngClass]="lang.css" [innerHTML]="lang.lang"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="site-search" [ngClass]="{'active': isSearchNavOpen}">
+      <button class="close-site-nav" (click)="closeAllNav()">
+        <span class="mdi mdi-close"></span>
+      </button>
+      <div class="site-search-content">
+        <form id="usersearchform">
+          <div class="form-group">
+            <input type="search" class="form-control form-control-lg" id="usersearch" placeholder="Enter keywords">
+            <button type="button" class="user-search-btn">
+              <span class="mdi mdi-magnify"></span>
             </button>
-            <div class="site-search-content">
-                <form id="usersearchform">
-                    <div class="form-group">
-                        <input type="search" class="form-control form-control-lg" id="usersearch" placeholder="Enter keywords">
-                        <button type="button" class="user-search-btn">
-                            <span class="mdi mdi-magnify"></span>
-                        </button>
-                    </div>
-                </form>
+          </div>
+        </form>
+      </div>
+    </aside>
+    <aside class="site-user" [ngClass]="{'active': isUserNavOpen}">
+      <button class="close-site-nav" (click)="closeAllNav()">
+        <span class="mdi mdi-close"></span>
+      </button>
+      <div class="site-user-content">
+        <form id="userloginform" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit(loginForm.value)">
+          <div class="form-group">
+            <label for="useremail">Registered Email</label>
+            <input type="email" class="form-control form-control-lg"
+              [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_EMAIL.errors}"
+              placeholder="Registered Email" formControlName="USER_EMAIL">
+            <div *ngIf="loginFormSubmitted && loginControls.USER_EMAIL.errors" class="invalid-feedback">
+              <div *ngIf="loginControls.USER_EMAIL.errors.required">Email is required</div>
+              <div *ngIf="loginControls.USER_EMAIL.errors.email">Email must be a valid email address</div>
             </div>
-        </aside>
-        <aside class="site-user" [ngClass]="{'active': isUserNavOpen}">
-            <button class="close-site-nav" (click)="closeAllNav()">
-                <span class="mdi mdi-close"></span>
-            </button>
-            <div class="site-user-content">
-                <form id="userloginform" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit(loginForm.value)" >
-                    <div class="form-group">
-                        <label for="useremail">Registered Email</label>
-                        <input type="email" class="form-control form-control-lg" [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_EMAIL.errors}" placeholder="Registered Email" formControlName="USER_EMAIL">
-                    </div>
-                    <div class="form-group">
-                        <label for="userpassword">Password</label>
-                        <input type="password" class="form-control form-control-lg" [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_PASSWORD.errors}" id="userpassword" placeholder="Password" formControlName="USER_PASSWORD">
-                    </div>
-                    <div class="form-group">
-                        <app-cta
-                            [data]="{
+          </div>
+          <div class="form-group">
+            <label for="userpassword">Password</label>
+            <input type="password" class="form-control form-control-lg"
+              [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_PASSWORD.errors}" id="userpassword"
+              placeholder="Password" formControlName="USER_PASSWORD">
+            <div *ngIf="loginFormSubmitted && loginControls.USER_PASSWORD.errors" class="invalid-feedback">
+              <div *ngIf="loginControls.USER_PASSWORD.errors.required">Password is required</div>
+              <div *ngIf="loginControls.USER_PASSWORD.errors.pattern">Password must follow pattern</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <app-cta [data]="{
                                 tag: 'button',
                                 title: 'Sign In',
                                 cssclass: 'btn btn-primary',
                                 text: 'Sign In',
                                 icon: 'chevron-right',
                                 buttontype: 'submit',
-                                disabled: isLoginLoading,
+                                possibleLoading: true,
                                 loading: isLoginLoading
-                            }"
-                        ></app-cta>
-                    </div>
+                            }"></app-cta>
+          </div>
 
-                    <app-alert-msg [data]="{
+          <app-alert-msg *ngIf="isLoginLoading" [data]="{
                         alertType: 'info',
                         content: 'Logging in...',
                         icon: 'loading-spinner'
-                      }"></app-alert-msg>
+                      }">
+          </app-alert-msg>
 
-                </form>
-            </div>
-        </aside>
-    </div>
+          <app-alert-msg *ngIf="isLoginFailed" [data]="{
+                        alertType: 'danger',
+                        content: 'Login failed',
+                        icon: 'account-cancel'
+                      }">
+          </app-alert-msg>
+
+        </form>
+      </div>
+    </aside>
+  </div>
 </section>
 <div class="siteheader-buffer" [ngClass]="{'active': isScrolledDown}"></div>

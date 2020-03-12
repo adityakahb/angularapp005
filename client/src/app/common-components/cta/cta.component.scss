@@ -67,7 +67,7 @@
     &.txt-icn {
         padding-right: rem(40px);
         position: relative;
-        .mdi {
+        .mdi, .spinner {
             margin-top: rem(-12px);
             position: absolute;
             right: rem(8px);
@@ -85,6 +85,16 @@
             line-height: 1;
             padding-bottom: 0;
             padding-top: rem(2.29px);
+        }
+    }
+    .ld-spinner {
+        height: rem(24px);
+        width: rem(24px);
+    }
+    &.btn-primary {
+        .ld-spinner {
+            border-color: rgba(#fff, 0.25);
+            border-top-color: rgba(#fff, 1);
         }
     }
 }

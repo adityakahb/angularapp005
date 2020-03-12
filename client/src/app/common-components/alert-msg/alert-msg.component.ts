@@ -17,7 +17,7 @@ export class AlertMsgComponent implements OnInit {
   actions;
   isClosable;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     const data = this.data || {};

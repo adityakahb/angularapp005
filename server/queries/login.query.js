@@ -12,7 +12,7 @@ const {
 
 const _ = require('lodash');
 
-const {errorName} = require('./../errorFormat/errors.format');
+const {errorName} = require('./../errorsConfig/errors.config');
 
 const u_accounts = require('./../data/usersaccount');
 const u_info = require('./../data/userstable');
@@ -28,12 +28,11 @@ const loginQuery = {
         }
     },
     resolve(parent, args) {
-        let found = _.find(u_accounts, { email: args.email, password: args.password}) || {};
-        console.log('=========found', found);
+        let found = _.find(u_accounts, {email: args.email, password: args.password}) || {};
         if (found.id) {
-            return _.find(u_info, { email: args.email });
+            return _.find(u_info, {email: args.email});
         } else {
-            throw new Error(errorName.UNAUTHORIZED);
+            throw new Error(errorName.LOGIN_FAILED);
         }
     }
 };

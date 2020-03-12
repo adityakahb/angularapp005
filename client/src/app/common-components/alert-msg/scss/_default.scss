@@ -1,44 +1,59 @@
-.alert.custom {    
-    &.with-icon {
-        padding-left: rem(76px);
-        position: relative;
+.alert.custom {
+  &.with-icon {
+    padding-left: rem(76px);
+    position: relative;
+  }
+
+  .txt {
+    min-height: rem(32px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    ::ng-deep {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
     }
-    .txt {
-        min-height: rem(32px);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        ::ng-deep {
-            h1, h2, h3, h4, h5, h6 {
-                margin: 0;
-            }
-        }
-    }
-    .icn {
+  }
+
+  .icn {
+    height: rem(40px);
+    left: rem(20px);
+    margin-top: rem(-20px);
+    position: absolute;
+    top: 50%;
+    width: rem(40px);
+
+    .mdi {
+      display: block;
+      font-size: rem(40px);
+
+      &,
+      &:before {
         height: rem(40px);
-        left: rem(20px);
-        margin-top: rem(-20px);
-        position: absolute;
-        top: 50%;
-        width: rem(40px);
-        .mdi {
-            display: block;
-            font-size: rem(40px);
-            &, &:before {
-                height: rem(40px);
-                line-height: 1;
-            }
-        }
+        line-height: 1;
+      }
     }
-    hr {
-        width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  @each $color,
+  $value in $theme-colors {
+    &.alert-#{$color} {
+      .ld-spinner {
+        border-color: rgba(theme-color-level($color, $alert-color-level), 0.25);
+        border-top-color: rgba(theme-color-level($color, $alert-color-level), 1);
+      }
     }
-    @each $color, $value in $theme-colors {
-        &.alert-#{$color} {
-            .ld-spinner {
-                border-color: rgba(theme-color-level($color, $alert-color-level), 0.25);
-                border-top-color: rgba(theme-color-level($color, $alert-color-level), 1);
-            }
-        }
-    }
+  }
 }

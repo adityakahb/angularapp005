@@ -8,7 +8,10 @@
 </a>
 <button *ngIf="tag === 'button' && !share" [type]="buttontype" role="button" class="cta-comp" [ngClass]="generateCssClass(true)">
     <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
-    <span *ngIf="icon" class="mdi" [ngClass]="'mdi-' + icon"></span>
+    <span *ngIf="icon && !loading" class="mdi" [ngClass]="'mdi-' + icon"></span>
+    <span class="spinner" *ngIf="loading">
+        <div class="ld-spinner"></div>
+    </span>
 </button>
 <div class="btn-group dropup cta-inline-dd" *ngIf="tag === 'button' && (share || {}).length > 0">
     <button [type]="buttontype" role="button" class="cta-comp dropdown-toggle" [ngClass]="generateCssClass(true)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

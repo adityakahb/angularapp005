@@ -11,6 +11,7 @@ export class RatingsReviewsComponent implements OnInit {
   noofreviews;
   noofratings;
   ratingsArr = [];
+  onestar = 'star-outline';
   @Input() data;
 
   constructor() { }
@@ -22,6 +23,7 @@ export class RatingsReviewsComponent implements OnInit {
     let arr = [];
     try {
       let r = Math.round(this.ratings * 10) / 10;
+      let r1 = r;
       r = parseFloat(r.toFixed(1));
       for (; r > 0.8; r--) {
         arr.push('star');
@@ -34,6 +36,11 @@ export class RatingsReviewsComponent implements OnInit {
       for (let s = arr.length + 1; s<=5; s++) {
         arr.push('star-outline');
       }
+
+      if (r1 > 0) {
+        this.onestar = 'star';
+      }
+
     } catch (e) {}
     this.ratingsArr = arr;
   }

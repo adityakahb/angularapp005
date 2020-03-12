@@ -251,30 +251,27 @@
               <hr>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="acceptterms">
-                <label class="custom-control-label" name="acceptterms" for="acceptterms">Accept <a href="#">Terms and Conditions</a></label>
+                <label class="custom-control-label" name="acceptterms" for="acceptterms">Accept <a href="#">Terms and
+                    Conditions</a></label>
               </div>
               <hr>
               <div class="form-group">
-                <app-cta
-                  [data]="{
+                <app-cta [data]="{
                     tag: 'button',
                     title: 'Register',
                     cssclass: 'btn-primary',
                     text: 'Register',
                     icon: 'chevron-right',
                     buttontype: 'submit'
-                  }"
-                ></app-cta>
-                <app-cta
-                  [data]="{
+                  }"></app-cta>
+                <app-cta [data]="{
                     tag: 'a',
                     title: 'Sign In',
                     cssclass: 'btn-outline',
                     text: 'Account exists? Sign In',
                     icon: 'chevron-right',
                     href: '#'
-                  }"
-                ></app-cta>
+                  }"></app-cta>
               </div>
             </form>
           </div>

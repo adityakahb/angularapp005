@@ -8,9 +8,9 @@ describe('IndexbannerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IndexbannerComponent ]
+      declarations: [IndexbannerComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

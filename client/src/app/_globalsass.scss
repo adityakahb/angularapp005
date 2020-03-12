@@ -1,29 +1,25 @@
 // @import '~@angular/material/theming';
 
-$primary:       #673AB7;
-$secondary:     #795548;
-$success:       #4CAF50;
-$info:          #00BCD4;
-$warning:       #FFEB3B;
-$danger:        #F44336;
-$light:         #ECEFF1;
-$dark:          #263238;
+$primary: #673AB7;
+$secondary: #795548;
+$success: #4CAF50;
+$info: #00BCD4;
+$warning: #FFEB3B;
+$danger: #F44336;
+$light: #ECEFF1;
+$dark: #263238;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$theme-colors: map-merge(
-  (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
-  ),
-  $theme-colors
-);
+$theme-colors: map-merge(("primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark),
+  $theme-colors);
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -37,15 +33,19 @@ $theme-colors: map-merge(
 .type-hindi {
   font-family: 'Hind', sans-serif;
 }
+
 .type-marathi {
   font-family: 'Khand', sans-serif;
 }
+
 .type-bangla {
   font-family: 'Hind Siliguri', sans-serif;
 }
+
 .type-gurumukhi {
   font-family: 'Mukta Mahee', sans-serif;
 }
+
 .type-gujarati {
   font-family: 'Hind Vadodara', sans-serif;
 }

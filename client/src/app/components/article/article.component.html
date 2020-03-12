@@ -1,13 +1,11 @@
 <section class="article-comp">
-    <article class="article-wrap">
-        <div class="publish-info" *ngIf="thisDate">
-            <p><span [innerHTML]="data.published.title"></span>&nbsp;<span [innerHTML]="thisDate"></span></p>
-        </div>
-        <h1 [innerHTML]="data.title"></h1>
-        <div class="tags">
-            <app-cta
-                *ngFor="let tag of data.tags, index as i, last as isLast"
-                [data]="{
+  <article class="article-wrap">
+    <div class="publish-info" *ngIf="thisDate">
+      <p><span [innerHTML]="data.published.title"></span>&nbsp;<span [innerHTML]="thisDate"></span></p>
+    </div>
+    <h1 [innerHTML]="data.title"></h1>
+    <div class="tags">
+      <app-cta *ngFor="let tag of data.tags, index as i, last as isLast" [data]="{
                     cssclass: tag.cssclass,
                     href: tag.link,
                     index: i,
@@ -15,19 +13,17 @@
                     tag: tag.tag,
                     text: tag.title,
                     title: tag.title
-                }"
-                [theme]="data.theme"
-            ></app-cta>
-        </div>
-        <p class="h5" [innerHTML]="data.titlepara"></p>
-        <div [innerHTML]="data.para"></div>
-    </article>
-    <div class="author-comp" *ngIf="data.authordata">
-        <hr/>
-        <app-ratings-reviews [data]="data.ratingsData"></app-ratings-reviews>
-        <app-author-teaser [data]="data.authordata" [theme]="data.theme"></app-author-teaser>
+                }" [theme]="data.theme"></app-cta>
     </div>
-    <div class="reviews-comp">
-        <h3 [innerHTML]="data.commentsheader"></h3>
-    </div>
+    <p class="h5" [innerHTML]="data.titlepara"></p>
+    <div [innerHTML]="data.para"></div>
+  </article>
+  <div class="author-comp" *ngIf="data.authordata">
+    <hr />
+    <app-ratings-reviews [data]="data.ratingsData"></app-ratings-reviews>
+    <app-author-teaser [data]="data.authordata" [theme]="data.theme"></app-author-teaser>
+  </div>
+  <div class="reviews-comp">
+    <h3 [innerHTML]="data.commentsheader"></h3>
+  </div>
 </section>

@@ -1,35 +1,35 @@
 <section class="sitefooter-comp">
-    <div class="footer-wrap">
-        <footer>
-            <div class="max-wrap">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-xl-3 logo-holder">
-                            <div class="logo-wrap">
-                                <img src="./../../../assets/logo-white.svg">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-xl-3" *ngFor="let item of footerData.nav">
-                            <nav>
-                                <h6 [innerHTML]="item.title"></h6>
-                                <ul>
-                                    <li *ngFor="let link of item.links" [ngClass]="link.type === 'morelink' ? 'morelink' : ''">
-                                        <a [title]="link.title" [href]="link.link">
-                                            <span *ngIf="link.icon" class="icn">
-                                                <img [src]="link.icon" alt="link.title">
-                                            </span>
-                                            <span [innerHTML]="link.text" class="txt"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-12">
-                            <p>&copy; SWEET SPATULA</p>
-                        </div>
-                    </div>
-                </div>
+  <div class="footer-wrap">
+    <footer>
+      <div class="max-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-xl-3 logo-holder">
+              <div class="logo-wrap">
+                <img src="./../../../assets/logo-white.svg">
+              </div>
             </div>
-        </footer>
-    </div>
+            <div class="col-12 col-md-4 col-xl-3" *ngFor="let item of footerData.nav">
+              <nav>
+                <h6 [innerHTML]="item.title"></h6>
+                <ul>
+                  <li *ngFor="let link of item.links" [ngClass]="link.type === 'morelink' ? 'morelink' : ''">
+                    <a [title]="link.title" [href]="link.link">
+                      <span *ngIf="link.icon" class="icn">
+                        <img [src]="link.icon" alt="link.title">
+                      </span>
+                      <span [innerHTML]="link.text" class="txt"></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12">
+              <p>&copy; SWEET SPATULA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </section>

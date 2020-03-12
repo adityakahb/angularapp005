@@ -1,90 +1,112 @@
 .profile-comp {
-    background-color: #fff;
-    background-image: url('./../../../assets/page-bg.jpg');
-    background-position: top left;
-    background-repeat: repeat;
-    background-size: contain;
-    padding: rem(24px) 0;
+  background-color: #fff;
+  background-image: url('./../../../assets/page-bg.jpg');
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: contain;
+  padding: rem(24px) 0;
+
+  @media (min-resolution: 120dpi) and (-webkit-min-device-pixel-ratio: 1.2) {
+    background-image: url('./../../../assets/page-bg@2x.jpg');
+  }
+
+  &.dark {
+    background-color: #000;
+    background-image: url('./../../../assets/page-dark-bg.jpg');
+    color: #fff;
+
     @media (min-resolution: 120dpi) and (-webkit-min-device-pixel-ratio: 1.2) {
-        background-image: url('./../../../assets/page-bg@2x.jpg');
+      background-image: url('./../../../assets/page-dark-bg@2x.jpg');
     }
-    &.dark {
-        background-color: #000;
-        background-image: url('./../../../assets/page-dark-bg.jpg');
-        color: #fff;
-        @media (min-resolution: 120dpi) and (-webkit-min-device-pixel-ratio: 1.2) {
-            background-image: url('./../../../assets/page-dark-bg@2x.jpg');
-        }
+  }
+
+  .user-comp {
+    text-align: center;
+    margin-bottom: rem(30px);
+
+    .img-wrap {
+      display: inline-block;
+      width: rem(160px);
+      height: 0;
+      padding-bottom: rem(160px);
+      overflow: hidden;
+      position: relative;
+      border-radius: rem(4px);
     }
-    .user-comp {
-        text-align: center;
-        margin-bottom: rem(30px);
-        .img-wrap {
-            display: inline-block;
-            width: rem(160px);
-            height: 0;
-            padding-bottom: rem(160px);
-            overflow: hidden;
-            position: relative;
-            border-radius: rem(4px);
-        }
+  }
+
+  h1 {
+    padding: rem(16px) 0;
+    margin: 0;
+    background-color: $light;
+  }
+
+  .profile-links {
+    text-align: left;
+
+    ul,
+    li {
+      list-style: none;
+      display: block;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-        padding: rem(16px) 0;
-        margin: 0;
-        background-color: $light;
+
+    li {
+      margin-top: rem(4px);
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
-    .profile-links {
-        text-align: left;
-        ul, li {
-            list-style: none;
-            display: block;
-            margin: 0;
-            padding: 0;
+
+    a {
+      width: 100%;
+      position: relative;
+      text-align: left;
+      padding-left: rem(40px);
+      padding-right: rem(40px);
+
+      &.primary {
+
+        .left,
+        .right {
+          top: rem(8px);
         }
-        li {
-            margin-top: rem(4px);
-            &:first-child {
-                margin-top: 0;
-            }
-        }
-        a {
-            width: 100%;
-            position: relative;
-            text-align: left;
-            padding-left: rem(40px);
-            padding-right: rem(40px);
-            &.primary {
-                .left, .right {
-                    top: rem(8px);
-                }
-            }
-            .left, .right {
-                position: absolute;
-                top: rem(6px);
-            }
-            .left {
-                left: 8px;
-            }
-            .right {
-                right: 8px;
-            }
-        }
+      }
+
+      .left,
+      .right {
+        position: absolute;
+        top: rem(6px);
+      }
+
+      .left {
+        left: 8px;
+      }
+
+      .right {
+        right: 8px;
+      }
     }
-    .main-actions {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: rem(16px);
-        border-bottom: rem(1px) solid $dark;
-        margin-bottom: rem(16px);
-        button {
-            flex-basis: 33%;
-            line-height: 1;
-            .mdi {
-                font-size: rem(36px);
-                display: block;
-                margin-bottom: rem(5px);
-            }
-        }
+  }
+
+  .main-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(16px);
+    border-bottom: rem(1px) solid $dark;
+    margin-bottom: rem(16px);
+
+    button {
+      flex-basis: 33%;
+      line-height: 1;
+
+      .mdi {
+        font-size: rem(36px);
+        display: block;
+        margin-bottom: rem(5px);
+      }
     }
+  }
 }

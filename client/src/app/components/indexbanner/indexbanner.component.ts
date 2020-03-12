@@ -27,7 +27,7 @@ export class IndexbannerComponent implements OnInit {
     //   this.bannerData = bannerJson[Math.floor(Math.random() * bannerJson.length)];
     // }
     if (window && document) {
-      window.setTimeout(()=> {
+      window.setTimeout(() => {
         $('.hero-slider').slick({
           arrows: false,
           autoplay: false,

@@ -1,55 +1,69 @@
 $rem30px: rem(30px);
+
 .section-header {
-    display: inline-block;
-    // max-width: calc(88% - #{$rem30px});
+  display: inline-block;
+
+  // max-width: calc(88% - #{$rem30px});
+  .h-tag {
+    margin: 0;
+    position: relative;
+
+    &:before,
+    &:after {
+      background-color: $dark;
+      bottom: 50%;
+      content: '';
+      display: none;
+      height: rem(2px);
+      position: absolute;
+      width: rem(16px);
+    }
+
+    &:before {
+      right: 105%;
+    }
+
+    &:after {
+      left: 105%;
+    }
+  }
+
+  .section-icon {
+    display: block;
+    margin-bottom: rem(16px);
+
+    .mdi {
+      font-size: rem(48px);
+    }
+
+    &:before {
+      font-size: rem(40px);
+    }
+  }
+
+  &.left {
     .h-tag {
-        margin: 0;
-        position: relative;
-        &:before, &:after {
-            background-color: $dark;
-            bottom: 50%;
-            content: '';
-            display: none;
-            height: rem(2px);
-            position: absolute;
-            width: rem(16px);
-        }
-        &:before {
-            right: 105%;
-        }
-        &:after {
-            left: 105%;
-        }
+      &:before {
+        display: none;
+      }
     }
-    .section-icon {
-        display: block;
-        margin-bottom: rem(16px);
-        .mdi {
-            font-size: rem(48px);
-        }
-        &:before {
-            font-size: rem(40px);
-        }
+  }
+
+  &.right {
+    .h-tag {
+      &:after {
+        display: none;
+      }
     }
-    &.left {
-        .h-tag {
-            &:before {
-                display: none;
-            }
-        }
+  }
+
+  &.dark {
+    .h-tag {
+
+      &:before,
+      &:after {
+        background-color: $light;
+      }
     }
-    &.right {
-        .h-tag {
-            &:after {
-                display: none;
-            }
-        }
-    }
-    &.dark {
-        .h-tag {
-            &:before, &:after {
-                background-color: $light;
-            }
-        }
-    }
+  }
 }

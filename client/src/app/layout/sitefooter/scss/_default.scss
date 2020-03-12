@@ -1,70 +1,86 @@
 .sitefooter-comp {
-    color: #fff;
-    .logo-holder {
-        &:before {
-            content: '';
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-            width: rem(1px);
-        }
+  color: #fff;
+
+  .logo-holder {
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      width: rem(1px);
     }
-    [class^="col"] {
-        border-top: rem(1px) solid #fff;
-        padding-bottom: rem(32px);
-        padding-top: rem(32px);
-        &:first-child {
-            border-top: 0;
-        }
+  }
+
+  [class^="col"] {
+    border-top: rem(1px) solid #fff;
+    padding-bottom: rem(32px);
+    padding-top: rem(32px);
+
+    &:first-child {
+      border-top: 0;
     }
-    .logo-wrap {
-        display: inline-block;
-        width: rem(80px);
+  }
+
+  .logo-wrap {
+    display: inline-block;
+    width: rem(80px);
+  }
+
+  a {
+    &:link {
+      color: $light;
     }
-    a {
-        &:link {
-            color: $light;
-        }
-        &:visited {
-            color: $light;
-        }
-        &:hover {
-            color: $light;
-        }
-        &:active {
-            color: $light;
-        }
-        .icn {
-            display: inline-block;
-            height: rem(24px);
-            margin-right: rem(8px);
-            width: rem(24px);
-            img {
-                width: 100%;
-            }
-        }
+
+    &:visited {
+      color: $light;
     }
-    nav {
-        h6 {
-            display: block;
-            margin-bottom: rem(32px);
-        }
-        ul, li {
-            display: block;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        li {
-            margin-bottom: rem(8px);
-            &.morelink {
-                font-weight: bold;
-                margin: 0;
-                padding-top: rem(16px);
-            }
-        }
+
+    &:hover {
+      color: $light;
     }
-    p {
+
+    &:active {
+      color: $light;
+    }
+
+    .icn {
+      display: inline-block;
+      height: rem(24px);
+      margin-right: rem(8px);
+      width: rem(24px);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  nav {
+    h6 {
+      display: block;
+      margin-bottom: rem(32px);
+    }
+
+    ul,
+    li {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: rem(8px);
+
+      &.morelink {
+        font-weight: bold;
         margin: 0;
+        padding-top: rem(16px);
+      }
     }
+  }
+
+  p {
+    margin: 0;
+  }
 }

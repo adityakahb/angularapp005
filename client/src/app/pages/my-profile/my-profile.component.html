@@ -1,84 +1,84 @@
 <div class="main-content">
-    <section class="profile-comp">
-        <div class="max-wrap">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <aside class="user-comp">
-                            <div class="img-wrap">
-                                <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="{
+  <section class="profile-comp">
+    <div class="max-wrap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 col-lg-3">
+            <aside class="user-comp">
+              <div class="img-wrap">
+                <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="{
                                     xs: 'https://via.placeholder.com/400x400.png',
                                     xs2: 'https://via.placeholder.com/800x800.png'
                                 }"></app-responsive-image>
-                            </div>
-                            <div class="text-wrap">
-                                <h1 class="h5">Jane Doe</h1>
-                                <nav class="profile-links">
-                                    <ul>
-                                        <li><a href="#" class="btn btn-primary btn-lg primary">
-                                            <span class="left">
-                                                <span class="mdi mdi-pencil"></span>
-                                            </span>
-                                            Edit profile
-                                            <span class="right">
-                                                <span class="mdi mdi-chevron-right"></span>
-                                            </span>
-                                        </a></li>
-                                        <li><a href="#" class="btn btn-outline-primary">
-                                            <span class="left">
-                                                <span class="mdi mdi-hubspot"></span>
-                                            </span>
-                                            My followers
-                                            <span class="right">
-                                                <span class="mdi mdi-chevron-right"></span>
-                                            </span>
-                                        </a></li>
-                                        <li><a href="#" class="btn btn-outline-primary">
-                                            <span class="left">
-                                                <span class="mdi mdi-silverware"></span>
-                                            </span>
-                                            My recipes
-                                            <span class="right">
-                                                <span class="mdi mdi-chevron-right"></span>
-                                            </span>
-                                        </a></li>
-                                        <li><a href="#" class="btn btn-outline-primary">
-                                            <span class="left">
-                                                <span class="mdi mdi-script-text"></span>
-                                            </span>
-                                            My articles
-                                            <span class="right">
-                                                <span class="mdi mdi-chevron-right"></span>
-                                            </span>
-                                        </a></li>
-                                        <li><a href="#" class="btn btn-outline-primary">
-                                            <span class="left">
-                                                <span class="mdi mdi-account-group"></span>
-                                            </span>
-                                            My groups
-                                            <span class="right">
-                                                <span class="mdi mdi-chevron-right"></span>
-                                            </span>
-                                        </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </aside>    
-                    </div>
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <div class="profile-center">
-                            <div class="main-actions">
-                                <button type="button" class="btn btn-lg btn-light">
-                                    <span class="mdi mdi-silverware"></span>
-                                    New recipe
-                                </button>
-                                <button type="button" class="btn btn-lg btn-light">
-                                    <span class="mdi mdi-script-text"></span>
-                                    New article
-                                </button>
-                            </div>
-                            <div class="profile-activity">
-                                <app-activity-teaser [data]="{
+              </div>
+              <div class="text-wrap">
+                <h1 class="h5">Jane Doe</h1>
+                <nav class="profile-links">
+                  <ul>
+                    <li><a href="#" class="btn btn-primary btn-lg primary">
+                        <span class="left">
+                          <span class="mdi mdi-pencil"></span>
+                        </span>
+                        Edit profile
+                        <span class="right">
+                          <span class="mdi mdi-chevron-right"></span>
+                        </span>
+                      </a></li>
+                    <li><a href="#" class="btn btn-outline-primary">
+                        <span class="left">
+                          <span class="mdi mdi-hubspot"></span>
+                        </span>
+                        My followers
+                        <span class="right">
+                          <span class="mdi mdi-chevron-right"></span>
+                        </span>
+                      </a></li>
+                    <li><a href="#" class="btn btn-outline-primary">
+                        <span class="left">
+                          <span class="mdi mdi-silverware"></span>
+                        </span>
+                        My recipes
+                        <span class="right">
+                          <span class="mdi mdi-chevron-right"></span>
+                        </span>
+                      </a></li>
+                    <li><a href="#" class="btn btn-outline-primary">
+                        <span class="left">
+                          <span class="mdi mdi-script-text"></span>
+                        </span>
+                        My articles
+                        <span class="right">
+                          <span class="mdi mdi-chevron-right"></span>
+                        </span>
+                      </a></li>
+                    <li><a href="#" class="btn btn-outline-primary">
+                        <span class="left">
+                          <span class="mdi mdi-account-group"></span>
+                        </span>
+                        My groups
+                        <span class="right">
+                          <span class="mdi mdi-chevron-right"></span>
+                        </span>
+                      </a></li>
+                  </ul>
+                </nav>
+              </div>
+            </aside>
+          </div>
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="profile-center">
+              <div class="main-actions">
+                <button type="button" class="btn btn-lg btn-light">
+                  <span class="mdi mdi-silverware"></span>
+                  New recipe
+                </button>
+                <button type="button" class="btn btn-lg btn-light">
+                  <span class="mdi mdi-script-text"></span>
+                  New article
+                </button>
+              </div>
+              <div class="profile-activity">
+                <app-activity-teaser [data]="{
                                     from: {
                                         name: 'John Doe',
                                         link: '#',
@@ -103,7 +103,7 @@
                                         md2: 'https://via.placeholder.com/1600x900.png'
                                     }
                                 }"></app-activity-teaser>
-                                <app-activity-teaser [data]="{
+                <app-activity-teaser [data]="{
                                     from: {
                                         name: 'John Doe',
                                         link: '#',
@@ -130,15 +130,15 @@
                                         md2: 'https://via.placeholder.com/1600x900.png'
                                     }
                                 }"></app-activity-teaser>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-12 col-xl-3">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-12 col-xl-3">
                         <div style="background-color: red;">right</div>
                     </div> -->
-                </div>
-            </div>
         </div>
-    </section>
-    <!--  -->
+      </div>
+    </div>
+  </section>
+  <!--  -->
 </div>

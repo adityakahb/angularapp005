@@ -12,9 +12,9 @@ export class AppComponent implements OnInit {
   showSiteHeader = false;
   showSiteFooter = false;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
-// 800x800, 1200x1200, 1440x1200, 2880x1200
-// 400x400, 600x600, 720x620, 1440x600
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
+  // 800x800, 1200x1200, 1440x1200, 2880x1200
+  // 400x400, 600x600, 720x620, 1440x600
   ngOnInit() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {

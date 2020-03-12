@@ -4,7 +4,7 @@ const userstable = [
         firstname: 'user1_firstname',
         middlename: 'user1_middlename',
         lastname: 'user1_lastname',
-        email: 'user1.email@emaildomain.com',
+        email: 'u1.email@domain.com',
         dateofbirth: '1980-03-04T08:46:55.091Z',
         gender: 'gmale',
         profilepic: ''
@@ -14,7 +14,7 @@ const userstable = [
         firstname: 'user2_firstname',
         middlename: 'user2_middlename',
         lastname: 'user2_lastname',
-        email: 'user2.email@emaildomain.com',
+        email: 'u2.email@domain.com',
         dateofbirth: '1990-03-04T08:46:55.091Z',
         gender: 'gfemale',
         profilepic: ''
@@ -24,7 +24,7 @@ const userstable = [
         firstname: 'user3_firstname',
         middlename: '',
         lastname: 'user3_lastname',
-        email: 'user3.email@emaildomain.com',
+        email: 'u3.email@domain.com',
         dateofbirth: '1970-03-04T08:46:55.091Z',
         gender: 'gnot',
         profilepic: ''

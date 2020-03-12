@@ -20,23 +20,23 @@ export class ResponsiveBreakpointDirective implements AfterViewInit {
       '(min-width: 768px)',
       '(min-width: 992px)',
       '(min-width: 1200px)'])
-    .subscribe((state: BreakpointState) => {
-      this.currentBreakpoint = 'xs';
-      if (state.breakpoints['(min-width: 576px)']) {
-        this.currentBreakpoint = 'sm';
-      }
-      if (state.breakpoints['(min-width: 768px)']) {
-        this.currentBreakpoint = 'md';
-      }
-      if (state.breakpoints['(min-width: 1024px)']) {
-        this.currentBreakpoint = 'lg';
-      }
-      if (state.breakpoints['(min-width: 1200px)']) {
-        this.currentBreakpoint = 'xl';
-      }
-      setTimeout(() => {
-        this.bpService.setCBP(this.currentBreakpoint + (dpr > 1 ? '2' : ''));
-      }, 0);
-    });
+      .subscribe((state: BreakpointState) => {
+        this.currentBreakpoint = 'xs';
+        if (state.breakpoints['(min-width: 576px)']) {
+          this.currentBreakpoint = 'sm';
+        }
+        if (state.breakpoints['(min-width: 768px)']) {
+          this.currentBreakpoint = 'md';
+        }
+        if (state.breakpoints['(min-width: 1024px)']) {
+          this.currentBreakpoint = 'lg';
+        }
+        if (state.breakpoints['(min-width: 1200px)']) {
+          this.currentBreakpoint = 'xl';
+        }
+        setTimeout(() => {
+          this.bpService.setCBP(this.currentBreakpoint + (dpr > 1 ? '2' : ''));
+        }, 0);
+      });
   }
 }

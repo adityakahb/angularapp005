@@ -34,12 +34,12 @@ export class IndexComponent implements OnInit {
     for (let i = 0; i < arr.length; i++) {
       let sp = (arr[i].q_specialty_id || []);
       let ge = (arr[i].location_nimvs || []);
-      for (let j = 0; j< ge.length; j++) {
+      for (let j = 0; j < ge.length; j++) {
         let gej = JSON.parse(ge[j]);
         if (gej.geolocation) {
           let geo = gej.geolocation;
           if (gej.geolocation !== '0,0') {
-            for (let k=0; k<sp.length;k++) {
+            for (let k = 0; k < sp.length; k++) {
               data += geo + ',' + sp[k] + '\n';
             }
           }

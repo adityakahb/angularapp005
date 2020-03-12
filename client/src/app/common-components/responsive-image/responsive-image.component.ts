@@ -17,7 +17,7 @@ export class ResponsiveImageComponent implements AfterViewChecked {
   private _cbp;
   private currentImg;
 
-  constructor(private cdRef:ChangeDetectorRef, private bpService: CommonFunctionsService) {}
+  constructor(private cdRef: ChangeDetectorRef, private bpService: CommonFunctionsService) { }
 
   ngAfterViewChecked() {
     this._cbp = this.bpService.getCBP();
