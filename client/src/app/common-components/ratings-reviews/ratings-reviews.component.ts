@@ -12,6 +12,8 @@ export class RatingsReviewsComponent implements OnInit {
   noofratings;
   ratingsArr = [];
   onestar = 'star-outline';
+  showratings = false;
+  showreviews = false;
   @Input() data;
 
   constructor() { }
@@ -21,6 +23,12 @@ export class RatingsReviewsComponent implements OnInit {
     this.noofratings = this.data.noofratings;
     this.noofreviews = this.data.noofreviews;
     let arr = [];
+    try {
+      const re = parseInt(this.data.noofreviews);
+      if (re > 0) {
+        this.showreviews = true;
+      }
+    } catch (e) {}
     try {
       let r = Math.round(this.ratings * 10) / 10;
       let r1 = r;
@@ -39,6 +47,7 @@ export class RatingsReviewsComponent implements OnInit {
 
       if (r1 > 0) {
         this.onestar = 'star';
+        this.showratings = true;
       }
 
     } catch (e) {}

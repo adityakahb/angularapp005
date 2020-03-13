@@ -94,7 +94,7 @@
       <div class="site-search-content">
         <form id="usersearchform">
           <div class="form-group">
-            <input type="search" class="form-control form-control-lg" id="usersearch" placeholder="Enter keywords">
+            <input type="search" class="form-control" id="usersearch" placeholder="Enter keywords">
             <button type="button" class="user-search-btn">
               <span class="mdi mdi-magnify"></span>
             </button>
@@ -110,7 +110,7 @@
         <form id="userloginform" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit(loginForm.value)">
           <div class="form-group">
             <label for="useremail">Registered Email</label>
-            <input type="email" class="form-control form-control-lg"
+            <input type="email" class="form-control"
               [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_EMAIL.errors}"
               placeholder="Registered Email" formControlName="USER_EMAIL">
             <div *ngIf="loginFormSubmitted && loginControls.USER_EMAIL.errors" class="invalid-feedback">
@@ -120,7 +120,7 @@
           </div>
           <div class="form-group">
             <label for="userpassword">Password</label>
-            <input type="password" class="form-control form-control-lg"
+            <input type="password" class="form-control"
               [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.USER_PASSWORD.errors}" id="userpassword"
               placeholder="Password" formControlName="USER_PASSWORD">
             <div *ngIf="loginFormSubmitted && loginControls.USER_PASSWORD.errors" class="invalid-feedback">

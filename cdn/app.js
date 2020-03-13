@@ -39,20 +39,20 @@ let fontsText = '';
 
 app.listen(4100, () => {
     console.log('====Started CDN on port 4100====');
-    Promise.all(jsURLs.map(u=>fetch(u))).then(responses =>
+    Promise.all(jsURLs.map(u => fetch(u))).then(responses =>
         Promise.all(responses.map(res => res.text()))
     ).then(t => {
-        jsText = (t || []).join('\n'); 
+        jsText = (t || []).join('\n');
     });
-    Promise.all(cssURLs.map(u=>fetch(u))).then(responses =>
+    Promise.all(cssURLs.map(u => fetch(u))).then(responses =>
         Promise.all(responses.map(res => res.text()))
     ).then(t => {
-        cssText = (t || []).join('\n'); 
+        cssText = (t || []).join('\n');
     });
-    Promise.all(fontsURLs.map(u=>fetch(u))).then(responses =>
+    Promise.all(fontsURLs.map(u => fetch(u))).then(responses =>
         Promise.all(responses.map(res => res.text()))
     ).then(t => {
-        fontsText = (t || []).join('\n'); 
+        fontsText = (t || []).join('\n');
     });
 });
 

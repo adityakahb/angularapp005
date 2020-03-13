@@ -31,7 +31,7 @@
     <iframe *ngIf="tileVideoSource === 'youtube'" width="560" height="315" [src]="tileVideoURL" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div class="teaser-subtitle" *ngIf="(tags || []).length > 0">
+  <!-- <div class="teaser-subtitle" *ngIf="(tags || []).length > 0">
     <app-cta *ngFor="let tag of tags, index as i, last as isLast" [data]="{
                 cssclass: tag.cssclass,
                 href: tag.link,
@@ -41,7 +41,7 @@
                 text: tag.title,
                 title: tag.title
             }" [theme]="sttheme"></app-cta>
-  </div>
+  </div> -->
   <div class="teaser-content">
     <p [innerHTML]="desc"></p>
   </div>

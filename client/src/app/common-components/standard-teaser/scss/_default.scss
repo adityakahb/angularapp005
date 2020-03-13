@@ -40,7 +40,7 @@
     border-bottom: rem(1px) solid $light;
     border-top: rem(1px) solid $light;
     height: 0;
-    margin: 0 rem(-1px) rem(8px) rem(-1px);
+    margin: 0 rem(-1px);
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
@@ -89,9 +89,9 @@
   }
 
   .teaser-header {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
-    height: rem(40px);
+    height: rem(48px);
     padding: rem(8px);
 
     &.with-icon {

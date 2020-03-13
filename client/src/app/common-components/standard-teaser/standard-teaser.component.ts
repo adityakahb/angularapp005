@@ -31,7 +31,7 @@ export class StandardTeaserComponent implements OnInit {
     let data = this.data || {};
     this.icon = data.icon;
     this.ctas = data.cta;
-    this.desc = this.getTrimmedData(this.trimStr(data.desc || ''), 100);
+    this.desc = this.getTrimmedData(this.trimStr(data.desc || ''), 160);
     this.tags = data.tags;
     this.tileImg = data.tileImg;
     this.title = this.getTrimmedData(this.trimStr(data.title || ''), 40);

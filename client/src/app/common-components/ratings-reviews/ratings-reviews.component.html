@@ -8,17 +8,14 @@
     <div class="r-num" *ngIf="ratings" [innerHTML]="ratings"></div> -->
 
     <!-- <div class="r-count" *ngIf="noofratings" [innerHTML]="get99(noofratings, 'Rating', 'Ratings')"></div> -->
-    <div class="r-date">
-        20-March-2020
+    <div class="r-wrap" *ngIf="showratings">
+        <span class="mdi" *ngFor="let rt of ratingsArr" [ngClass]="'mdi-' + rt"></span>
+        <!-- <span class="mdi" [ngClass]="'mdi-' + onestar"></span> -->
+        <span class="r-num" [innerHTML]="ratings"></span>
     </div>
-    <div class="r-wrap">
-        <!-- <span class="mdi" *ngFor="let rt of ratingsArr" [ngClass]="'mdi-' + rt"></span> -->
-        <span class="mdi" [ngClass]="'mdi-' + onestar"></span>
-    </div>
-    <div class="r-num" *ngIf="ratings" [innerHTML]="ratings"></div>
 
-    <div class="r-r-icon" *ngIf="noofreviews">
+    <div class="r-reviews" *ngIf="noofreviews && showreviews">
         <span class="mdi mdi-comment-text"></span>
+        <span class="r-rev" [innerHTML]="get99(noofratings, 'Review', 'Reviews')"></span>
     </div>
-    <div class="r-reviews" *ngIf="noofreviews" [innerHTML]="get99(noofratings, 'Review', 'Reviews')"></div>
 </div>

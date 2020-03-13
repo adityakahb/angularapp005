@@ -74,6 +74,7 @@ $rem240: rem(-240px);
   }
 
   .close-site-nav {
+    font-size: rem(20px);
     background: none;
     border: 0;
     height: rem(60px);
@@ -113,7 +114,7 @@ $rem240: rem(-240px);
   top: 0;
   transform: translateX(0);
   transition: transform 250ms ease;
-  width: rem(240px);
+  width: 100%;
   z-index: 1102;
 
   .mat-form-field {
@@ -146,8 +147,8 @@ $rem240: rem(-240px);
     right: 0;
     background-color: transparent;
     border: 0;
-    height: rem(48px);
-    width: rem(48px);
+    height: rem(38px);
+    width: rem(38px);
 
     .mdi {
       font-size: rem(24px);
